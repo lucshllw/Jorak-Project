@@ -1,0 +1,16 @@
+node_modules/
+.next/
+.env*
+!.env.example
+.local-data/
+.npm-cache/
+*.tsbuildinfo
+next-env.d.ts
+ACESSO-LOCAL.txt
+test-results/
+research/
+PROMPT-JORAK.md
+*.log
+.DS_Store
+supabase/.temp/
+supabase/.branches/
