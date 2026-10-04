@@ -45,7 +45,8 @@
       "previewReady": true,
       "originalRanges": [],
       "pendingReason": null,
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "► Edição: Moura, Vetan, Ryan, Kazuya, Jorak, SkyFilmez, LxMasaru, J4oZ, Ayato"
     },
     {
       "slug": "mensageiro-kaito",
@@ -67,7 +68,8 @@
       "previewReady": true,
       "originalRanges": [],
       "pendingReason": null,
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição: Kuro, Kasaro, Kizuna, Nog, Xeu, Norockvs, Jorak, Matte & Ikari"
     },
     {
       "slug": "carrasco-ranori",
@@ -96,7 +98,8 @@
         }
       ],
       "pendingReason": null,
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "▸ Edição por Ikari, SkyFilmeZ, Sadly, Kukki, NoRockz, Moura, Yuki, VicBySoup, Nickzada, Jorak, Jota, Henriuq\n03:59 \"Arrependimento\" Jorak"
     },
     {
       "slug": "anomalia-slow-gm",
@@ -125,7 +128,8 @@
         }
       ],
       "pendingReason": null,
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Visual por Samuca, VicBySoup, Nugget, Ozy, Kukki, Ness, Ikari, Jorak, Henrique, Betto\n2:08 Jorak"
     },
     {
       "slug": "convidado-especial-oshaman",
@@ -160,7 +164,8 @@
         }
       ],
       "pendingReason": null,
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Audiovisual: Edwr, Ilka, Kukki, Xeu, Grey, Jorak, oLeozin, Ichiro, Avocado\n1:43 Jorak\n3:15 Jorak"
     },
     {
       "slug": "rota-da-gula-shiny",
@@ -182,7 +187,8 @@
       "previewReady": true,
       "originalRanges": [],
       "pendingReason": null,
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição por: Jorak, Only, Mauad, NT, Vinni"
     },
     {
       "slug": "heroi-do-japao-neshyzk",
@@ -211,7 +217,8 @@
         }
       ],
       "pendingReason": null,
-      "trailerOnly": true
+      "trailerOnly": true,
+      "creditFound": "▸ Edição por Zada, ALL, RMDS, KKZ, DanZ, Ryo, Knoff, Akiraz, Jorak e Aruni\n01:12 Edição: @Jorakeditor"
     },
     {
       "slug": "karma-basara",
@@ -233,7 +240,8 @@
       "previewReady": true,
       "originalRanges": [],
       "pendingReason": null,
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Jorak"
     },
     {
       "slug": "lampiao-de-espinhos-shiny",
@@ -255,7 +263,8 @@
       "previewReady": true,
       "originalRanges": [],
       "pendingReason": null,
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição por: Scrowlly, Jorak, Sakas, All, Thura, Manhoso,"
     },
     {
       "slug": "tipo-inosuke-2-mhrap",
@@ -275,7 +284,8 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "Original exclusivo para membros; nenhuma comissão pública correspondente encontrada nas fontes consultadas. É necessário arquivo autorizado e identificação da participação.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição: PEDROZNTI, GOWWW, ZOOM, JORAK, BELLTE, GYNZ, BLACK AMV"
     },
     {
       "slug": "america-ranori",
@@ -304,7 +314,8 @@
         }
       ],
       "pendingReason": null,
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "▸ Edição por Ilka, Nirockvs, SkyFilmez, Akage, Redzzz, Wata, Emm, Kukki, Jorak, Nighttz\n03:29 Verso 2: Jorak"
     },
     {
       "slug": "cara-de-sorte-basara",
@@ -326,7 +337,8 @@
       "previewReady": true,
       "originalRanges": [],
       "pendingReason": null,
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Jorak"
     },
     {
       "slug": "socando-nesses-betinhas-ashur4",
@@ -346,7 +358,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição por: Kukki, Ryo, Lyz, Doriuta, Henrib, Ikari, Nighttz, Vizeivfx, Misty, Jorak, Naoki, Nt",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=c4eAmh8BOOA",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          189.321,
+          195.321,
+          199.321
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "ado-ado-do-maskarado-pejota",
@@ -366,7 +392,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição: R4 ( @raph.10__ ), Kyllua ( @kyllua_sz ), Noryak (@noryakedits), Jorak ( @Jorak.editor )",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=Zc_3YRV8mc4",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          303.768,
+          309.768,
+          313.768
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "a-guerra-sangrenta-dos-mil-anos-pejota",
@@ -386,7 +426,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição: R4 ( @raph.10__ ), TrupZ ( @trupzeditor ), Noryak ( @noryakedits ), South ( @south.edicoes ), Jorak ( @Jorak.editor ), Kyllua ( @kyllua_sz ), RUIGH ( @ruigh.athome ), Gold ( @ogold.editor ), Aw Edit ( @_william69_5 ), Trinity ( @the.trinityz ) & Aly ( @laan02001601 )",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=joXDTbKD_9g",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          765.201,
+          771.201,
+          775.201
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "morte-branca-pejota",
@@ -407,7 +461,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição: R4 ( @raph.10__ ), Kyllua ( @kyllua_sz ), Gold ( @ogold.editor ), Jorak ( @Jorak.editor )",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=Q9hbyrsTmkg",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          241.381,
+          247.381,
+          251.381
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "indie-cross-chevz",
@@ -455,7 +523,8 @@
         }
       ],
       "pendingReason": null,
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "▶ Editores: Augusto, Ness, Gowww, Lucius, Felipe, Finis, Jorak, Marques, Kane, Mauad, Misuke, Zeref, Araiya e Antropa\n2:26 Refrão por Okabe (Jorak e Akira)\n4:55 Refrão por Okabe (Jorak e Akira)\n7:22 Refrão por Okabe (Jorak e Akira)"
     },
     {
       "slug": "deus-do-lixo-pejota",
@@ -476,7 +545,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição: Hydra, Jorak, maTTe, Yaruzito, Mauad, Ryoji, Bxxxyz, Shake, Boo Edits, Crazy, LiloZuum, YT:IKZ e Dant3",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=hdSg0NPAvsc",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          231.741,
+          237.741,
+          241.741
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "vinganca-mathover",
@@ -503,7 +586,25 @@
         }
       ],
       "pendingReason": "A descrição credita início(s) em 1:46; término(s) derivado(s) do próximo capítulo continuam inferidos. Nenhum upload próprio correspondente foi encontrado nas fontes consultadas. Confirmar os limites ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição: Gabbb, Arexz, Seyaah, Ky, Rockwzz, Gilga_editor e Jorak\n1:46 Verso 2: Jorak",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=bsyt56Mmt4U",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          105.8,
+          106.2,
+          132.8,
+          133.2,
+          181.021,
+          187.021,
+          191.021
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "obsessao-as-ace",
@@ -523,7 +624,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "EDITORES: Nenis, Jorak, Kasaro, Anoveas, Redzz, Manhoso, Scrowly, Ratinhuu, Naoki e Bryan",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=x5_UJUa7QaY",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          279.361,
+          285.361,
+          289.361
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "vem-pro-quarto-levar-espada-kaji",
@@ -543,7 +658,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "▸Edição: Kaji, GD, Ota, Mauad, Ikari, Jorak",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=fgGrKkUxBcY",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          138.121,
+          144.121,
+          148.121
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "de-joelhos-fokes",
@@ -572,7 +701,8 @@
         }
       ],
       "pendingReason": null,
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Editores: KaioSC, Leave, oGabsz, Ryoji, Ikari, Millin, Manhoso, Jorak, Kvnzy\nVerso 3 - (Jorak): 02:54"
     },
     {
       "slug": "arcanjo-caido-msdaiki",
@@ -592,7 +722,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Editores: Kkzpo, Falkão, Iuri, Lucxxs, Jorak, Shadow, Nightz, Sgz",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=FuijCYnJpCc",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          191.821,
+          197.821,
+          201.821
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "servical-theuz",
@@ -631,7 +775,33 @@
         }
       ],
       "pendingReason": "A descrição credita início(s) em 1:15, 2:08, 3:38; término(s) derivado(s) do próximo capítulo continuam inferidos. Nenhum upload próprio correspondente foi encontrado nas fontes consultadas. Confirmar os limites ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "• Editores: Kyllua, AW, Jorak , Santty, Nytoru, Matte, Rayo, Sans, oHustave\n• 01:15  | Jorak\n• 02:08  | Jorak\n• 03:38  | Jorak",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=ne8Qd7Ao564",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          74.8,
+          75.2,
+          101.8,
+          102.2,
+          127.8,
+          128.2,
+          140.8,
+          141.2,
+          217.8,
+          218.2,
+          245.8,
+          246.2,
+          273.861,
+          279.861,
+          283.861
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "restricao-neshyzk",
@@ -660,7 +830,8 @@
         }
       ],
       "pendingReason": null,
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "▸ Edição por NaSants, RMDS, Maou e Jorak\n02:38 Edição: Jorak"
     },
     {
       "slug": "metempsicose-caneco",
@@ -680,7 +851,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição: dannn, Bryan, Kayffu , Edu, kkzpo, Jorak, raitsuu",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=iTISBOL48w8",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          176.381,
+          182.381,
+          186.381
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "costuras-caneco",
@@ -702,7 +887,8 @@
       "previewReady": true,
       "originalRanges": [],
       "pendingReason": null,
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição: Rou, Bryan, Ryo, Temetsuki, Hasty, Jorak"
     },
     {
       "slug": "renascer-otaiyo",
@@ -739,7 +925,29 @@
         }
       ],
       "pendingReason": "A descrição credita início(s) em 0:53, 2:03; término(s) derivado(s) do próximo capítulo continuam inferidos. Nenhum upload próprio correspondente foi encontrado nas fontes consultadas. Confirmar os limites ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição por @borutin_ofc, @EditByPeh, @sunnymp44, @jorak.editor e @Mattekm\n0:53 Refrão - Edit: Sunny & Jorak\n2:03 Refrão - Edit: Sunny & Jorak",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=wKu4DduNXjU",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          52.8,
+          53.2,
+          87.8,
+          88.2,
+          122.8,
+          123.2,
+          158.8,
+          159.2,
+          168.361,
+          174.361,
+          178.361
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "lixo-a-gloria-caneco",
@@ -761,7 +969,8 @@
       "previewReady": true,
       "originalRanges": [],
       "pendingReason": null,
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição: Matte,Rou, Jorak ,kkzpo ,Nighttz,Dann"
     },
     {
       "slug": "pela-patria-neshyzk",
@@ -781,7 +990,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "▸ Edição por Jorak, Zada, All, Darqz, RMDS, KevZ, Maou, Natori e Kayffu",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=s45dsKaMupo",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          271.981,
+          277.981,
+          281.981
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "robozao-okumura",
@@ -808,7 +1031,25 @@
         }
       ],
       "pendingReason": "A descrição credita início(s) em 2:28; término(s) derivado(s) do próximo capítulo continuam inferidos. Nenhum upload próprio correspondente foi encontrado nas fontes consultadas. Confirmar os limites ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição por: Rou, Redzzz, EditByIsa, Anoveas , oGabz, Jorak, Hydra\n02:28 Jorak (Pré-Refrão)",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=E8kut62CtYs",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          147.8,
+          148.2,
+          155.8,
+          156.2,
+          215.521,
+          221.521,
+          225.521
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "coisa-ruim-rou",
@@ -836,7 +1077,25 @@
         }
       ],
       "pendingReason": "A descrição credita início(s) em 0:24; término(s) derivado(s) do próximo capítulo continuam inferidos. Nenhum upload próprio correspondente foi encontrado nas fontes consultadas. Confirmar os limites ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição: Dannn (@daniiibrk), Jorak (@jorak.editor), Rou, Kry (@Kryzeraxd), Falkão, Nightzz (@NighttzDesigner), Nocry (@nocryy_), Temetsuki, Luck_aex (@Luck_aex)\n00:24 - Pré Verso - Jorak",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=EFTcOyuaBKU",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          23.8,
+          24.2,
+          34.8,
+          35.2,
+          270.201,
+          276.201,
+          280.201
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "memorias-roubadas-eosans",
@@ -863,7 +1122,25 @@
         }
       ],
       "pendingReason": "A descrição credita início(s) em 0:39; término(s) derivado(s) do próximo capítulo continuam inferidos. Nenhum upload próprio correspondente foi encontrado nas fontes consultadas. Confirmar os limites ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "00:39 - Jorak\nJorak",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=hCA4m2Is1Ng",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          38.8,
+          39.2,
+          52.8,
+          53.2,
+          122.661,
+          128.661,
+          132.661
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "celestial-mathover",
@@ -890,7 +1167,25 @@
         }
       ],
       "pendingReason": "A descrição credita início(s) em 3:12; término(s) derivado(s) do próximo capítulo continuam inferidos. Nenhum upload próprio correspondente foi encontrado nas fontes consultadas. Confirmar os limites ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição de vídeo: ‪Indrazin, ghost_aex, Mathover, moura_editor, Ryota, kkz, Kry, Togaton e Jorak\n03:12 - Ponte Final jorak",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=9lpSZ85-WPA",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          191.8,
+          192.2,
+          210.8,
+          211.2,
+          245.24099999999999,
+          251.24099999999999,
+          255.24099999999999
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "cair-da-lua-m4rques",
@@ -910,7 +1205,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "► Edição por: Kishi, Kayden, Misake, Jorak, Freitas",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=rHy1YYWqWYY",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          195.861,
+          201.861,
+          205.861
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "trucido-infindavel-tutuflow",
@@ -930,7 +1239,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Jorakk(@Jorak_oficial)",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=EwJtgNGoTlY",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          299.701,
+          305.701,
+          309.701
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "anjo-caido-storini",
@@ -952,7 +1275,8 @@
       "previewReady": true,
       "originalRanges": [],
       "pendingReason": null,
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição de Vídeo: Jorak (@jorak.editor) Zenin (@Zenin_.musicss) Shinnt (@shinnedit) Storini, Owen (@owen_producer)"
     },
     {
       "slug": "criacao-perfeita-storini",
@@ -974,7 +1298,8 @@
       "previewReady": true,
       "originalRanges": [],
       "pendingReason": null,
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição de Vídeo:  Zenin (@Zenin_.musicss), Jorak (@jorak.editor), Shinnt (@shinnedit), Eleven Studios (@ElevenMusicOficial), KNS (@KNSOficial) & Storini"
     },
     {
       "slug": "infame-as-ace",
@@ -994,7 +1319,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "EDITORES: Kylu, Gow, Jorak, Bryan e Kasaro",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=E064s1A5wS0",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          290.481,
+          296.481,
+          300.481
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "no-topo-do-cla-kmg-geek",
@@ -1014,7 +1353,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição: Killmer18, Z3CH1U, Seiji_aep e Jorak",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=_Eg0pdJ81Xo",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          154.208,
+          160.208,
+          164.208
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "wave-tokito-eoshadow",
@@ -1034,7 +1387,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição : Kwax, Jorak, Noryak, Gabbz",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=efxptEgKmYE",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          120.761,
+          126.761,
+          130.761
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "quando-ela-chegou-sunny",
@@ -1055,7 +1422,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "· Edição por Sunny, @mtz_aex, @jorak.editor & @soeudramnn",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=wFs-4xxTrgE",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          183.421,
+          189.421,
+          193.421
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "zero-arthurzinn",
@@ -1082,7 +1463,25 @@
         }
       ],
       "pendingReason": "A descrição credita início(s) em 0:07; término(s) derivado(s) do próximo capítulo continuam inferidos. Nenhum upload próprio correspondente foi encontrado nas fontes consultadas. Confirmar os limites ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Diretor Visual vulgo meu pretinho: Jorak (@jorak.editor )\nEdição: Jorak (@jorak.editor ), Ser Humano(‎⁨@humaninkk⁩   ), Izuki (@izukiokkotsu), Gilgamesh (@Prod_gilga ), Clara Rocha (@cl4ra_r0cha ), Arthurzinn* (@otaldoarthurzinn ), Ryuuji (@RyuujiAM ), Dogg (@doggcaramello ), ÉoJean (@essejeansz ),  Yuta_Sz (@Yuta_sz-Oficial ), Jack Ladino (@JackOLadino ), Bardockzinn (@Bardockzin_oficial ), Natizu (@Natizu ), Tamo Ai (@tamoai2-zu4cb ), ÉoRosito (@rosito987102), Zezoou (@Zeszu1 ), Tenshi (@Tenshi_editor2603 ), Dhan (@danedicoessigmass), Tr4ck (@TR4CK-v6b ) e Yunariando (@Yunariando2.0 )\n00:07 Créditos [Edit by: Jorak]",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=RWHjnijaLh0",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          6.8,
+          7.2,
+          12,
+          18.8,
+          19.2,
+          483.961,
+          489.961,
+          493.961
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "correnteza-nasants",
@@ -1103,7 +1502,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "➫Edição: Orutsu (@vinicius_ortiz02), Tgze (@thiagu_benjoya), Shadow (@shadowfx_sw), Zoom (@zoomeditor01), Jorak (@jorak_editor) & NaSants (@nasantsoficial)",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=2FXI4zgbcEI",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          317.021,
+          323.021,
+          327.021
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "eu-nao-sou-um-vilao-secretraps",
@@ -1123,7 +1536,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "➤ Edição ➞ Jorak (jorak_editor) ,  Gilgamash (@jk_gilgamesh_oficial) , Buno(@buno2010) ,  Sennin_LC (@sennin_editzx) , KlSoul(@Kl Soul) @SecretRaps (@Secret_raps12)",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=7DFxOxPHHqI",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          245.401,
+          251.401,
+          255.401
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "ergam-se-storini",
@@ -1143,7 +1570,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição de Vídeo:  Jorak (@jorak.editor ), Zenin (@Zenin_.musicss) Shinnt (@shinnedit), Owen (@owen_producer)",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=SKbzuaxj6zc",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          233.201,
+          239.201,
+          243.201
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "viva-o-pivete-kaji",
@@ -1163,7 +1604,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "▸Edição: Kaji, Ota, Luanyukii, Vizei, Magrelão, YoruFx, Bxxxyz, Nan, Jorak, Ts4r",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=hhBPUFz4u3c",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          222.281,
+          228.281,
+          232.281
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "docura-neko",
@@ -1183,7 +1638,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição: DanZ, Kukki, Ayato, Ikari, Jotta, Edwr, Erick, Wata, Moura, Naokiz, Nighttz, Jorak, J4oz",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=X7cRXWQYnY4",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          289.621,
+          295.621,
+          299.621
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "o-primeiro-rei-anirap",
@@ -1205,7 +1674,8 @@
       "previewReady": true,
       "originalRanges": [],
       "pendingReason": null,
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "▶ Editor: DanZ,Jorak,Tennyson,Dean,N3vx,Yuki,Kukki e Sadly"
     },
     {
       "slug": "traicao-de-sangue-igris",
@@ -1225,7 +1695,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "► Edição: LxMassaru, Xeu, Ryan, Kukki, Nighttz, Jorak, Kutz, J4oz, GD",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=ynECM2La-dI",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          294.781,
+          300.781,
+          304.781
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "death-the-zane",
@@ -1247,7 +1731,8 @@
       "previewReady": true,
       "originalRanges": [],
       "pendingReason": null,
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "| Visual: @eusoumatte, @kizunakkkk, @kkzpo_mmv, @nescoheditor, @SouL_aex, @tgeditor85, @Jorakeditor"
     },
     {
       "slug": "gols-e-travessuras-neko",
@@ -1267,7 +1752,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição por: Akage, Jorak, Xeu & Kukki",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=qFGJYdGufbE",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          228.001,
+          234.001,
+          238.001
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "maldito-arkay",
@@ -1290,7 +1789,21 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição: Kuro, Smoker, Ayato, Dannn, Jorak & VicBySoup",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=i_fPgGUg8II",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          206.281,
+          212.281,
+          216.281
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "imperador-m4rkim",
@@ -1320,7 +1833,8 @@
         }
       ],
       "pendingReason": null,
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "04:01 até 04:30 - Jorak"
     },
     {
       "slug": "faminto-anirap",
@@ -1342,7 +1856,8 @@
       "previewReady": true,
       "originalRanges": [],
       "pendingReason": null,
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "▶ Editor:And1,DanZ,N3vx,Tennyson,Betto,Smoker,MTZ,Jorak"
     },
     {
       "slug": "sou-deus-7-minutoz",
@@ -1369,7 +1884,25 @@
         }
       ],
       "pendingReason": "A descrição credita início(s) em 2:28; término(s) derivado(s) do próximo capítulo continuam inferidos. Nenhum upload próprio correspondente foi encontrado nas fontes consultadas. Confirmar os limites ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "EDIÇÃO DE VÍDEO: MB, Malaksans (@malaksans), Zalen (@Zalen_Editor), Misty (@MistycSz), Nickel (@nickel_editor), Manhoso (@manhosoeditor), TGZE (@tgeditor85), 3DMIG (@MigJKJ), Sunny (@eosunnyy), Kizuna (@kizunakkkk), Znow (@znowaex_ofc), Naron (@l_naronn), Hasty (@hastyaex), LightSL (@LLightSL), oAmorim (@oamorimeditor), Coalinha (@c0alinhaEditor), Jorak (@Jorakeditor), LYZ (@lyz_editsx), Luck (@Luck_aex), All (@AlleditorGK), oLeozin (@oleozineditor), Theuo (@srtheuoeditor), Ayato (@ayatoaex), Gowww (@gowwwedits), Redzzz (@R3dzzz_), MaTTe (@eusoumatte), Smoker (@smoker_editss), Zada (@zada_comissions) e Only (@OnLyEditorr)\n02:28 Verso II: Jorak",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=5Kvnfecwb60",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          147.8,
+          148.2,
+          155.8,
+          156.2,
+          310.401,
+          316.401,
+          320.401
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     },
     {
       "slug": "no-topo-do-campo-kmg-geek",
@@ -1395,7 +1928,22 @@
       "previewReady": false,
       "originalRanges": [],
       "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
-      "trailerOnly": false
+      "trailerOnly": false,
+      "creditFound": "Edição: Killmer18, Shin Editor, Yuta_sz-Oficial, Z3CH1U, Halopeculiar,Jorak, Magrelão e Soul Music (New Kentoo e OZackEditor)",
+      "visualReview": {
+        "sourceUrl": "https://www.youtube.com/watch?v=C9ymH3ixZm4",
+        "resolutionPurpose": "Versão leve do original, somente para pesquisa visual. Não é um recorte próprio nem arquivo de apresentação.",
+        "sampleTimes": [
+          2,
+          6,
+          12,
+          302.821,
+          308.821,
+          312.821
+        ],
+        "result": "Abertura, encerramento e transições documentadas examinados. Créditos de equipe ou mudanças de plano não comprovam isoladamente os limites individuais. Nenhum novo intervalo promovido a confirmado."
+      }
     }
-  ]
+  ],
+  "visualReviewScope": "34 originais públicos pendentes obtidos e amostrados em abertura/encerramento e transições dos capítulos registrados. Tipo Inosuke 2 é exclusivo para membros. A amostragem não equivale a assistir a todos os frames."
 }

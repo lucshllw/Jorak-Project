@@ -1,0 +1,406 @@
+{
+  "version": 1,
+  "method": "Original public YouTube thumbnails; only outer solid black strips removed. Original sources retained in .local-data/artwork/originals; no upscaling.",
+  "entries": [
+    {
+      "slug": "anomalia-slow-gm",
+      "originalUrl": "https://www.youtube.com/watch?v=QQixrfnAyPk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QQixrfnAyPk/maxresdefault.jpg",
+      "sourceSize": [
+        1280,
+        720
+      ],
+      "crop": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "sha256": "0fc2b30d94b01aa95172a65e25c046381c4249c1cbeefd427d35852455bd1ae2",
+      "position": {
+        "x": 50,
+        "y": 50
+      },
+      "upscaled": false
+    },
+    {
+      "slug": "tipo-inosuke-2-mhrap",
+      "originalUrl": "https://www.youtube.com/watch?v=Vk3LKeSqijQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Vk3LKeSqijQ/maxresdefault.jpg",
+      "sourceSize": [
+        1280,
+        720
+      ],
+      "crop": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "sha256": "e3efe7cb8046d9c83b9abaab442e25c927dab111bce88ad8b9f0cd7527b9c32b",
+      "position": {
+        "x": 50,
+        "y": 50
+      },
+      "upscaled": false
+    },
+    {
+      "slug": "arcanjo-caido-msdaiki",
+      "originalUrl": "https://www.youtube.com/watch?v=FuijCYnJpCc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FuijCYnJpCc/maxresdefault.jpg",
+      "sourceSize": [
+        1280,
+        720
+      ],
+      "crop": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "sha256": "e09b097328104b6f9d84c9a591b626275ea208146a89eeed2666f94c8b77d3dc",
+      "position": {
+        "x": 50,
+        "y": 50
+      },
+      "upscaled": false
+    },
+    {
+      "slug": "servical-theuz",
+      "originalUrl": "https://www.youtube.com/watch?v=ne8Qd7Ao564",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ne8Qd7Ao564/maxresdefault.jpg",
+      "sourceSize": [
+        1280,
+        720
+      ],
+      "crop": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "sha256": "87c315b787a0ae49cd0b2ca076ad014a388bc154b8b3fc25b0508469272af7c1",
+      "position": {
+        "x": 50,
+        "y": 50
+      },
+      "upscaled": false
+    },
+    {
+      "slug": "memorias-roubadas-eosans",
+      "originalUrl": "https://www.youtube.com/watch?v=hCA4m2Is1Ng",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hCA4m2Is1Ng/maxresdefault.jpg",
+      "sourceSize": [
+        1280,
+        720
+      ],
+      "crop": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "sha256": "0cc2c992b988de30205d5487ca01251a0495d36d4eb06c592204c8ee23fc3de2",
+      "position": {
+        "x": 50,
+        "y": 50
+      },
+      "upscaled": false
+    },
+    {
+      "slug": "celestial-mathover",
+      "originalUrl": "https://www.youtube.com/watch?v=9lpSZ85-WPA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9lpSZ85-WPA/maxresdefault.jpg",
+      "sourceSize": [
+        1280,
+        720
+      ],
+      "crop": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "sha256": "da356ae22337e8438d9526f1f98eb4672daa3a535585348ccd5f5a3580ba035d",
+      "position": {
+        "x": 50,
+        "y": 50
+      },
+      "upscaled": false
+    },
+    {
+      "slug": "cair-da-lua-m4rques",
+      "originalUrl": "https://www.youtube.com/watch?v=rHy1YYWqWYY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/rHy1YYWqWYY/maxresdefault.jpg",
+      "sourceSize": [
+        1280,
+        720
+      ],
+      "crop": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "sha256": "a386914ab8a3d5ab0236082af97de8f0c1585127358bd9164b5e007d39399d03",
+      "position": {
+        "x": 50,
+        "y": 50
+      },
+      "upscaled": false
+    },
+    {
+      "slug": "trucido-infindavel-tutuflow",
+      "originalUrl": "https://www.youtube.com/watch?v=EwJtgNGoTlY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/EwJtgNGoTlY/maxresdefault.jpg",
+      "sourceSize": [
+        1280,
+        720
+      ],
+      "crop": [
+        1,
+        0,
+        1279,
+        720
+      ],
+      "outputSize": [
+        1278,
+        720
+      ],
+      "sha256": "fe14be8549924baf182e959e27107abe4c32cd90c80a741ad8f77c124b9d3ddf",
+      "position": {
+        "x": 50,
+        "y": 50
+      },
+      "upscaled": false
+    },
+    {
+      "slug": "infame-as-ace",
+      "originalUrl": "https://www.youtube.com/watch?v=E064s1A5wS0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/E064s1A5wS0/maxresdefault.jpg",
+      "sourceSize": [
+        1280,
+        720
+      ],
+      "crop": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "sha256": "016094364b41c8b80943933ffb591b765d088c519617e6173a47c9095c2d3c56",
+      "position": {
+        "x": 50,
+        "y": 50
+      },
+      "upscaled": false
+    },
+    {
+      "slug": "no-topo-do-cla-kmg-geek",
+      "originalUrl": "https://www.youtube.com/watch?v=_Eg0pdJ81Xo",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_Eg0pdJ81Xo/maxresdefault.jpg",
+      "sourceSize": [
+        1280,
+        720
+      ],
+      "crop": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "sha256": "c22dce22a62288ebc12d5548e9a7998418a8cd97e340b8cde245d553d215712c",
+      "position": {
+        "x": 50,
+        "y": 50
+      },
+      "upscaled": false
+    },
+    {
+      "slug": "wave-tokito-eoshadow",
+      "originalUrl": "https://www.youtube.com/watch?v=efxptEgKmYE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/efxptEgKmYE/maxresdefault.jpg",
+      "sourceSize": [
+        1280,
+        720
+      ],
+      "crop": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "sha256": "cb93fa2d32c44b9920cdb1fd17bb13f2f7884da65a78ef176d93edacaeb02b8e",
+      "position": {
+        "x": 50,
+        "y": 50
+      },
+      "upscaled": false
+    },
+    {
+      "slug": "quando-ela-chegou-sunny",
+      "originalUrl": "https://www.youtube.com/watch?v=wFs-4xxTrgE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/wFs-4xxTrgE/maxresdefault.jpg",
+      "sourceSize": [
+        1280,
+        720
+      ],
+      "crop": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "sha256": "51869d68c58166a3c0c5e374ec76ea99293693fba542cce0d71f886c24be746f",
+      "position": {
+        "x": 50,
+        "y": 50
+      },
+      "upscaled": false
+    },
+    {
+      "slug": "zero-arthurzinn",
+      "originalUrl": "https://www.youtube.com/watch?v=RWHjnijaLh0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RWHjnijaLh0/sddefault.jpg",
+      "sourceSize": [
+        640,
+        480
+      ],
+      "crop": [
+        0,
+        59,
+        640,
+        420
+      ],
+      "outputSize": [
+        640,
+        361
+      ],
+      "sha256": "b23caccc7aa8a4e1901c1e7d7686d8e3aedaba986843612d125a223a366c18b1",
+      "position": {
+        "x": 50,
+        "y": 50
+      },
+      "upscaled": false
+    },
+    {
+      "slug": "eu-nao-sou-um-vilao-secretraps",
+      "originalUrl": "https://www.youtube.com/watch?v=7DFxOxPHHqI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7DFxOxPHHqI/maxresdefault.jpg",
+      "sourceSize": [
+        1280,
+        720
+      ],
+      "crop": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "sha256": "8da4ee78c845c82ecba7737752053a228b71d945d423eb14c37e8c97d1f1fca8",
+      "position": {
+        "x": 50,
+        "y": 50
+      },
+      "upscaled": false
+    },
+    {
+      "slug": "sou-deus-7-minutoz",
+      "originalUrl": "https://www.youtube.com/watch?v=5Kvnfecwb60",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5Kvnfecwb60/maxresdefault.jpg",
+      "sourceSize": [
+        1280,
+        720
+      ],
+      "crop": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "sha256": "a5cc7bf441d0bd146465cb251f3c511f760746ab26763083b8ce32b6f756f6de",
+      "position": {
+        "x": 50,
+        "y": 50
+      },
+      "upscaled": false
+    },
+    {
+      "slug": "no-topo-do-campo-kmg-geek",
+      "originalUrl": "https://www.youtube.com/watch?v=C9ymH3ixZm4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/C9ymH3ixZm4/maxresdefault.jpg",
+      "sourceSize": [
+        1280,
+        720
+      ],
+      "crop": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "sha256": "f582eee5b55ad809fbcbe111e11b8ccf400a34a2c285a4d7f322c0a2f4c53a87",
+      "position": {
+        "x": 50,
+        "y": 50
+      },
+      "upscaled": false
+    }
+  ]
+}

@@ -9,7 +9,7 @@ const directory = path.resolve(/^PORTFOLIO_DATA_DIR=(.+)$/m.exec(env)?.[1].trim(
 const relative = path.relative(process.cwd(),directory);
 assert.ok(relative && !relative.startsWith('..') && !path.isAbsolute(relative));
 const catalog = JSON.parse(await readFile(new URL('../data/catalog.json',import.meta.url),'utf8')).portfolio;
-const fields = ['title','character','work','date','summary','participation','credits','creditSource','coverUrl','coverSource','coverSourceUrl','coverAlt','coverCredit','spotifyUrl','checkedAt','videoAvailability','verification','editShowcaseUrl','editShowcaseDuration'];
+const fields = ['title','character','work','date','summary','participation','credits','creditSource','coverUrl','coverSource','coverSourceUrl','coverAlt','coverCredit','coverPosition','spotifyUrl','checkedAt','videoAvailability','verification','editShowcaseUrl','editShowcaseDuration'];
 async function merge(data) {
   for (const source of catalog.projects) {
     const existing = data.projects.find(p=>p.id===source.id || p.youtubeUrl===source.youtubeUrl);
