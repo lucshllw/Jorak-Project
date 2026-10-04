@@ -2,7 +2,32 @@
 
 `scripts/prepare-clips.mjs` prepara os arquivos de apresentação e de prévia fora do site. Ele usa somente vídeos locais com autorização e limites confirmados. Não baixa vídeos, não envia arquivos, não escreve no banco e não oferece acesso administrativo.
 
-Os recortes reais ainda dependem dos arquivos autorizados e do projeto de armazenamento escolhido. Um horário obtido pelo início do próximo crédito é uma inferência: o editor precisa confirmar o fim antes de exportar. O teste sintético não representa um projeto do JORAK.
+Os arquivos reais já preparados e as pendências estão em [docs/MIDIAS-REAIS.md](docs/MIDIAS-REAIS.md). Um horário obtido pelo início do próximo crédito é uma inferência: precisa de confirmação do fim antes de exportar. O teste sintético não representa um projeto do JORAK.
+
+## Obter as fontes públicas revisadas
+
+`scripts/acquire-portfolio-media.mjs` complementa o processamento offline: usa `data/media-sources.json`, com fontes autorizadas, canal/autor esperado e comprovação. Aceita somente links canônicos do YouTube e posts públicos de @Jorakeditor; não usa cookies, login nem acesso a uploads privados. Recusa limites inferidos. O identificador do vídeo no X pode diferir do identificador do post; a associação é conferida pelos metadados da fonte e pelo autor.
+
+Instale yt-dlp de [seu repositório oficial](https://github.com/yt-dlp/yt-dlp#installation), verificando o checksum publicado. A preparação realizada usou yt-dlp 2026.08.19 e FFmpeg/FFprobe 9.0.2. Os executáveis ficam em `.tools/`, fora do Git. Com Node e as ferramentas no PATH:
+
+```powershell
+npm run media:prepare
+npm run media:prepare -- --execute --import-local
+```
+
+Para os executáveis portáteis instalados neste computador:
+
+```powershell
+node scripts/acquire-portfolio-media.mjs --execute --import-local --yt-dlp .tools/yt-dlp/yt-dlp.exe --ffmpeg .tools/ffmpeg/ffmpeg-9.0.2-essentials_build/bin/ffmpeg.exe --ffprobe .tools/ffmpeg/ffmpeg-9.0.2-essentials_build/bin/ffprobe.exe
+```
+
+O modo padrão somente mostra o plano. `--execute` baixa fontes possíveis, mede a duração real, exporta e decodifica os arquivos para validação, verifica áudio não silencioso, proporção e hashes. Produz `presentation.mp4`, `mobile.mp4` (até 720p, com áudio), `preview.mp4` (até oito segundos e 480 pixels, sem áudio), `poster.jpg` (quadro revisado da edição) e `export.json`. A prévia começa depois da vinheta inicial quando possível. Nunca altera os originais. Um upload próprio usa 0 até a duração medida de sua própria linha do tempo; não recebe os horários do lançamento original.
+
+`--import-local` exige `PORTFOLIO_MODE=local` e importa somente os projetos já cadastrados, preservando mensagens e configurações, com trava, backup privado e atualização atômica. Os projetos com arquivo passam a publicados **somente no armazenamento local**, pois a API continua recusando mídias de rascunhos. Nenhuma variável, banco ou política remota é alterada. O seed do Git continua em rascunho e não contém URLs locais de mídia.
+
+Exports existentes são reaproveitados somente após conferir hashes e fonte. O import é idempotente quando os arquivos não mudam. `--refresh-assets` regenera explicitamente somente quadro/prévia; a apresentação permanece intacta. O relatório privado `.local-data/media-export-report.json` informa falhas por projeto e só arquivos validados são associados. As evidências sanitizadas em `data/media-assets.json` registram o lote efetivamente preparado; não são um comando de publicação.
+
+Finalize a importação antes de testar no navegador e recarregue as abas. Uma troca de referências invalida URLs antigas que deixaram de estar associadas a projetos publicados; isso preserva a proteção do serviço de mídia.
 
 ## Preparação
 

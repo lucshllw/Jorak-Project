@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start --hostname 127.0.0.1",
     "typecheck": "tsc --noEmit",
-    "test": "node --test src/lib/media.test.mjs scripts/prepare-clips.test.mjs && node scripts/validate-catalog.mjs",
+    "test": "node --test src/lib/media.test.mjs scripts/prepare-clips.test.mjs scripts/acquire-portfolio-media.test.mjs && node scripts/validate-catalog.mjs",
+    "media:prepare": "node scripts/acquire-portfolio-media.mjs",
     "catalog:generate": "node scripts/seed-catalog.mjs && node supabase/generate-seed.mjs",
     "setup:local": "node scripts/setup-local.mjs"
   },
