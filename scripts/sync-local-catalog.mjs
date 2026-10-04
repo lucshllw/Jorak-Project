@@ -18,8 +18,8 @@ async function merge(data) {
     if (!existing.tools.length && source.tools.length) { existing.tools=source.tools; existing.toolsSource=source.toolsSource; }
     const oldSegments = existing.segments;
     existing.segments = source.segments.map(segment=>{
-      const saved = oldSegments.find(s=>s.id===segment.id || (s.start===segment.start && s.end===segment.end));
-      return {...segment,...(saved?.clipUrl ? {clipUrl:saved.clipUrl} : {}),...(saved?.previewUrl ? {previewUrl:saved.previewUrl,previewStart:saved.previewStart} : {})};
+      const saved = oldSegments.find(s=>s.id===segment.id || (s.start===segment.start && s.end===segment.end && s.timeline===segment.timeline));
+      return {...segment,...(saved?.clipUrl ? {clipUrl:saved.clipUrl,mobileClipUrl:saved.mobileClipUrl,posterUrl:saved.posterUrl,videoWidth:saved.videoWidth,videoHeight:saved.videoHeight,timeline:saved.timeline,mediaFingerprint:saved.mediaFingerprint} : {}),...(saved?.previewUrl ? {previewUrl:saved.previewUrl,previewStart:saved.previewStart} : {})};
     });
     // Preserve manually supplied media even if an audit cannot locate its source range.
     existing.segments.push(...oldSegments.filter(s=>(s.clipUrl || s.previewUrl) && !existing.segments.some(n=>n.id===s.id || (n.start===s.start && n.end===s.end))));

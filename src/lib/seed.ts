@@ -281,7 +281,25 @@ export const seedPortfolio: PortfolioData = {
       "youtubeUrl": "https://www.youtube.com/watch?v=EhAcLuI68ro",
       "spotifyUrl": "https://open.spotify.com/track/31wTsVvuiqB0baqmHQTMRx",
       "xUrl": null,
-      "segments": [],
+      "segments": [
+        {
+          "id": "upload-yt-vy33rvro0ty",
+          "name": "Comissão do editor",
+          "start": 0,
+          "end": 14.701,
+          "kind": "edit",
+          "order": 0,
+          "clipUrl": null,
+          "previewUrl": null,
+          "posterUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "showcase",
+          "sourceUrl": "https://www.youtube.com/watch?v=VY33rvRO0tY",
+          "evidence": "Comissão publicada pelo canal oficial Jorak e acessível na playlist COMISSÕES. A descrição aponta para o lançamento original. Usa a duração do upload próprio, sem assumir seu início ou fim no lançamento. Fonte: https://www.youtube.com/watch?v=VY33rvRO0tY",
+          "videoWidth": 2560,
+          "videoHeight": 1440
+        }
+      ],
       "processImages": [],
       "featured": false,
       "featuredOrder": null,
@@ -291,7 +309,9 @@ export const seedPortfolio: PortfolioData = {
       "verification": "Crédito nominal confirmado na descrição original; intervalo individual pendente, sem atribuição do vídeo inteiro.",
       "coverSourceUrl": "https://open.spotify.com/track/31wTsVvuiqB0baqmHQTMRx",
       "checkedAt": "2026-10-04",
-      "videoAvailability": "available"
+      "videoAvailability": "available",
+      "editShowcaseUrl": "https://www.youtube.com/watch?v=VY33rvRO0tY",
+      "editShowcaseDuration": 14.701
     },
     {
       "id": "7dcbdbfe-aaec-40d9-a8f7-0e69dfe3c589",
@@ -325,7 +345,25 @@ export const seedPortfolio: PortfolioData = {
       "youtubeUrl": "https://www.youtube.com/watch?v=aNlMrwrkcxU",
       "spotifyUrl": "https://open.spotify.com/album/3JHFTAP5ipXDHYsupWZ3A9",
       "xUrl": "https://x.com/Jorakeditor/status/2066575174959329735",
-      "segments": [],
+      "segments": [
+        {
+          "id": "upload-yt-ragoqelm6qq",
+          "name": "Comissão do editor",
+          "start": 0,
+          "end": 32.521,
+          "kind": "edit",
+          "order": 0,
+          "clipUrl": null,
+          "previewUrl": null,
+          "posterUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "showcase",
+          "sourceUrl": "https://www.youtube.com/watch?v=RaGOQelM6qQ",
+          "evidence": "Upload de comissão no canal oficial do editor; a descrição vincula o lançamento original. Arquivo inteiro na linha do tempo do upload; não confirma limites do lançamento original. Fonte: https://www.youtube.com/watch?v=RaGOQelM6qQ",
+          "videoWidth": 2560,
+          "videoHeight": 1440
+        }
+      ],
       "processImages": [],
       "featured": true,
       "featuredOrder": 4,
@@ -337,7 +375,7 @@ export const seedPortfolio: PortfolioData = {
       "checkedAt": "2026-10-04",
       "videoAvailability": "available",
       "editShowcaseUrl": "https://www.youtube.com/watch?v=RaGOQelM6qQ",
-      "editShowcaseDuration": 33,
+      "editShowcaseDuration": 32.521,
       "toolsSource": "https://www.youtube.com/watch?v=RaGOQelM6qQ"
     },
     {
@@ -386,6 +424,23 @@ export const seedPortfolio: PortfolioData = {
           "rangeStatus": "inferred",
           "sourceUrl": "https://www.youtube.com/watch?v=-HOdjvjt0HE",
           "evidence": "Início creditado na descrição oficial. Fim estimado pelo capítulo seguinte; confirmação do limite pendente."
+        },
+        {
+          "id": "upload-yt-51-dqpyxqw8",
+          "name": "Comissão do editor",
+          "start": 0,
+          "end": 36.061,
+          "kind": "edit",
+          "order": 1,
+          "clipUrl": null,
+          "previewUrl": null,
+          "posterUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "showcase",
+          "sourceUrl": "https://www.youtube.com/watch?v=51-DqpyXqW8",
+          "evidence": "Upload de comissão no canal oficial do editor; a descrição vincula o lançamento original. Arquivo inteiro na linha do tempo do upload; não confirma limites do lançamento original. Fonte: https://www.youtube.com/watch?v=51-DqpyXqW8",
+          "videoWidth": 2560,
+          "videoHeight": 1440
         }
       ],
       "processImages": [],
@@ -399,7 +454,7 @@ export const seedPortfolio: PortfolioData = {
       "checkedAt": "2026-10-04",
       "videoAvailability": "available",
       "editShowcaseUrl": "https://www.youtube.com/watch?v=51-DqpyXqW8",
-      "editShowcaseDuration": 37,
+      "editShowcaseDuration": 36.061,
       "toolsSource": "https://www.youtube.com/watch?v=51-DqpyXqW8"
     },
     {
@@ -447,6 +502,23 @@ export const seedPortfolio: PortfolioData = {
           "rangeStatus": "inferred",
           "sourceUrl": "https://www.youtube.com/watch?v=QQixrfnAyPk",
           "evidence": "Início creditado na descrição oficial. Fim estimado pelo capítulo seguinte; confirmação do limite pendente."
+        },
+        {
+          "id": "upload-yt-jk6eav1pq8i",
+          "name": "Comissão do editor",
+          "start": 0,
+          "end": 21.521,
+          "kind": "edit",
+          "order": 1,
+          "clipUrl": null,
+          "previewUrl": null,
+          "posterUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "showcase",
+          "sourceUrl": "https://www.youtube.com/watch?v=JK6EaV1pq8I",
+          "evidence": "Upload de comissão no canal oficial do editor; a descrição vincula o lançamento original. Arquivo inteiro na linha do tempo do upload; não confirma limites do lançamento original. Fonte: https://www.youtube.com/watch?v=JK6EaV1pq8I",
+          "videoWidth": 2560,
+          "videoHeight": 1440
         }
       ],
       "processImages": [],
@@ -460,7 +532,7 @@ export const seedPortfolio: PortfolioData = {
       "checkedAt": "2026-10-04",
       "videoAvailability": "available",
       "editShowcaseUrl": "https://www.youtube.com/watch?v=JK6EaV1pq8I",
-      "editShowcaseDuration": 22,
+      "editShowcaseDuration": 21.521,
       "toolsSource": "https://www.youtube.com/watch?v=JK6EaV1pq8I"
     },
     {
@@ -518,6 +590,23 @@ export const seedPortfolio: PortfolioData = {
           "rangeStatus": "inferred",
           "sourceUrl": "https://www.youtube.com/watch?v=uWhchQMpuHI",
           "evidence": "Início creditado na descrição oficial. Fim estimado pelo capítulo seguinte; confirmação do limite pendente."
+        },
+        {
+          "id": "upload-x-2078225925880025270",
+          "name": "Comissão do editor",
+          "start": 0,
+          "end": 12.48,
+          "kind": "edit",
+          "order": 2,
+          "clipUrl": null,
+          "previewUrl": null,
+          "posterUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "showcase",
+          "sourceUrl": "https://x.com/Jorakeditor/status/2078225925880025270",
+          "evidence": "Publicação do próprio @Jorakeditor declara comissão para o artista. Vínculo com o projeto e publicação preservados no catálogo. Arquivo completo do upload próprio; limites no lançamento original não confirmados. Fonte: https://x.com/Jorakeditor/status/2078225925880025270",
+          "videoWidth": 1280,
+          "videoHeight": 720
         }
       ],
       "processImages": [],
@@ -560,7 +649,25 @@ export const seedPortfolio: PortfolioData = {
       "youtubeUrl": "https://www.youtube.com/watch?v=7qepNr_fIiI",
       "spotifyUrl": "https://open.spotify.com/track/3GilM4vEUaGHMNpYMFCl7V",
       "xUrl": null,
-      "segments": [],
+      "segments": [
+        {
+          "id": "upload-yt--51q-soipio",
+          "name": "Comissão do editor",
+          "start": 0,
+          "end": 15.961,
+          "kind": "edit",
+          "order": 0,
+          "clipUrl": null,
+          "previewUrl": null,
+          "posterUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "showcase",
+          "sourceUrl": "https://www.youtube.com/watch?v=_51q_sOIPio",
+          "evidence": "Comissão do canal oficial Jorak na playlist pública COMISSÕES. Título GULA (SHINY), crédito no original, duas correspondências visuais e três janelas de áudio com correlação >=0,65 e deslocamento consistente. Identifica a música sem confirmar os limites exclusivos no original. Usa a duração do upload próprio. Fonte: https://www.youtube.com/watch?v=_51q_sOIPio",
+          "videoWidth": 2560,
+          "videoHeight": 1440
+        }
+      ],
       "processImages": [],
       "featured": false,
       "featuredOrder": null,
@@ -570,7 +677,9 @@ export const seedPortfolio: PortfolioData = {
       "verification": "Crédito nominal confirmado na descrição original; intervalo individual pendente, sem atribuição do vídeo inteiro.",
       "coverSourceUrl": "https://open.spotify.com/track/3GilM4vEUaGHMNpYMFCl7V",
       "checkedAt": "2026-10-04",
-      "videoAvailability": "available"
+      "videoAvailability": "available",
+      "editShowcaseUrl": "https://www.youtube.com/watch?v=_51q_sOIPio",
+      "editShowcaseDuration": 15.961
     },
     {
       "id": "aa23cbea-2237-4949-ae43-b6d144afca5f",
@@ -614,6 +723,23 @@ export const seedPortfolio: PortfolioData = {
           "rangeStatus": "inferred",
           "sourceUrl": "https://www.youtube.com/watch?v=ZJhCz3L1UZs",
           "evidence": "Início creditado na descrição oficial. Fim estimado pelo capítulo seguinte; confirmação do limite pendente."
+        },
+        {
+          "id": "upload-x-2070260710265819175",
+          "name": "Trailer do editor",
+          "start": 0,
+          "end": 15.616,
+          "kind": "trailer",
+          "order": 1,
+          "clipUrl": null,
+          "previewUrl": null,
+          "posterUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "showcase",
+          "sourceUrl": "https://x.com/Jorakeditor/status/2070260710265819175",
+          "evidence": "Publicação do próprio @Jorakeditor declara autoria do trailer. Vínculo com o projeto e publicação preservados no catálogo. Arquivo completo do upload próprio; limites no lançamento original não confirmados. Fonte: https://x.com/Jorakeditor/status/2070260710265819175",
+          "videoWidth": 1280,
+          "videoHeight": 720
         }
       ],
       "processImages": [],
@@ -656,7 +782,25 @@ export const seedPortfolio: PortfolioData = {
       "youtubeUrl": "https://www.youtube.com/watch?v=Cl8kw0HsNmU",
       "spotifyUrl": "https://open.spotify.com/track/2mKFrggvguLsNvOuXOI8DU",
       "xUrl": "https://x.com/Jorakeditor/status/2053222066195759174",
-      "segments": [],
+      "segments": [
+        {
+          "id": "upload-x-2053222066195759174",
+          "name": "Comissão do editor",
+          "start": 0,
+          "end": 21.056,
+          "kind": "edit",
+          "order": 0,
+          "clipUrl": null,
+          "previewUrl": null,
+          "posterUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "showcase",
+          "sourceUrl": "https://x.com/Jorakeditor/status/2053222066195759174",
+          "evidence": "Publicação do próprio @Jorakeditor declara comissão para o artista. Vínculo com o projeto e publicação preservados no catálogo. Arquivo completo do upload próprio; limites no lançamento original não confirmados. Fonte: https://x.com/Jorakeditor/status/2053222066195759174",
+          "videoWidth": 1280,
+          "videoHeight": 720
+        }
+      ],
       "processImages": [],
       "featured": false,
       "featuredOrder": null,
@@ -700,7 +844,25 @@ export const seedPortfolio: PortfolioData = {
       "youtubeUrl": "https://www.youtube.com/watch?v=rsMWVDKlSyM",
       "spotifyUrl": "https://open.spotify.com/track/2LixQitM0RZfc7opsP0fUj",
       "xUrl": "https://x.com/Jorakeditor/status/2017693241265561792",
-      "segments": [],
+      "segments": [
+        {
+          "id": "upload-yt-sp2n8uei8j0",
+          "name": "Comissão do editor",
+          "start": 0,
+          "end": 21.301,
+          "kind": "edit",
+          "order": 0,
+          "clipUrl": null,
+          "previewUrl": null,
+          "posterUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "showcase",
+          "sourceUrl": "https://www.youtube.com/watch?v=sP2N8uei8J0",
+          "evidence": "Upload de comissão no canal oficial do editor; a descrição vincula o lançamento original. Arquivo inteiro na linha do tempo do upload; não confirma limites do lançamento original. Fonte: https://www.youtube.com/watch?v=sP2N8uei8J0",
+          "videoWidth": 2560,
+          "videoHeight": 1440
+        }
+      ],
       "processImages": [],
       "featured": false,
       "featuredOrder": null,
@@ -712,7 +874,7 @@ export const seedPortfolio: PortfolioData = {
       "checkedAt": "2026-10-04",
       "videoAvailability": "available",
       "editShowcaseUrl": "https://www.youtube.com/watch?v=sP2N8uei8J0",
-      "editShowcaseDuration": 22,
+      "editShowcaseDuration": 21.301,
       "toolsSource": "https://www.youtube.com/watch?v=sP2N8uei8J0"
     },
     {
@@ -801,6 +963,23 @@ export const seedPortfolio: PortfolioData = {
           "rangeStatus": "inferred",
           "sourceUrl": "https://www.youtube.com/watch?v=BSmZt8dKtMw",
           "evidence": "Início creditado na descrição oficial. Fim estimado pelo capítulo seguinte; confirmação do limite pendente."
+        },
+        {
+          "id": "upload-yt-axfkpekwjh8",
+          "name": "Comissão do editor",
+          "start": 0,
+          "end": 42.541,
+          "kind": "edit",
+          "order": 1,
+          "clipUrl": null,
+          "previewUrl": null,
+          "posterUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "showcase",
+          "sourceUrl": "https://www.youtube.com/watch?v=aXfKpEkwjH8",
+          "evidence": "Upload de comissão no canal oficial do editor; a descrição vincula o lançamento original. Arquivo inteiro na linha do tempo do upload; não confirma limites do lançamento original. Fonte: https://www.youtube.com/watch?v=aXfKpEkwjH8",
+          "videoWidth": 2560,
+          "videoHeight": 1440
         }
       ],
       "processImages": [],
@@ -814,7 +993,7 @@ export const seedPortfolio: PortfolioData = {
       "checkedAt": "2026-10-04",
       "videoAvailability": "available",
       "editShowcaseUrl": "https://www.youtube.com/watch?v=aXfKpEkwjH8",
-      "editShowcaseDuration": 43,
+      "editShowcaseDuration": 42.541,
       "toolsSource": "https://www.youtube.com/watch?v=aXfKpEkwjH8"
     },
     {
@@ -849,7 +1028,25 @@ export const seedPortfolio: PortfolioData = {
       "youtubeUrl": "https://www.youtube.com/watch?v=EQkAA4HPmvQ",
       "spotifyUrl": "https://open.spotify.com/album/3MWfIZ8e8Xbf456Z2QTuhE",
       "xUrl": null,
-      "segments": [],
+      "segments": [
+        {
+          "id": "upload-yt-quaf3ytbk48",
+          "name": "Comissão do editor",
+          "start": 0,
+          "end": 29.281,
+          "kind": "edit",
+          "order": 0,
+          "clipUrl": null,
+          "previewUrl": null,
+          "posterUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "showcase",
+          "sourceUrl": "https://www.youtube.com/watch?v=quaf3YtBk48",
+          "evidence": "Upload de comissão no canal oficial do editor; a descrição vincula o lançamento original. Arquivo inteiro na linha do tempo do upload; não confirma limites do lançamento original. Fonte: https://www.youtube.com/watch?v=quaf3YtBk48",
+          "videoWidth": 2560,
+          "videoHeight": 1440
+        }
+      ],
       "processImages": [],
       "featured": true,
       "featuredOrder": 6,
@@ -861,7 +1058,7 @@ export const seedPortfolio: PortfolioData = {
       "checkedAt": "2026-10-04",
       "videoAvailability": "available",
       "editShowcaseUrl": "https://www.youtube.com/watch?v=quaf3YtBk48",
-      "editShowcaseDuration": 30,
+      "editShowcaseDuration": 29.281,
       "toolsSource": "https://www.youtube.com/watch?v=quaf3YtBk48"
     },
     {
@@ -1107,6 +1304,26 @@ export const seedPortfolio: PortfolioData = {
           "coEditors": [
             "Akira"
           ]
+        },
+        {
+          "id": "upload-yt-zjmt8p0abdk",
+          "name": "Comissão do editor",
+          "start": 0,
+          "end": 15.701,
+          "kind": "edit",
+          "order": 3,
+          "clipUrl": null,
+          "previewUrl": null,
+          "posterUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "showcase",
+          "sourceUrl": "https://www.youtube.com/watch?v=ZJmt8p0ABDk",
+          "evidence": "Comissão do canal oficial Jorak na playlist pública COMISSÕES. Título JOGOS INDIE (CHEVZ), crédito nominal com Akira no refrão, frames do upload aos 5/11 s correspondem ao original por volta de 151,80/157,80 s. Coedição preservada. A associação não confirma os limites exclusivos no original. Usa a duração do upload próprio. Fonte: https://www.youtube.com/watch?v=ZJmt8p0ABDk",
+          "videoWidth": 2560,
+          "videoHeight": 1440,
+          "coEditors": [
+            "Akira"
+          ]
         }
       ],
       "processImages": [],
@@ -1118,7 +1335,9 @@ export const seedPortfolio: PortfolioData = {
       "verification": "Início informado nos capítulos oficiais; fim delimitado pelo capítulo seguinte. Conferência do recorte pendente.",
       "coverSourceUrl": "https://open.spotify.com/track/0XqAH9essFTfk72Zq0Eqe4",
       "checkedAt": "2026-10-04",
-      "videoAvailability": "available"
+      "videoAvailability": "available",
+      "editShowcaseUrl": "https://www.youtube.com/watch?v=ZJmt8p0ABDk",
+      "editShowcaseDuration": 15.701
     },
     {
       "id": "5411b5bf-e07a-4569-a62e-90e5edd34d8e",
@@ -1344,6 +1563,23 @@ export const seedPortfolio: PortfolioData = {
           "rangeStatus": "inferred",
           "sourceUrl": "https://www.youtube.com/watch?v=11FQab0JNQU",
           "evidence": "Início creditado na descrição oficial. Fim estimado pelo capítulo seguinte; confirmação do limite pendente."
+        },
+        {
+          "id": "upload-yt-0f2fgi-ow2y",
+          "name": "Comissão do editor",
+          "start": 0,
+          "end": 32.521,
+          "kind": "edit",
+          "order": 1,
+          "clipUrl": null,
+          "previewUrl": null,
+          "posterUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "showcase",
+          "sourceUrl": "https://www.youtube.com/watch?v=0F2Fgi_ow2Y",
+          "evidence": "Upload de comissão no canal oficial do editor; a descrição vincula o lançamento original. Arquivo inteiro na linha do tempo do upload; não confirma limites do lançamento original. Fonte: https://www.youtube.com/watch?v=0F2Fgi_ow2Y",
+          "videoWidth": 2560,
+          "videoHeight": 1440
         }
       ],
       "processImages": [],
@@ -1357,7 +1593,7 @@ export const seedPortfolio: PortfolioData = {
       "checkedAt": "2026-10-04",
       "videoAvailability": "available",
       "editShowcaseUrl": "https://www.youtube.com/watch?v=0F2Fgi_ow2Y",
-      "editShowcaseDuration": 33,
+      "editShowcaseDuration": 32.521,
       "toolsSource": "https://www.youtube.com/watch?v=0F2Fgi_ow2Y"
     },
     {
@@ -1524,6 +1760,23 @@ export const seedPortfolio: PortfolioData = {
           "rangeStatus": "inferred",
           "sourceUrl": "https://www.youtube.com/watch?v=8Uy0kyT5WzI",
           "evidence": "Início creditado na descrição oficial. Fim estimado pelo capítulo seguinte; confirmação do limite pendente."
+        },
+        {
+          "id": "upload-yt-0emzivgk5gc",
+          "name": "Comissão do editor",
+          "start": 0,
+          "end": 23.081,
+          "kind": "edit",
+          "order": 1,
+          "clipUrl": null,
+          "previewUrl": null,
+          "posterUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "showcase",
+          "sourceUrl": "https://www.youtube.com/watch?v=0eMziVgK5Gc",
+          "evidence": "Comissão do canal oficial Jorak na playlist pública COMISSÕES. Título MAKI (NESHYZK), personagem e artista únicos no catálogo, crédito nominal no original e correspondência da sequência urbana monocromática com a parte creditada a Jorak. Mixagem e montagem diferem; nenhum limite do original foi promovido a explícito. Usa a duração do upload próprio. Fonte: https://www.youtube.com/watch?v=0eMziVgK5Gc",
+          "videoWidth": 2560,
+          "videoHeight": 1440
         }
       ],
       "processImages": [],
@@ -1535,7 +1788,9 @@ export const seedPortfolio: PortfolioData = {
       "verification": "Início informado nos capítulos oficiais; fim delimitado pelo capítulo seguinte. Conferência do recorte pendente.",
       "coverSourceUrl": "https://open.spotify.com/album/0YH6PIVIvtd79c5NS9b7w2",
       "checkedAt": "2026-10-04",
-      "videoAvailability": "available"
+      "videoAvailability": "available",
+      "editShowcaseUrl": "https://www.youtube.com/watch?v=0eMziVgK5Gc",
+      "editShowcaseDuration": 23.081
     },
     {
       "id": "1490cf78-36a5-4c9f-a360-4d951b149d4e",
@@ -1607,7 +1862,25 @@ export const seedPortfolio: PortfolioData = {
       "youtubeUrl": "https://www.youtube.com/watch?v=2ovP85p6NmM",
       "spotifyUrl": "https://open.spotify.com/album/5Cu0DPHVYwJw9wh9PloDD8",
       "xUrl": null,
-      "segments": [],
+      "segments": [
+        {
+          "id": "upload-yt-zjx6rkawrgs",
+          "name": "Comissão do editor",
+          "start": 0,
+          "end": 28.641,
+          "kind": "edit",
+          "order": 0,
+          "clipUrl": null,
+          "previewUrl": null,
+          "posterUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "showcase",
+          "sourceUrl": "https://www.youtube.com/watch?v=zjX6rkaWRgs",
+          "evidence": "Comissão do canal oficial Jorak na playlist pública COMISSÕES. Título JUUZOU (CANECO), crédito no original e duas correspondências visuais: upload aos 8/24 s e original por volta de 8,06/24,05 s. Corrigida associação anterior a Metempsicose, cujo personagem é Kenjaku. Não confirma os limites no original. Usa a duração do upload próprio. Fonte: https://www.youtube.com/watch?v=zjX6rkaWRgs",
+          "videoWidth": 2560,
+          "videoHeight": 1440
+        }
+      ],
       "processImages": [],
       "featured": false,
       "featuredOrder": null,
@@ -1617,7 +1890,9 @@ export const seedPortfolio: PortfolioData = {
       "verification": "Crédito nominal confirmado na descrição original; intervalo individual pendente, sem atribuição do vídeo inteiro.",
       "coverSourceUrl": "https://open.spotify.com/album/5Cu0DPHVYwJw9wh9PloDD8",
       "checkedAt": "2026-10-04",
-      "videoAvailability": "available"
+      "videoAvailability": "available",
+      "editShowcaseUrl": "https://www.youtube.com/watch?v=zjX6rkaWRgs",
+      "editShowcaseDuration": 28.641
     },
     {
       "id": "9bf9bf7e-9409-4dae-aabf-51d9451391e6",
@@ -1722,7 +1997,25 @@ export const seedPortfolio: PortfolioData = {
       "youtubeUrl": "https://www.youtube.com/watch?v=AZIXSmDZu4Q",
       "spotifyUrl": "https://open.spotify.com/album/7l3bO5MaypGGwvpwfKJVfL",
       "xUrl": null,
-      "segments": [],
+      "segments": [
+        {
+          "id": "upload-yt-hd4gg4kqc2q",
+          "name": "Comissão do editor",
+          "start": 0,
+          "end": 23.361,
+          "kind": "edit",
+          "order": 0,
+          "clipUrl": null,
+          "previewUrl": null,
+          "posterUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "showcase",
+          "sourceUrl": "https://www.youtube.com/watch?v=hd4gG4kQc2Q",
+          "evidence": "Comissão do canal oficial Jorak na playlist pública COMISSÕES. Título LORENZO (CANECO), crédito no original e frame do upload aos 5 s correspondente ao original por volta de 58,68 s; áudio com alinhamento consistente. A comparação identifica a música, sem confirmar limites exclusivos no original. Usa a duração do upload próprio. Fonte: https://www.youtube.com/watch?v=hd4gG4kQc2Q",
+          "videoWidth": 2560,
+          "videoHeight": 1440
+        }
+      ],
       "processImages": [],
       "featured": false,
       "featuredOrder": null,
@@ -1732,7 +2025,9 @@ export const seedPortfolio: PortfolioData = {
       "verification": "Descrição oficial completa confirma participação nominal; não publica marcação de tempo individual.",
       "coverSourceUrl": "https://open.spotify.com/album/7l3bO5MaypGGwvpwfKJVfL",
       "checkedAt": "2026-10-04",
-      "videoAvailability": "available"
+      "videoAvailability": "available",
+      "editShowcaseUrl": "https://www.youtube.com/watch?v=hd4gG4kQc2Q",
+      "editShowcaseDuration": 23.361
     },
     {
       "id": "df021f97-b637-46fd-a4a0-4d9549f272ac",
@@ -2107,7 +2402,25 @@ export const seedPortfolio: PortfolioData = {
       "youtubeUrl": "https://www.youtube.com/watch?v=yM2AkRwpzGE",
       "spotifyUrl": "https://open.spotify.com/track/522N2zFznTRZOpG7k624Nz",
       "xUrl": null,
-      "segments": [],
+      "segments": [
+        {
+          "id": "upload-yt-gsmdg-dkdxo",
+          "name": "Comissão do editor",
+          "start": 0,
+          "end": 78.041,
+          "kind": "edit",
+          "order": 0,
+          "clipUrl": null,
+          "previewUrl": null,
+          "posterUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "showcase",
+          "sourceUrl": "https://www.youtube.com/watch?v=GsMdG_dKDXo",
+          "evidence": "Comissão publicada pelo canal oficial Jorak e acessível na playlist COMISSÕES. A descrição aponta para o lançamento original. Usa a duração do upload próprio, sem assumir seu início ou fim no lançamento. Fonte: https://www.youtube.com/watch?v=GsMdG_dKDXo",
+          "videoWidth": 2560,
+          "videoHeight": 1440
+        }
+      ],
       "processImages": [],
       "featured": false,
       "featuredOrder": null,
@@ -2117,7 +2430,9 @@ export const seedPortfolio: PortfolioData = {
       "verification": "Descrição oficial completa confirma participação nominal; não publica marcação de tempo individual.",
       "coverSourceUrl": "https://open.spotify.com/track/522N2zFznTRZOpG7k624Nz",
       "checkedAt": "2026-10-04",
-      "videoAvailability": "available"
+      "videoAvailability": "available",
+      "editShowcaseUrl": "https://www.youtube.com/watch?v=GsMdG_dKDXo",
+      "editShowcaseDuration": 78.041
     },
     {
       "id": "8c88d323-836d-4cb1-a190-7fb87451f831",
@@ -2148,7 +2463,25 @@ export const seedPortfolio: PortfolioData = {
       "youtubeUrl": "https://www.youtube.com/watch?v=XyBWn9Y-vGo",
       "spotifyUrl": "https://open.spotify.com/track/0PL8CcmjfbX7VdW6dNE452",
       "xUrl": null,
-      "segments": [],
+      "segments": [
+        {
+          "id": "upload-yt-n0jbfc0ieem",
+          "name": "Comissão do editor",
+          "start": 0,
+          "end": 63.041,
+          "kind": "edit",
+          "order": 0,
+          "clipUrl": null,
+          "previewUrl": null,
+          "posterUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "showcase",
+          "sourceUrl": "https://www.youtube.com/watch?v=N0JbFc0IEEM",
+          "evidence": "Comissão publicada pelo canal oficial Jorak e acessível na playlist COMISSÕES. A descrição aponta para o lançamento original. Usa a duração do upload próprio, sem assumir seu início ou fim no lançamento. Fonte: https://www.youtube.com/watch?v=N0JbFc0IEEM",
+          "videoWidth": 2560,
+          "videoHeight": 1440
+        }
+      ],
       "processImages": [],
       "featured": false,
       "featuredOrder": null,
@@ -2158,7 +2491,9 @@ export const seedPortfolio: PortfolioData = {
       "verification": "Descrição oficial completa confirma participação nominal; não publica marcação de tempo individual.",
       "coverSourceUrl": "https://open.spotify.com/track/0PL8CcmjfbX7VdW6dNE452",
       "checkedAt": "2026-10-04",
-      "videoAvailability": "available"
+      "videoAvailability": "available",
+      "editShowcaseUrl": "https://www.youtube.com/watch?v=N0JbFc0IEEM",
+      "editShowcaseDuration": 63.041
     },
     {
       "id": "f0ced17c-f846-482a-a10b-4d26bad98160",
@@ -2618,7 +2953,25 @@ export const seedPortfolio: PortfolioData = {
       "youtubeUrl": "https://www.youtube.com/watch?v=oMgMrZERlS0",
       "spotifyUrl": "https://open.spotify.com/track/2YoYcn0YRs1PgIHhkYcq02",
       "xUrl": "https://x.com/Jorakeditor/status/2084024838503469351",
-      "segments": [],
+      "segments": [
+        {
+          "id": "upload-yt-knu10r-t08m",
+          "name": "Comissão do editor",
+          "start": 0,
+          "end": 20.801,
+          "kind": "edit",
+          "order": 0,
+          "clipUrl": null,
+          "previewUrl": null,
+          "posterUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "showcase",
+          "sourceUrl": "https://www.youtube.com/watch?v=KNu10R_t08M",
+          "evidence": "Upload de comissão no canal oficial do editor; a descrição vincula o lançamento original. Arquivo inteiro na linha do tempo do upload; não confirma limites do lançamento original. Fonte: https://www.youtube.com/watch?v=KNu10R_t08M",
+          "videoWidth": 3840,
+          "videoHeight": 2160
+        }
+      ],
       "processImages": [],
       "featured": true,
       "featuredOrder": 3,
@@ -2630,7 +2983,7 @@ export const seedPortfolio: PortfolioData = {
       "checkedAt": "2026-10-04",
       "videoAvailability": "available",
       "editShowcaseUrl": "https://www.youtube.com/watch?v=KNu10R_t08M",
-      "editShowcaseDuration": 21,
+      "editShowcaseDuration": 20.801,
       "toolsSource": "https://www.youtube.com/watch?v=KNu10R_t08M"
     },
     {
@@ -2703,7 +3056,25 @@ export const seedPortfolio: PortfolioData = {
       "youtubeUrl": "https://www.youtube.com/watch?v=EE11d-5ZakI",
       "spotifyUrl": "https://open.spotify.com/album/6iG7ZFGYGD9Bgao18aaqmc",
       "xUrl": "https://x.com/Jorakeditor/status/2086221549858590830",
-      "segments": [],
+      "segments": [
+        {
+          "id": "upload-x-2086221549858590830",
+          "name": "Comissão do editor",
+          "start": 0,
+          "end": 22.954,
+          "kind": "edit",
+          "order": 0,
+          "clipUrl": null,
+          "previewUrl": null,
+          "posterUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "showcase",
+          "sourceUrl": "https://x.com/Jorakeditor/status/2086221549858590830",
+          "evidence": "Publicação do próprio @Jorakeditor declara comissão para o artista. Vínculo com o projeto e publicação preservados no catálogo. Arquivo completo do upload próprio; limites no lançamento original não confirmados. Fonte: https://x.com/Jorakeditor/status/2086221549858590830",
+          "videoWidth": 1280,
+          "videoHeight": 720
+        }
+      ],
       "processImages": [],
       "featured": false,
       "featuredOrder": null,
@@ -2845,6 +3216,23 @@ export const seedPortfolio: PortfolioData = {
           "rangeStatus": "explicit",
           "sourceUrl": "https://www.youtube.com/watch?v=fZoCEzumGi8",
           "evidence": "Início e fim declarados na descrição oficial."
+        },
+        {
+          "id": "upload-yt-qo6alyybdey",
+          "name": "Comissão do editor",
+          "start": 0,
+          "end": 36.301,
+          "kind": "edit",
+          "order": 1,
+          "clipUrl": null,
+          "previewUrl": null,
+          "posterUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "showcase",
+          "sourceUrl": "https://www.youtube.com/watch?v=Qo6aLyYbdEY",
+          "evidence": "Upload de comissão no canal oficial do editor; a descrição vincula o lançamento original. Arquivo inteiro na linha do tempo do upload; não confirma limites do lançamento original. Fonte: https://www.youtube.com/watch?v=Qo6aLyYbdEY",
+          "videoWidth": 3840,
+          "videoHeight": 2160
         }
       ],
       "processImages": [],
@@ -2858,7 +3246,7 @@ export const seedPortfolio: PortfolioData = {
       "checkedAt": "2026-10-04",
       "videoAvailability": "available",
       "editShowcaseUrl": "https://www.youtube.com/watch?v=Qo6aLyYbdEY",
-      "editShowcaseDuration": 37,
+      "editShowcaseDuration": 36.301,
       "toolsSource": "https://www.youtube.com/watch?v=Qo6aLyYbdEY"
     },
     {
@@ -2890,7 +3278,25 @@ export const seedPortfolio: PortfolioData = {
       "youtubeUrl": "https://www.youtube.com/watch?v=_XKG7mIdLeg",
       "spotifyUrl": "https://open.spotify.com/album/3ajbGUaJCkM6OwMsWmqnjc",
       "xUrl": "https://x.com/Jorakeditor/status/2102371461277028767",
-      "segments": [],
+      "segments": [
+        {
+          "id": "upload-x-2102371461277028767",
+          "name": "Comissão do editor",
+          "start": 0,
+          "end": 20.032,
+          "kind": "edit",
+          "order": 0,
+          "clipUrl": null,
+          "previewUrl": null,
+          "posterUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "showcase",
+          "sourceUrl": "https://x.com/Jorakeditor/status/2102371461277028767",
+          "evidence": "Publicação do próprio @Jorakeditor declara comissão para o artista. Vínculo com o projeto e publicação preservados no catálogo. Arquivo completo do upload próprio; limites no lançamento original não confirmados. Fonte: https://x.com/Jorakeditor/status/2102371461277028767",
+          "videoWidth": 1280,
+          "videoHeight": 720
+        }
+      ],
       "processImages": [],
       "featured": true,
       "featuredOrder": 1,

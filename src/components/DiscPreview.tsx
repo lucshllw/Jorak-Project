@@ -12,9 +12,9 @@ export type PreviewRequest = { project: Project; anchor: PreviewAnchor; interact
 type Props = PreviewRequest & { artist: string; onOpen: () => void; onClose: () => void; onKeepOpen: () => void; onLeave: () => void };
 export function confirmedPreview(project: Project) {
   for (const segment of [...project.segments].sort((a, b) => a.order - b.order)) {
-    if (segment.kind !== 'edit' || !confirmedRange(segment)) continue;
+    if (!confirmedRange(segment)) continue;
     const lightSource = fileMediaUrl(segment.previewUrl), source = lightSource || fileMediaUrl(segment.clipUrl);
-    if (source) return { source, start: lightSource && Number.isFinite(segment.previewStart) ? Math.max(0, segment.previewStart || 0) : 0, length: Math.min(8, segment.end - segment.start) };
+    if (source) return { source, poster: fileMediaUrl(segment.posterUrl), aspectRatio: segment.videoWidth && segment.videoHeight ? `${segment.videoWidth} / ${segment.videoHeight}` : '16 / 9', kind: segment.kind, start: lightSource && Number.isFinite(segment.previewStart) ? Math.max(0, segment.previewStart || 0) : 0, length: Math.min(8, segment.end - segment.start) };
   }
   return null;
 }
@@ -114,10 +114,10 @@ export default function DiscPreview({ project, artist, anchor, interaction, trig
   return <>
     {mobile && <button className="disc-preview-backdrop" aria-label="Fechar prévia" aria-hidden="true" onClick={dismiss} tabIndex={-1}/>}
     <div ref={root} className={`disc-preview ${mobile ? 'disc-preview-sheet' : ''} ${position.below ? 'disc-preview-below' : ''}`} style={mobile ? undefined : { left: position.left, top: position.top, '--preview-tip': `${position.tip}px` } as React.CSSProperties} role="dialog" aria-modal={mobile} aria-labelledby={titleId} data-lenis-prevent onPointerEnter={onKeepOpen} onPointerLeave={() => { if (!mobile && !root.current?.contains(document.activeElement)) onLeave(); }} onFocusCapture={onKeepOpen} onBlurCapture={event => { if (!mobile && !event.currentTarget.contains(event.relatedTarget)) onLeave(); }}>
-      <div className="disc-preview-top"><span>Prévia da edição</span><button className="disc-preview-close" aria-label="Fechar prévia" onClick={dismiss}><Icon name="close-circle-linear" size={20}/></button></div>
-      <div className="disc-preview-media">
-        {project.coverUrl && <Image src={project.coverUrl} alt="" fill sizes="340px" unoptimized/>}
-        {preview && !failed && <video ref={video} poster={project.coverUrl || undefined} muted playsInline preload="metadata" onPlay={() => { setPlaying(true); setManual(false); announcePlayback(`preview-${owner}`); }} onPause={() => setPlaying(false)} onTimeUpdate={event => { const node = event.currentTarget; if (node.currentTime >= Math.min(preview.start + preview.length, node.duration)) node.currentTime = preview.start; }} onEnded={event => { event.currentTarget.currentTime = preview.start; if (automaticallyPlay.current && !document.hidden) event.currentTarget.play().catch(() => setManual(true)); }} onError={() => { setFailed(true); setLoading(false); setPlaying(false); }}/>}
+      <div className="disc-preview-top"><span>{preview?.kind === 'trailer' ? 'Prévia do trailer' : 'Prévia da edição'}</span><button className="disc-preview-close" aria-label="Fechar prévia" onClick={dismiss}><Icon name="close-circle-linear" size={20}/></button></div>
+      <div className="disc-preview-media" style={{ aspectRatio: preview?.aspectRatio }}>
+        {(preview?.poster || project.coverUrl) && <Image src={preview?.poster || project.coverUrl!} alt="" fill sizes="340px" unoptimized/>}
+        {preview && !failed && <video ref={video} poster={preview.poster || project.coverUrl || undefined} muted playsInline preload="metadata" onPlay={() => { setPlaying(true); setManual(false); announcePlayback(`preview-${owner}`); }} onPause={() => setPlaying(false)} onTimeUpdate={event => { const node = event.currentTarget; if (node.currentTime >= Math.min(preview.start + preview.length, node.duration)) node.currentTime = preview.start; }} onEnded={event => { event.currentTarget.currentTime = preview.start; if (automaticallyPlay.current && !document.hidden) event.currentTarget.play().catch(() => setManual(true)); }} onError={() => { setFailed(true); setLoading(false); setPlaying(false); }}/>}
         {loading && !failed && <span className="disc-preview-status" role="status">Carregando prévia…</span>}
         {(!preview || failed) && <span className="disc-preview-status">{failed ? 'Prévia indisponível' : 'Trecho em preparação'}</span>}
         {preview && !failed && !loading && <button className="disc-preview-toggle" onClick={toggle} aria-label={playing ? 'Pausar prévia sem som' : 'Reproduzir prévia sem som'}><Icon name={playing ? 'pause-bold' : 'play-bold'} size={18}/><span>{playing ? 'Sem som' : reduced || manual ? 'Reproduzir' : 'Pausado'}</span></button>}

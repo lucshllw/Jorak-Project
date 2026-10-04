@@ -35,7 +35,8 @@ export default function Portfolio({ data }: { data: PortfolioData }) {
     if (previewCloseTimer.current) clearTimeout(previewCloseTimer.current);
     previewOpenTimer.current = null; previewCloseTimer.current = null; pendingPreview.current = null; previewRef.current = null; setPreview(null);
   }, []);
-  const leavePreview = useCallback(() => {
+  const leavePreview = useCallback((event?: React.SyntheticEvent<HTMLElement>) => {
+    if (!previewRef.current && event?.currentTarget === suppressedFocus.current?.node) suppressedFocus.current = null;
     if (previewOpenTimer.current) { clearTimeout(previewOpenTimer.current); previewOpenTimer.current = null; pendingPreview.current = null; }
     if (previewRef.current?.interaction === 'touch' || previewRef.current?.interaction === 'keyboard') return;
     if (!previewCloseTimer.current) previewCloseTimer.current = setTimeout(closePreview, 480);
@@ -99,10 +100,12 @@ export default function Portfolio({ data }: { data: PortfolioData }) {
   const closeProject = () => { if (history.state?.jorakProject) history.back(); else { history.replaceState(history.state, '', galleryUrl.current); setActiveProject(null); } };
   const requestPreview = (project: Project | undefined, anchor: PreviewAnchor, interaction: PreviewInteraction, trigger?: HTMLElement) => {
     if (!project) return;
-    if (interaction === 'pointer' && window.matchMedia('(max-width: 700px)').matches) return;
+    // A compact modal should open on activation, so Tab can traverse the collection without trapping focus.
+    if ((interaction === 'pointer' || interaction === 'focus') && window.matchMedia('(max-width: 700px)').matches) return;
     if (project.id === 'about' || project.id === 'contact') { if (interaction === 'touch' || interaction === 'keyboard') openProject(project); return; }
     const suppression = suppressedFocus.current;
-    if (interaction === 'focus' && suppression && suppression.node === trigger) { suppressedFocus.current = null; return; }
+    // Closing restores focus and can expose the same card under the pointer. Neither should reopen it.
+    if ((interaction === 'focus' || interaction === 'pointer') && suppression && suppression.node === trigger) return;
     suppressedFocus.current = null; keepPreview();
     const request: PreviewRequest = { project, anchor, interaction, trigger };
     const show = () => { pendingPreview.current = null; previewOpenTimer.current = null; previewRef.current = request; setPreview(request); };

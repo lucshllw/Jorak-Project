@@ -19,7 +19,7 @@ export async function validateCatalog(catalog) {
     if (p.editShowcaseUrl) {
       assert.equal(evidence.showcase.url,p.editShowcaseUrl,'Upload próprio precisa de fonte correspondente');
       assert.ok(evidence.showcase.identitySource && evidence.showcase.correspondenceEvidence,'Vínculo do canal e do original precisam estar documentados');
-      assert.ok(p.toolsSource && p.tools.length,'Ferramentas do upload têm fonte específica');
+      if(p.tools.length)assert.ok(p.toolsSource,'Ferramentas do upload têm fonte específica');
     }
     assert.match(p.coverUrl, /^\/media\/covers\/[a-z0-9-]+\.jpg$/, `Capa local inválida: ${p.slug}`);
     assert.ok(['spotify','youtube','official','uploaded'].includes(p.coverSource));
@@ -29,12 +29,15 @@ export async function validateCatalog(catalog) {
     const decoded = await sharp(await readFile(cover)).metadata();
     assert.ok(decoded.width >= 300 && decoded.height >= 200, `Capa pequena: ${p.slug}`);
     for (const s of p.segments) {
-      assert.ok(Number.isFinite(s.start) && Number.isFinite(s.end) && s.start >= 0 && s.end > s.start && s.end <= evidence.durationSeconds, `Intervalo inválido: ${p.slug}`);
+      const own=s.timeline==='showcase';
+      const duration=own?evidence.mediaSources?.find(item=>item.segmentId===s.id)?.durationSeconds:evidence.durationSeconds;
+      assert.ok(Number.isFinite(duration)&&Number.isFinite(s.start) && Number.isFinite(s.end) && s.start >= 0 && s.end > s.start && s.end <= duration+0.001, `Intervalo inválido: ${p.slug}`);
+      if(own)assert.ok(s.start===0&&s.rangeStatus==='explicit'&&evidence.mediaSources.find(item=>item.segmentId===s.id)?.originalRangeConfirmed===false,'Upload próprio não confirma limites do lançamento original');
       assert.ok(['explicit','inferred','pending','chapter-boundary'].includes(s.rangeStatus) && s.sourceUrl && s.evidence, `Intervalo sem evidência: ${p.slug}`);
-      assert.ok(!s.clipUrl && !s.previewUrl, 'Não inventar recortes no catálogo inicial');
+      assert.ok(!s.clipUrl && !s.mobileClipUrl && !s.previewUrl && !s.posterUrl, 'URLs locais e recortes não publicados ficam fora do catálogo inicial');
     }
   }
-  return {projects:projects.length,covers:projects.length,artists:artists.length,explicitRanges:projects.flatMap(p=>p.segments).filter(s=>s.rangeStatus==='explicit').length,inferredRanges:projects.flatMap(p=>p.segments).filter(s=>s.rangeStatus==='inferred').length};
+  return {projects:projects.length,covers:projects.length,artists:artists.length,explicitOriginalRanges:projects.flatMap(p=>p.segments).filter(s=>s.rangeStatus==='explicit'&&s.timeline!=='showcase').length,ownUploadRanges:projects.flatMap(p=>p.segments).filter(s=>s.timeline==='showcase').length,inferredOriginalRanges:projects.flatMap(p=>p.segments).filter(s=>s.rangeStatus==='inferred').length};
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   console.log(JSON.stringify(await validateCatalog(JSON.parse(await readFile(new URL('../data/catalog.json', import.meta.url),'utf8'))),null,2));

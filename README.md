@@ -2,6 +2,8 @@
 
 Portfólio de Jorak, editor MMV e motion designer da cena geek brasileira. A coleção reúne 57 trabalhos com créditos conferidos, 49 artistas, oito destaques, páginas de projeto, apresentação profissional e formulário de orçamento. Todos os discos têm capas verificadas: 41 do Spotify e 16 do YouTube.
 
+A entrega local possui **22 projetos com vídeo próprio** (21 edições e um trailer), **23 apresentações com áudio**, versões menores para celular e **22 discos com prévias reproduzíveis**. Os 35 projetos restantes têm sua pendência documentada individualmente em [MIDIAS-REAIS.md](docs/MIDIAS-REAIS.md). Os arquivos de mídia são preparados fora do Git; o repositório contém as fontes revisadas, evidências e o processo reproduzível.
+
 A versão atual é exclusivamente pública: não contém login, cadastro, painel, sessão ou APIs administrativas. A conversa com o personagem será adicionada em uma etapa futura.
 
 ## Executar localmente
@@ -42,9 +44,9 @@ Os contornos preparados ficam em `public/media/jorak-logo-shapes.json`. O script
 
 A publicação do código no GitHub não configura uma hospedagem ou um banco. Para operação online, conecte o projeto Supabase existente com as variáveis de `.env.example`, aplicando as migrations na ordem. A última migration revoga o antigo acesso administrativo, preserva os dados e mantém RLS e o bucket privado.
 
-As chaves ficam somente no servidor. Não adicione prefixo `NEXT_PUBLIC_` a segredos. Nunca envie `.env.local`, dados locais, solicitações de orçamento, credenciais, `node_modules` ou `.next` ao GitHub.
+As chaves ficam somente no servidor. Não adicione prefixo `NEXT_PUBLIC_` a segredos. Nunca envie `.env.local`, dados locais, vídeos, solicitações de orçamento, credenciais, `node_modules` ou `.next` ao GitHub.
 
-Nenhum recurso Supabase remoto foi criado ou alterado nesta etapa. O catálogo inicial permanece em rascunho para revisão e publicação pelo responsável. Consulte `docs/BANCO-E-OPERACAO.md` para os detalhes operacionais e [docs/VERIFICACAO-MIDIA.md](docs/VERIFICACAO-MIDIA.md) para a validação atual.
+Nenhum recurso Supabase remoto foi criado ou alterado nesta etapa. O catálogo inicial permanece em rascunho para revisão e publicação pelo responsável. Consulte `docs/BANCO-E-OPERACAO.md` para os detalhes operacionais e [docs/MIDIAS-REAIS.md](docs/MIDIAS-REAIS.md) para a entrega e a validação atuais.
 
 ## Catálogo, prévias e player
 
@@ -52,8 +54,8 @@ Nenhum recurso Supabase remoto foi criado ou alterado nesta etapa. O catálogo i
 
 Os discos abrem balões no computador e um painel inferior no celular. A prévia silenciosa usa `segment.previewUrl`, ou `clipUrl` com intervalo confirmado, carregando somente o projeto aberto. Sem arquivo próprio, mostra a capa e informa que o trecho está em preparação. Navegação por teclado, Escape, foco e preferência por movimento reduzido são respeitados.
 
-O player próprio inclui progresso, volume, atalhos, tela cheia e controles que se recolhem durante a reprodução. **Nenhum recorte nativo real foi preparado ou publicado nesta etapa.** Nove comissões do canal do próprio Jorak estão vinculadas ao lançamento original e tiveram reprodução conferida no site, pelo player externo. A interface do YouTube continua visível; não é coberta por elementos do site.
+O player próprio inclui progresso, volume, atalhos, tela cheia e controles que se recolhem durante a reprodução. Os arquivos reais usam um quadro da edição e um único botão de play, sem iframe, título sobreposto ou laterais cinzas. Créditos, links e duração ficam fora da imagem. O celular recebe a versão de até 720p, mantendo áudio, proporção e intervalo; o computador conserva a apresentação de alta qualidade. Vídeos externos continuam disponíveis somente onde falta arquivo próprio.
 
 Há um intervalo com início/fim explícitos e 23 intervalos cujo fim foi derivado do capítulo seguinte. Estes últimos continuam pendentes e não habilitam automaticamente um recorte. As fontes e os limites da pesquisa estão em `docs/CATALOGO-AUDIT-A.md` e `docs/CATALOGO-AUDIT-B.md`; uma entrada indisponível oculta na playlist não foi inventada.
 
-O processamento offline de arquivos autorizados está documentado em [RECORTES-OFFLINE.md](RECORTES-OFFLINE.md). Ele gera uma apresentação H.264/AAC e uma prévia leve sem áudio, sem alterar os originais nem o banco. Arquivos autorizados, confirmação dos intervalos e configuração do projeto Supabase existente ainda são necessários para armazenar e publicar essas mídias em produção. As fixtures sintéticas usadas para testar o player foram removidas do catálogo.
+O processo está documentado em [RECORTES-OFFLINE.md](RECORTES-OFFLINE.md). `npm run media:prepare` mostra o plano; `--execute --import-local` obtém as fontes públicas revisadas com yt-dlp, exporta H.264/AAC, gera a prévia, o quadro e a versão para celular, e associa as mídias somente na prévia local. Requer as ferramentas indicadas no documento. Os originais são preservados. Para produção ainda faltam o projeto Supabase existente, envio dos arquivos e associação das referências publicadas. As fixtures sintéticas não entram nas contagens de entrega.

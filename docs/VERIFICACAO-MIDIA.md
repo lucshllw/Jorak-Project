@@ -1,5 +1,7 @@
 # Verificação do catálogo e da experiência de mídia
 
+**Registro da etapa anterior.** As contagens de zero arquivos próprios e nove players externos abaixo são históricas. A entrega atual possui 22 projetos nativos e está descrita em [MIDIAS-REAIS.md](MIDIAS-REAIS.md).
+
 Etapa de 4 de outubro de 2026, na prévia local. Complementa e atualiza as contagens de `VERIFICACAO.md`. A administração continua removida e a conversa com personagem permanece adiada.
 
 ## Pesquisa aplicada

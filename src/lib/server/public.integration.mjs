@@ -101,6 +101,20 @@ try {
   await transaction(data => { data.projects.find(project => project.id === fixtureId).status = 'published'; });
   const previewRange = await check('prévia publicada aceita Range sem liberar upload', await call(`/api/media/${mediaId}`, { headers: { Range: 'bytes=4-7' } }), 206);
   assert.equal(await previewRange.text(), 'ftyp');
+  await transaction(data => {
+    const project = data.projects.find(project => project.id === fixtureId);
+    project.status = 'draft'; project.segments[0].previewUrl = null; project.segments[0].posterUrl = `/api/media/${mediaId}`;
+  });
+  await check('quadro real de rascunho permanece privado', await call(`/api/media/${mediaId}`), 404);
+  await transaction(data => { data.projects.find(project => project.id === fixtureId).status = 'published'; });
+  await check('quadro referenciado por projeto publicado é acessível', await call(`/api/media/${mediaId}`, { method: 'HEAD' }), 200);
+  await transaction(data => {
+    const project = data.projects.find(project => project.id === fixtureId);
+    project.status = 'draft'; project.segments[0].posterUrl = null; project.segments[0].mobileClipUrl = `/api/media/${mediaId}`;
+  });
+  await check('versão de celular de rascunho permanece privada', await call(`/api/media/${mediaId}`), 404);
+  await transaction(data => { data.projects.find(project => project.id === fixtureId).status = 'published'; });
+  await check('versão de celular publicada aceita Range', await call(`/api/media/${mediaId}`, { headers: { Range: 'bytes=4-7' } }), 206);
 
   const inquiry = { name: 'Verificação automatizada', email: 'verification@example.com', type: 'MMV', duration: '30 segundos', deadline: '', references: '', budget: '', message: 'Mensagem temporária para verificar a persistência do contato.', website: '' };
   await check('contato sem Origin recusado', await call('/api/contact', { method: 'POST', body: inquiry, origin: false }), 403);

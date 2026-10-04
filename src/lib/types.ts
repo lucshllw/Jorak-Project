@@ -4,6 +4,9 @@ export type Segment = {
   id: string; name: string; start: number | null; end: number | null; clipUrl: string | null;
   kind: 'edit' | 'trailer'; order: number;
   previewUrl?: string | null; previewStart?: number | null;
+  posterUrl?: string | null; videoWidth?: number; videoHeight?: number;
+  mobileClipUrl?: string | null;
+  timeline?: 'original' | 'showcase';
   rangeStatus?: 'explicit' | 'chapter-boundary' | 'inferred' | 'pending';
   sourceUrl?: string; evidence?: string; coEditors?: string[];
 };

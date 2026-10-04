@@ -22,7 +22,7 @@ Nenhum projeto remoto foi criado, conectado ou alterado nesta etapa. URL, chave 
 2. A migration inicial conserva o histórico do esquema. A migration adicional `20261004011538_remove_portfolio_admin_access.sql` retira políticas, RPCs e grants administrativos, inclusive para contas anteriormente autorizadas. Ela não exclui tabelas, projetos, contatos, arquivos ou usuários.
 3. A configuração final disponibiliza apenas leitura de conteúdo publicado para visitantes e contas comuns. A chave do servidor tem somente SELECT em metadados de mídia e INSERT em contatos dentro dessas tabelas. A aplicação não consulta mensagens recebidas.
 4. Configure `PORTFOLIO_MODE=supabase`, `PORTFOLIO_SITE_ORIGIN`, `SUPABASE_URL`, `SUPABASE_PUBLISHABLE_KEY` e `SUPABASE_SECRET_KEY` conforme `.env.example`.
-5. Revise `supabase/seed.sql` antes de usar. Ele contém 56 trabalhos em rascunho e exige tabelas vazias; não sobrescreve conteúdo existente. O operador do projeto deverá confirmar conteúdo, trechos e publicação por um processo de manutenção externo ao site.
+5. Revise `supabase/seed.sql` antes de usar. Ele contém 57 trabalhos em rascunho e exige tabelas vazias; não sobrescreve conteúdo existente. O operador do projeto deverá confirmar conteúdo, trechos e publicação por um processo de manutenção externo ao site.
 6. Confira os grants, execute os advisors e teste as consultas com visitantes e contas comuns no projeto remoto.
 
 Sem configuração, o adapter retorna indisponibilidade, sem trocar silenciosamente para arquivos locais. Em produção, somente projetos publicados são retornados. As migrations remotas e os advisors não foram executados porque o projeto definitivo não está conectado. Revise também políticas adicionais de `storage.objects` do projeto existente: políticas permissivas de outras integrações podem ampliar acesso.
@@ -33,7 +33,9 @@ O formulário exige Origin exata, corpo JSON com limite de tamanho, campos valid
 
 O bucket `portfolio-media` continua privado. `/api/media/UUID` exige associação a um projeto publicado ou a uma configuração pública antes de consultar o arquivo. Conhecer a URL, enviar um cookie antigo ou usar o parâmetro de prévia não concede acesso. Arquivos soltos, de rascunhos ou de projetos arquivados permanecem privados.
 
-No Supabase, uma referência autorizada recebe URL temporária de 60 segundos. Uma URL já emitida pode permanecer válida até expirar. No modo local, a reprodução mantém GET, HEAD e Range para avanço e retorno no vídeo. Não transfira arquivos privados para `public/`.
+No Supabase, uma referência autorizada recebe URL temporária de 60 segundos. Uma URL já emitida pode permanecer válida até expirar. No modo local, a reprodução mantém GET, HEAD e Range para avanço e retorno no vídeo. Essa autorização também se aplica às prévias, aos quadros reais e às versões de celular. Não transfira arquivos privados para `public/`.
+
+Já há arquivos reais locais para 22 projetos. O envio dos arquivos e sua associação ao banco existente continuam separados da entrega local; consulte [MIDIAS-REAIS.md](MIDIAS-REAIS.md). Scripts de preparação e importação local não oferecem administração pela aplicação nem usam a chave do servidor para alterar o catálogo remoto.
 
 Não existem mais endpoints de envio de mídia pela aplicação. Arquivos existentes foram preservados; futuras alterações de conteúdo dependem de manutenção autorizada fora do site.
 

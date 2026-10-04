@@ -1,0 +1,1401 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-04",
+  "scope": "Todos os 57 projetos cadastrados. Comentários: até 60 mais relevantes recuperados por vídeo; não se afirma leitura de todos os comentários ou de toda a carreira. Canal público, playlist COMISSÕES e publicações acessíveis do editor também foram consultados.",
+  "totals": {
+    "catalogProjects": 57,
+    "nativeProjects": 22,
+    "editProjects": 21,
+    "trailerOnlyProjects": 1,
+    "presentations": 23,
+    "mobileVersions": 23,
+    "previewFiles": 23,
+    "previewProjects": 22,
+    "posters": 23,
+    "pendingProjects": 35,
+    "bytes": 1442068860
+  },
+  "originalRangePolicy": "Somente IMPERADOR 241–270 tem limites explicitamente delimitados no lançamento. Os 22 uploads próprios usam a sua duração medida; não confirmam a minutagem do original. Há 23 intervalos inferidos que continuam pendentes.",
+  "unidentifiedSources": {
+    "privateCommissionPlaylistEntries": 9,
+    "hiddenCatalogPlaylistEntries": 1,
+    "outsideCatalogPublicCommissions": [
+      "https://www.youtube.com/watch?v=A9JpZDwSsCo",
+      "https://www.youtube.com/watch?v=x_M59IZ8yO8"
+    ]
+  },
+  "projects": [
+    {
+      "slug": "espetaculo-de-kaiser-igris",
+      "title": "Espetáculo de Kaiser",
+      "artists": [
+        "Igris"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=EhAcLuI68ro",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [
+        "upload-yt-vy33rvro0ty"
+      ],
+      "previewReady": true,
+      "originalRanges": [],
+      "pendingReason": null,
+      "trailerOnly": false
+    },
+    {
+      "slug": "mensageiro-kaito",
+      "title": "Mensageiro",
+      "artists": [
+        "Kaito"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=aNlMrwrkcxU",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [
+        "upload-yt-ragoqelm6qq"
+      ],
+      "previewReady": true,
+      "originalRanges": [],
+      "pendingReason": null,
+      "trailerOnly": false
+    },
+    {
+      "slug": "carrasco-ranori",
+      "title": "Carrasco",
+      "artists": [
+        "Ranori"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=-HOdjvjt0HE",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 13,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [
+        "upload-yt-51-dqpyxqw8"
+      ],
+      "previewReady": true,
+      "originalRanges": [
+        {
+          "start": 239,
+          "end": 263,
+          "rangeStatus": "inferred",
+          "coEditors": []
+        }
+      ],
+      "pendingReason": null,
+      "trailerOnly": false
+    },
+    {
+      "slug": "anomalia-slow-gm",
+      "title": "Anomalia",
+      "artists": [
+        "Slow GM"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=QQixrfnAyPk",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 13,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 0,
+      "nativeAssetIds": [
+        "upload-yt-jk6eav1pq8i"
+      ],
+      "previewReady": true,
+      "originalRanges": [
+        {
+          "start": 128,
+          "end": 144,
+          "rangeStatus": "inferred",
+          "coEditors": []
+        }
+      ],
+      "pendingReason": null,
+      "trailerOnly": false
+    },
+    {
+      "slug": "convidado-especial-oshaman",
+      "title": "Convidado Especial",
+      "artists": [
+        "oShaman"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=uWhchQMpuHI",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 14,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 0,
+      "nativeAssetIds": [
+        "upload-x-2078225925880025270"
+      ],
+      "previewReady": true,
+      "originalRanges": [
+        {
+          "start": 103,
+          "end": 115,
+          "rangeStatus": "inferred",
+          "coEditors": []
+        },
+        {
+          "start": 195,
+          "end": 207,
+          "rangeStatus": "inferred",
+          "coEditors": []
+        }
+      ],
+      "pendingReason": null,
+      "trailerOnly": false
+    },
+    {
+      "slug": "rota-da-gula-shiny",
+      "title": "Rota da Gula",
+      "artists": [
+        "Shiny"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=7qepNr_fIiI",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 0,
+      "nativeAssetIds": [
+        "upload-yt--51q-soipio"
+      ],
+      "previewReady": true,
+      "originalRanges": [],
+      "pendingReason": null,
+      "trailerOnly": false
+    },
+    {
+      "slug": "heroi-do-japao-neshyzk",
+      "title": "Herói do Japão",
+      "artists": [
+        "NeshyzK"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=ZJhCz3L1UZs",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 12,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [
+        "upload-x-2070260710265819175"
+      ],
+      "previewReady": true,
+      "originalRanges": [
+        {
+          "start": 72,
+          "end": 81,
+          "rangeStatus": "inferred",
+          "coEditors": []
+        }
+      ],
+      "pendingReason": null,
+      "trailerOnly": true
+    },
+    {
+      "slug": "karma-basara",
+      "title": "KARMA",
+      "artists": [
+        "Basara"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=Cl8kw0HsNmU",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [
+        "upload-x-2053222066195759174"
+      ],
+      "previewReady": true,
+      "originalRanges": [],
+      "pendingReason": null,
+      "trailerOnly": false
+    },
+    {
+      "slug": "lampiao-de-espinhos-shiny",
+      "title": "Lampião de Espinhos",
+      "artists": [
+        "Shiny"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=rsMWVDKlSyM",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [
+        "upload-yt-sp2n8uei8j0"
+      ],
+      "previewReady": true,
+      "originalRanges": [],
+      "pendingReason": null,
+      "trailerOnly": false
+    },
+    {
+      "slug": "tipo-inosuke-2-mhrap",
+      "title": "Tipo Inosuke 2",
+      "artists": [
+        "MHRAP"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=Vk3LKeSqijQ",
+      "availability": "members-only",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": false,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 0,
+      "pinnedCommentsReviewed": 0,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "Original exclusivo para membros; nenhuma comissão pública correspondente encontrada nas fontes consultadas. É necessário arquivo autorizado e identificação da participação.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "america-ranori",
+      "title": "América",
+      "artists": [
+        "Ranori"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=BSmZt8dKtMw",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 11,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [
+        "upload-yt-axfkpekwjh8"
+      ],
+      "previewReady": true,
+      "originalRanges": [
+        {
+          "start": 209,
+          "end": 249,
+          "rangeStatus": "inferred",
+          "coEditors": []
+        }
+      ],
+      "pendingReason": null,
+      "trailerOnly": false
+    },
+    {
+      "slug": "cara-de-sorte-basara",
+      "title": "Cara De Sorte",
+      "artists": [
+        "Basara"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=EQkAA4HPmvQ",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [
+        "upload-yt-quaf3ytbk48"
+      ],
+      "previewReady": true,
+      "originalRanges": [],
+      "pendingReason": null,
+      "trailerOnly": false
+    },
+    {
+      "slug": "socando-nesses-betinhas-ashur4",
+      "title": "SOCANDO NESSES BETINHAS",
+      "artists": [
+        "Ashur4"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=c4eAmh8BOOA",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "ado-ado-do-maskarado-pejota",
+      "title": "ADO ADO do MASKARADO",
+      "artists": [
+        "PeJota"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=Zc_3YRV8mc4",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "a-guerra-sangrenta-dos-mil-anos-pejota",
+      "title": "A Guerra Sangrenta dos Mil Anos",
+      "artists": [
+        "PeJota"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=joXDTbKD_9g",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "morte-branca-pejota",
+      "title": "Morte Branca",
+      "artists": [
+        "PeJota",
+        "Geedix"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=Q9hbyrsTmkg",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "indie-cross-chevz",
+      "title": "Indie Cross",
+      "artists": [
+        "Chevz",
+        "Andrômeda"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=kztZSAHOEaQ",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 17,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [
+        "upload-yt-zjmt8p0abdk"
+      ],
+      "previewReady": true,
+      "originalRanges": [
+        {
+          "start": 146,
+          "end": 176,
+          "rangeStatus": "inferred",
+          "coEditors": [
+            "Akira"
+          ]
+        },
+        {
+          "start": 295,
+          "end": 325,
+          "rangeStatus": "inferred",
+          "coEditors": [
+            "Akira"
+          ]
+        },
+        {
+          "start": 442,
+          "end": 472,
+          "rangeStatus": "inferred",
+          "coEditors": [
+            "Akira"
+          ]
+        }
+      ],
+      "pendingReason": null,
+      "trailerOnly": false
+    },
+    {
+      "slug": "deus-do-lixo-pejota",
+      "title": "Deus do Lixo",
+      "artists": [
+        "PeJota",
+        "Bagguh"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=hdSg0NPAvsc",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "vinganca-mathover",
+      "title": "Vingança",
+      "artists": [
+        "Mathover"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=bsyt56Mmt4U",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 9,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [
+        {
+          "start": 106,
+          "end": 133,
+          "rangeStatus": "inferred",
+          "coEditors": []
+        }
+      ],
+      "pendingReason": "A descrição credita início(s) em 1:46; término(s) derivado(s) do próximo capítulo continuam inferidos. Nenhum upload próprio correspondente foi encontrado nas fontes consultadas. Confirmar os limites ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "obsessao-as-ace",
+      "title": "OBSESSÃO",
+      "artists": [
+        "As Ace"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=x5_UJUa7QaY",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 0,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "vem-pro-quarto-levar-espada-kaji",
+      "title": "Vem pro QUARTO levar ESPADA",
+      "artists": [
+        "Kaji"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=fgGrKkUxBcY",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "de-joelhos-fokes",
+      "title": "De Joelhos",
+      "artists": [
+        "Fokes"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=11FQab0JNQU",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 11,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [
+        "upload-yt-0f2fgi-ow2y"
+      ],
+      "previewReady": true,
+      "originalRanges": [
+        {
+          "start": 174,
+          "end": 201,
+          "rangeStatus": "inferred",
+          "coEditors": []
+        }
+      ],
+      "pendingReason": null,
+      "trailerOnly": false
+    },
+    {
+      "slug": "arcanjo-caido-msdaiki",
+      "title": "Arcanjo Caído",
+      "artists": [
+        "MSdaiki"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=FuijCYnJpCc",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "servical-theuz",
+      "title": "Serviçal",
+      "artists": [
+        "Theuz"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=ne8Qd7Ao564",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 11,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [
+        {
+          "start": 75,
+          "end": 102,
+          "rangeStatus": "inferred",
+          "coEditors": []
+        },
+        {
+          "start": 128,
+          "end": 141,
+          "rangeStatus": "inferred",
+          "coEditors": []
+        },
+        {
+          "start": 218,
+          "end": 246,
+          "rangeStatus": "inferred",
+          "coEditors": []
+        }
+      ],
+      "pendingReason": "A descrição credita início(s) em 1:15, 2:08, 3:38; término(s) derivado(s) do próximo capítulo continuam inferidos. Nenhum upload próprio correspondente foi encontrado nas fontes consultadas. Confirmar os limites ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "restricao-neshyzk",
+      "title": "RESTRIÇÃØ",
+      "artists": [
+        "NeshyzK"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=8Uy0kyT5WzI",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 5,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [
+        "upload-yt-0emzivgk5gc"
+      ],
+      "previewReady": true,
+      "originalRanges": [
+        {
+          "start": 158,
+          "end": 180,
+          "rangeStatus": "inferred",
+          "coEditors": []
+        }
+      ],
+      "pendingReason": null,
+      "trailerOnly": false
+    },
+    {
+      "slug": "metempsicose-caneco",
+      "title": "Metempsicose",
+      "artists": [
+        "Caneco"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=iTISBOL48w8",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "costuras-caneco",
+      "title": "Costuras",
+      "artists": [
+        "Caneco"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=2ovP85p6NmM",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [
+        "upload-yt-zjx6rkawrgs"
+      ],
+      "previewReady": true,
+      "originalRanges": [],
+      "pendingReason": null,
+      "trailerOnly": false
+    },
+    {
+      "slug": "renascer-otaiyo",
+      "title": "Renascer",
+      "artists": [
+        "oTaiyo"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=wKu4DduNXjU",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 6,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [
+        {
+          "start": 53,
+          "end": 88,
+          "rangeStatus": "inferred",
+          "coEditors": [
+            "Sunny"
+          ]
+        },
+        {
+          "start": 123,
+          "end": 159,
+          "rangeStatus": "inferred",
+          "coEditors": [
+            "Sunny"
+          ]
+        }
+      ],
+      "pendingReason": "A descrição credita início(s) em 0:53, 2:03; término(s) derivado(s) do próximo capítulo continuam inferidos. Nenhum upload próprio correspondente foi encontrado nas fontes consultadas. Confirmar os limites ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "lixo-a-gloria-caneco",
+      "title": "Lixo à Glória",
+      "artists": [
+        "Caneco"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=AZIXSmDZu4Q",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 58,
+      "pinnedCommentsReviewed": 0,
+      "nativeAssetIds": [
+        "upload-yt-hd4gg4kqc2q"
+      ],
+      "previewReady": true,
+      "originalRanges": [],
+      "pendingReason": null,
+      "trailerOnly": false
+    },
+    {
+      "slug": "pela-patria-neshyzk",
+      "title": "Pela Pátria!",
+      "artists": [
+        "NeshyzK"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=s45dsKaMupo",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "robozao-okumura",
+      "title": "Robozão",
+      "artists": [
+        "OKUMURA"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=E8kut62CtYs",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 10,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [
+        {
+          "start": 148,
+          "end": 156,
+          "rangeStatus": "inferred",
+          "coEditors": []
+        }
+      ],
+      "pendingReason": "A descrição credita início(s) em 2:28; término(s) derivado(s) do próximo capítulo continuam inferidos. Nenhum upload próprio correspondente foi encontrado nas fontes consultadas. Confirmar os limites ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "coisa-ruim-rou",
+      "title": "Coisa Ruim",
+      "artists": [
+        "Rou",
+        "LiuKay"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=EFTcOyuaBKU",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 11,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [
+        {
+          "start": 24,
+          "end": 35,
+          "rangeStatus": "inferred",
+          "coEditors": []
+        }
+      ],
+      "pendingReason": "A descrição credita início(s) em 0:24; término(s) derivado(s) do próximo capítulo continuam inferidos. Nenhum upload próprio correspondente foi encontrado nas fontes consultadas. Confirmar os limites ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "memorias-roubadas-eosans",
+      "title": "Memórias Roubadas",
+      "artists": [
+        "ÉoSans"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=hCA4m2Is1Ng",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 11,
+      "commentsReviewed": 11,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [
+        {
+          "start": 39,
+          "end": 53,
+          "rangeStatus": "inferred",
+          "coEditors": []
+        }
+      ],
+      "pendingReason": "A descrição credita início(s) em 0:39; término(s) derivado(s) do próximo capítulo continuam inferidos. Nenhum upload próprio correspondente foi encontrado nas fontes consultadas. Confirmar os limites ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "celestial-mathover",
+      "title": "Celestial",
+      "artists": [
+        "Mathover"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=9lpSZ85-WPA",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 10,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [
+        {
+          "start": 192,
+          "end": 211,
+          "rangeStatus": "inferred",
+          "coEditors": []
+        }
+      ],
+      "pendingReason": "A descrição credita início(s) em 3:12; término(s) derivado(s) do próximo capítulo continuam inferidos. Nenhum upload próprio correspondente foi encontrado nas fontes consultadas. Confirmar os limites ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "cair-da-lua-m4rques",
+      "title": "CAIR DA LUA",
+      "artists": [
+        "M4rques"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=rHy1YYWqWYY",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 0,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "trucido-infindavel-tutuflow",
+      "title": "Trucido Infindável",
+      "artists": [
+        "TutuFlow"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=EwJtgNGoTlY",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 54,
+      "pinnedCommentsReviewed": 0,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "anjo-caido-storini",
+      "title": "ANJO CAÍDO",
+      "artists": [
+        "Storini"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=yM2AkRwpzGE",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 47,
+      "pinnedCommentsReviewed": 0,
+      "nativeAssetIds": [
+        "upload-yt-gsmdg-dkdxo"
+      ],
+      "previewReady": true,
+      "originalRanges": [],
+      "pendingReason": null,
+      "trailerOnly": false
+    },
+    {
+      "slug": "criacao-perfeita-storini",
+      "title": "CRIAÇÃO PERFEITA",
+      "artists": [
+        "Storini"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=XyBWn9Y-vGo",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 51,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [
+        "upload-yt-n0jbfc0ieem"
+      ],
+      "previewReady": true,
+      "originalRanges": [],
+      "pendingReason": null,
+      "trailerOnly": false
+    },
+    {
+      "slug": "infame-as-ace",
+      "title": "Infame",
+      "artists": [
+        "As Ace"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=E064s1A5wS0",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 19,
+      "pinnedCommentsReviewed": 0,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "no-topo-do-cla-kmg-geek",
+      "title": "No topo do clã",
+      "artists": [
+        "KMG GEEK"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=_Eg0pdJ81Xo",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 42,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "wave-tokito-eoshadow",
+      "title": "Wave Tokito",
+      "artists": [
+        "ÉoShadow"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=efxptEgKmYE",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "quando-ela-chegou-sunny",
+      "title": "Quando Ela Chegou",
+      "artists": [
+        "Sunny",
+        "Reinehr"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=wFs-4xxTrgE",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 0,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "zero-arthurzinn",
+      "title": "ZERØ",
+      "artists": [
+        "Arthurzinn*"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=RWHjnijaLh0",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 22,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [
+        {
+          "start": 7,
+          "end": 19,
+          "rangeStatus": "inferred",
+          "coEditors": []
+        }
+      ],
+      "pendingReason": "A descrição credita início(s) em 0:07; término(s) derivado(s) do próximo capítulo continuam inferidos. Nenhum upload próprio correspondente foi encontrado nas fontes consultadas. Confirmar os limites ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "correnteza-nasants",
+      "title": "CORRENTEZA",
+      "artists": [
+        "NaSants",
+        "niallzin"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=2FXI4zgbcEI",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 44,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "eu-nao-sou-um-vilao-secretraps",
+      "title": "Eu Não Sou Um Vilão",
+      "artists": [
+        "SecretRaps"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=7DFxOxPHHqI",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 36,
+      "pinnedCommentsReviewed": 0,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "ergam-se-storini",
+      "title": "ERGAM-SE",
+      "artists": [
+        "Storini"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=SKbzuaxj6zc",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 18,
+      "pinnedCommentsReviewed": 0,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "viva-o-pivete-kaji",
+      "title": "VIVA O PIVETE",
+      "artists": [
+        "Kaji"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=hhBPUFz4u3c",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "docura-neko",
+      "title": "Doçura",
+      "artists": [
+        "Neko"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=X7cRXWQYnY4",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 0,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "o-primeiro-rei-anirap",
+      "title": "O Primeiro Rei",
+      "artists": [
+        "AniRap"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=oMgMrZERlS0",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 0,
+      "nativeAssetIds": [
+        "upload-yt-knu10r-t08m"
+      ],
+      "previewReady": true,
+      "originalRanges": [],
+      "pendingReason": null,
+      "trailerOnly": false
+    },
+    {
+      "slug": "traicao-de-sangue-igris",
+      "title": "Traição de Sangue",
+      "artists": [
+        "Igris"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=ynECM2La-dI",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "death-the-zane",
+      "title": "death.",
+      "artists": [
+        "The Zane"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=EE11d-5ZakI",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [
+        "upload-x-2086221549858590830"
+      ],
+      "previewReady": true,
+      "originalRanges": [],
+      "pendingReason": null,
+      "trailerOnly": false
+    },
+    {
+      "slug": "gols-e-travessuras-neko",
+      "title": "Gols e Travessuras",
+      "artists": [
+        "Neko"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=qFGJYdGufbE",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 0,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "maldito-arkay",
+      "title": "Maldito",
+      "artists": [
+        "Arkay",
+        "Ark King",
+        "Igris",
+        "Kazuya"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=i_fPgGUg8II",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 0,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "imperador-m4rkim",
+      "title": "IMPERADOR",
+      "artists": [
+        "M4rkim"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=fZoCEzumGi8",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 13,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [
+        "original-jorak-241-270",
+        "upload-yt-qo6alyybdey"
+      ],
+      "previewReady": true,
+      "originalRanges": [
+        {
+          "start": 241,
+          "end": 270,
+          "rangeStatus": "explicit",
+          "coEditors": []
+        }
+      ],
+      "pendingReason": null,
+      "trailerOnly": false
+    },
+    {
+      "slug": "faminto-anirap",
+      "title": "Faminto",
+      "artists": [
+        "AniRap"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=_XKG7mIdLeg",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 0,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 0,
+      "nativeAssetIds": [
+        "upload-x-2102371461277028767"
+      ],
+      "previewReady": true,
+      "originalRanges": [],
+      "pendingReason": null,
+      "trailerOnly": false
+    },
+    {
+      "slug": "sou-deus-7-minutoz",
+      "title": "SOU DEUS",
+      "artists": [
+        "7 Minutoz"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=5Kvnfecwb60",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 31,
+      "commentsReviewed": 60,
+      "pinnedCommentsReviewed": 0,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [
+        {
+          "start": 148,
+          "end": 156,
+          "rangeStatus": "inferred",
+          "coEditors": []
+        }
+      ],
+      "pendingReason": "A descrição credita início(s) em 2:28; término(s) derivado(s) do próximo capítulo continuam inferidos. Nenhum upload próprio correspondente foi encontrado nas fontes consultadas. Confirmar os limites ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    },
+    {
+      "slug": "no-topo-do-campo-kmg-geek",
+      "title": "No topo do Campo",
+      "artists": [
+        "KMG GEEK",
+        "Dino",
+        "Bloodz",
+        "Alvez",
+        "PeJota",
+        "As Ace",
+        "Kaji"
+      ],
+      "originalUrl": "https://www.youtube.com/watch?v=C9ymH3ixZm4",
+      "availability": "available",
+      "creditConfirmed": true,
+      "fullDescriptionRead": true,
+      "descriptionFetchedThisRun": true,
+      "chaptersReviewed": 10,
+      "commentsReviewed": 45,
+      "pinnedCommentsReviewed": 1,
+      "nativeAssetIds": [],
+      "previewReady": false,
+      "originalRanges": [],
+      "pendingReason": "A descrição credita Jorak entre vários editores, sem delimitar sua parte. Capítulos, comentários recuperados e publicações consultadas não fornecem início e fim comprovados; nenhum upload próprio correspondente foi localizado. É necessário confirmar os intervalos ou fornecer o trecho autorizado.",
+      "trailerOnly": false
+    }
+  ]
+}
