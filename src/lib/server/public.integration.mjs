@@ -93,6 +93,14 @@ try {
   assert.equal(head.headers.get('content-length'), String(bytes.length));
   await transaction(data => { data.projects.find(project => project.id === fixtureId).status = 'archived'; });
   await check('mídia arquivada volta a ser privada', await call(`/api/media/${mediaId}`), 404);
+  await transaction(data => {
+    const project = data.projects.find(project => project.id === fixtureId);
+    project.status = 'draft'; project.segments[0].clipUrl = null; project.segments[0].previewUrl = `/api/media/${mediaId}`;
+  });
+  await check('prévia de rascunho permanece privada', await call(`/api/media/${mediaId}`), 404);
+  await transaction(data => { data.projects.find(project => project.id === fixtureId).status = 'published'; });
+  const previewRange = await check('prévia publicada aceita Range sem liberar upload', await call(`/api/media/${mediaId}`, { headers: { Range: 'bytes=4-7' } }), 206);
+  assert.equal(await previewRange.text(), 'ftyp');
 
   const inquiry = { name: 'Verificação automatizada', email: 'verification@example.com', type: 'MMV', duration: '30 segundos', deadline: '', references: '', budget: '', message: 'Mensagem temporária para verificar a persistência do contato.', website: '' };
   await check('contato sem Origin recusado', await call('/api/contact', { method: 'POST', body: inquiry, origin: false }), 403);

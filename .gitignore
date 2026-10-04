@@ -14,3 +14,4 @@ PROMPT-JORAK.md
 .DS_Store
 supabase/.temp/
 supabase/.branches/
+.tools/

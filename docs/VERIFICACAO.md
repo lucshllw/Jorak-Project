@@ -1,5 +1,7 @@
 # Verificação da versão pública
 
+Registro histórico da etapa de 3 de outubro. A pesquisa, as contagens e a seleção de mídia foram atualizadas em [VERIFICACAO-MIDIA.md](VERIFICACAO-MIDIA.md); intervalos cujo término era derivado do capítulo seguinte agora permanecem pendentes de confirmação.
+
 Validação realizada em 3 de outubro de 2026, no ambiente local. Esta versão não inclui administração nem conversa com personagem; a conversa foi adiada pelo proprietário.
 
 ## Verificações automatizadas executadas

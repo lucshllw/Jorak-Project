@@ -1,6 +1,6 @@
 # Jorak-Project
 
-Portfólio de Jorak, editor MMV e motion designer da cena geek brasileira. A coleção reúne 56 trabalhos pesquisados, filtros por artista, oito destaques, páginas de projeto, vídeos oficiais, apresentação profissional e formulário de orçamento.
+Portfólio de Jorak, editor MMV e motion designer da cena geek brasileira. A coleção reúne 57 trabalhos com créditos conferidos, 49 artistas, oito destaques, páginas de projeto, apresentação profissional e formulário de orçamento. Todos os discos têm capas verificadas: 41 do Spotify e 16 do YouTube.
 
 A versão atual é exclusivamente pública: não contém login, cadastro, painel, sessão ou APIs administrativas. A conversa com o personagem será adicionada em uma etapa futura.
 
@@ -19,6 +19,7 @@ Abra http://127.0.0.1:3100. O setup cria somente a configuração de desenvolvim
 ## Verificar
 
 ```sh
+npm test
 npm run typecheck
 npm run build
 ```
@@ -43,4 +44,16 @@ A publicação do código no GitHub não configura uma hospedagem ou um banco. P
 
 As chaves ficam somente no servidor. Não adicione prefixo `NEXT_PUBLIC_` a segredos. Nunca envie `.env.local`, dados locais, solicitações de orçamento, credenciais, `node_modules` ou `.next` ao GitHub.
 
-Nenhum recurso Supabase remoto foi criado ou alterado nesta etapa. Conteúdos sem capa ou trechos confirmados permanecem como rascunhos. Consulte `docs/BANCO-E-OPERACAO.md` para os detalhes operacionais e `docs/VERIFICACAO.md` para o que foi efetivamente validado.
+Nenhum recurso Supabase remoto foi criado ou alterado nesta etapa. O catálogo inicial permanece em rascunho para revisão e publicação pelo responsável. Consulte `docs/BANCO-E-OPERACAO.md` para os detalhes operacionais e [docs/VERIFICACAO-MIDIA.md](docs/VERIFICACAO-MIDIA.md) para a validação atual.
+
+## Catálogo, prévias e player
+
+`data/catalog.json` reúne o catálogo e as fontes compactas da pesquisa; não depende dos arquivos temporários de pesquisa para gerar o seed. `npm run catalog:generate` valida capas, créditos, unicidade e intervalos, depois gera o catálogo TypeScript e o SQL local. O SQL exige um banco vazio e não sobrescreve conteúdo existente. Para atualizar somente os metadados pesquisados na prévia local, `node scripts/sync-local-catalog.mjs --apply` mantém mensagens, configurações, publicação e mídias, e cria backup privado.
+
+Os discos abrem balões no computador e um painel inferior no celular. A prévia silenciosa usa `segment.previewUrl`, ou `clipUrl` com intervalo confirmado, carregando somente o projeto aberto. Sem arquivo próprio, mostra a capa e informa que o trecho está em preparação. Navegação por teclado, Escape, foco e preferência por movimento reduzido são respeitados.
+
+O player próprio inclui progresso, volume, atalhos, tela cheia e controles que se recolhem durante a reprodução. **Nenhum recorte nativo real foi preparado ou publicado nesta etapa.** Nove comissões do canal do próprio Jorak estão vinculadas ao lançamento original e tiveram reprodução conferida no site, pelo player externo. A interface do YouTube continua visível; não é coberta por elementos do site.
+
+Há um intervalo com início/fim explícitos e 23 intervalos cujo fim foi derivado do capítulo seguinte. Estes últimos continuam pendentes e não habilitam automaticamente um recorte. As fontes e os limites da pesquisa estão em `docs/CATALOGO-AUDIT-A.md` e `docs/CATALOGO-AUDIT-B.md`; uma entrada indisponível oculta na playlist não foi inventada.
+
+O processamento offline de arquivos autorizados está documentado em [RECORTES-OFFLINE.md](RECORTES-OFFLINE.md). Ele gera uma apresentação H.264/AAC e uma prévia leve sem áudio, sem alterar os originais nem o banco. Arquivos autorizados, confirmação dos intervalos e configuração do projeto Supabase existente ainda são necessários para armazenar e publicar essas mídias em produção. As fixtures sintéticas usadas para testar o player foram removidas do catálogo.
