@@ -1,13 +1,21 @@
 export type PublishStatus = 'draft' | 'published' | 'archived';
 export type Artist = { id: string; name: string; slug: string };
-export type Segment = { id: string; name: string; start: number | null; end: number | null; clipUrl: string | null; kind: 'edit' | 'trailer'; order: number };
+export type Segment = {
+  id: string; name: string; start: number | null; end: number | null; clipUrl: string | null;
+  kind: 'edit' | 'trailer'; order: number;
+  previewUrl?: string | null; previewStart?: number | null;
+  rangeStatus?: 'explicit' | 'chapter-boundary' | 'inferred' | 'pending';
+  sourceUrl?: string; evidence?: string; coEditors?: string[];
+};
 export type Project = {
   id: string; slug: string; title: string; character: string; work: string; artistIds: string[];
   category: string; date: string | null; summary: string; participation: string; process: string;
   techniques: string[]; tools: string[]; credits: string; creditSource: string;
-  coverUrl: string | null; coverSource: 'spotify' | 'uploaded' | null; coverAlt: string;
+  coverUrl: string | null; coverSource: 'spotify' | 'youtube' | 'official' | 'uploaded' | null; coverAlt: string;
+  coverSourceUrl?: string; checkedAt?: string; videoAvailability?: 'available' | 'members-only' | 'unavailable' | 'unknown';
   coverPosition: { x: number; y: number }; coverCredit: string;
   youtubeUrl: string | null; spotifyUrl: string | null; xUrl: string | null;
+  editShowcaseUrl?: string; editShowcaseDuration?: number; toolsSource?: string;
   segments: Segment[]; processImages: string[];
   featured: boolean; featuredOrder: number | null; order: number; status: PublishStatus;
   accent: string; verification: string;
