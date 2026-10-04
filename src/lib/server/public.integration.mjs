@@ -51,6 +51,16 @@ async function check(label, response, expected) {
   return response;
 }
 try {
+  await check('FAQ sem Origin recusado', await call('/api/faq', { method: 'POST', body: { question: 'Quanto custa?' }, origin: false }), 403);
+  await check('FAQ cross-site recusado', await call('/api/faq', { method: 'POST', body: { question: 'Quanto custa?' }, headers: { Origin: 'https://externo.example' } }), 403);
+  await check('FAQ não aceita campos extras', await call('/api/faq', { method: 'POST', body: { question: 'Quanto custa?', model: 'outro' } }), 400);
+  await check('FAQ limita a pergunta', await call('/api/faq', { method: 'POST', body: { question: 'x'.repeat(801) } }), 400);
+  await check('FAQ limita o tamanho da requisição', await call('/api/faq', { method: 'POST', body: { question: 'x'.repeat(5000) } }), 413);
+  const faq = await check('FAQ responde com dados aprovados', await call('/api/faq', { method: 'POST', body: { question: 'Quanto custa uma edição?' } }), 200);
+  const faqResult = await faq.json();
+  assert.ok(['registered', 'ai'].includes(faqResult.mode));
+  assert.match(faqResult.answer, /Não há uma tabela/);
+  assert.equal(faqResult.href, '/contato');
   const response = await check('catálogo público funciona', await call('/api/portfolio'), 200);
   const portfolio = await response.json();
   assert.equal(portfolio.mode, 'local');

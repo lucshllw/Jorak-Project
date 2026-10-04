@@ -3,43 +3,37 @@ import Image from 'next/image';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import BrandArt from './BrandArt';
-export default function Intro({ avatarUrl }: { avatarUrl: string }) {
-  const root = useRef<HTMLDivElement>(null);
-  const [show, setShow] = useState(false), [logoReady, setLogoReady] = useState(false);
-  const timeline = useRef<gsap.core.Timeline | null>(null);
-  const ready = useCallback(() => setLogoReady(true), []);
-  const finish = () => { timeline.current?.kill(); sessionStorage.setItem('jorak-intro', 'seen'); setShow(false); setLogoReady(false); };
+
+export default function Intro({ avatarUrl, onComplete }: { avatarUrl: string; onComplete: () => void }) {
+  const root = useRef<HTMLDivElement>(null), skip = useRef<HTMLButtonElement>(null);
+  const timeline = useRef<gsap.core.Timeline | null>(null), completed = useRef(false), callback = useRef(onComplete);
+  callback.current = onComplete;
+  const [ready, setReady] = useState(false);
+  const logoReady = useCallback(() => setReady(true), []);
+  const finish = useCallback(() => { if (completed.current) return; completed.current = true; timeline.current?.kill(); callback.current(); }, []);
   useEffect(() => {
+    const previous = document.activeElement as HTMLElement | null, overflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden'; skip.current?.focus({ preventScroll: true });
     const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
-    if (!preference.matches && (!sessionStorage.getItem('jorak-intro') || new URLSearchParams(location.search).has('intro'))) setShow(true);
-    const replay = () => { if (!preference.matches) setShow(true); };
+    const key = (event: KeyboardEvent) => { if (event.key === 'Escape') finish(); if (event.key === 'Tab') { event.preventDefault(); skip.current?.focus(); } };
     const changed = () => { if (preference.matches) finish(); };
-    window.addEventListener('jorak:intro', replay); preference.addEventListener('change', changed);
-    return () => { window.removeEventListener('jorak:intro', replay); preference.removeEventListener('change', changed); };
-  // Session and replay events own the presentation lifetime.
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    // A failed WebGL renderer or image decode must never leave the page locked.
+    const watchdog = setTimeout(logoReady, 1800);
+    document.addEventListener('keydown', key); preference.addEventListener('change', changed);
+    return () => { clearTimeout(watchdog); document.removeEventListener('keydown', key); preference.removeEventListener('change', changed); document.body.style.overflow = overflow; if (previous?.isConnected) previous.focus({ preventScroll: true }); };
+  }, [finish, logoReady]);
   useEffect(() => {
-    if (!show || !logoReady || !root.current) return;
+    if (!ready || !root.current || completed.current) return;
     const element = root.current;
-    let cancelled = false;
-    const ctx = gsap.context(() => {}, element);
-    const images = Array.from(element.querySelectorAll('img'));
-    void Promise.all(images.map(image => image.decode().catch(() => {}))).then(() => {
-      if (cancelled) return;
-      ctx.add(() => {
-        timeline.current = gsap.timeline({ onComplete: finish })
-          .from('.intro-avatar', { scale: .7, autoAlpha: 0, duration: .6, ease: 'power3.out' })
-          .from('.intro-name', { y: 25, autoAlpha: 0, duration: .7, ease: 'power3.out' }, .2)
-          .to('.intro-avatar', { scale: .32, x: () => -window.innerWidth / 2 + 79, y: () => -window.innerHeight / 2 + 117, duration: .75, ease: 'power3.inOut' }, 2.15)
-          .to('.intro-name', { y: -20, autoAlpha: 0, duration: .45 }, 2.25)
-          .to(element, { autoAlpha: 0, duration: .5 }, 2.75);
-      });
-    });
-    return () => { cancelled = true; ctx.revert(); timeline.current = null; };
-  // Completion is controlled by the timeline and explicit replay state.
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [show, logoReady]);
-  if (!show) return null;
-  return <div className="intro" ref={root} aria-label="Apresentação de Jorak"><div className="intro-avatar"><Image src={avatarUrl} alt="Novo ícone de Jorak com dois personagens ilustrados e chapéu verde" width={148} height={148} priority unoptimized/></div><div className="intro-name" aria-hidden="true"><BrandArt onReady={ready}/></div><button className="intro-skip" onClick={finish}>Pular introdução <span>↗</span></button></div>;
+    const ctx = gsap.context(() => {
+      timeline.current = gsap.timeline({ onComplete: finish })
+        .from('.intro-avatar', { scale: .78, autoAlpha: 0, duration: .55, ease: 'power3.out' })
+        .from('.intro-name', { y: 20, autoAlpha: 0, duration: .65, ease: 'power3.out' }, .15)
+        .to('.intro-avatar', { scale: .32, x: () => -window.innerWidth / 2 + 79, y: () => -window.innerHeight / 2 + 117, duration: .65, ease: 'power3.inOut' }, 1.65)
+        .to('.intro-name', { y: -15, autoAlpha: 0, duration: .4 }, 1.8)
+        .to(element, { autoAlpha: 0, duration: .4 }, 2.15);
+    }, element);
+    return () => { ctx.revert(); timeline.current = null; };
+  }, [ready, finish]);
+  return <div className="intro" ref={root} role="dialog" aria-modal="true" aria-label="Apresentação de Jorak"><div className="intro-avatar"><Image src={avatarUrl} alt="Ilustração de Jorak" width={148} height={148} priority unoptimized/></div><div className="intro-name" aria-hidden="true"><BrandArt onReady={logoReady}/></div><button ref={skip} className="intro-skip" onClick={finish}>Pular introdução <span>↗</span></button></div>;
 }

@@ -1,5 +1,5 @@
 'use client';
-import Link from 'next/link';
+import Link from './TransitionLink';
 import Image from 'next/image';
 import { useState } from 'react';
 import type { SiteSettings } from '@/lib/types';

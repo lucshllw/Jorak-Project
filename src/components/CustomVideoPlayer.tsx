@@ -7,7 +7,7 @@ import './media-player.css';
 
 type SafariVideo = HTMLVideoElement & { webkitEnterFullscreen?: () => void };
 
-export default function CustomVideoPlayer({ src, poster, title, loop = false }: { src: string; poster?: string; title: string; loop?: boolean }) {
+export default function CustomVideoPlayer({ src, poster, title, loop = false, onEnded }: { src: string; poster?: string; title: string; loop?: boolean; onEnded?: () => void }) {
   const owner = useId(), root = useRef<HTMLDivElement>(null), video = useRef<HTMLVideoElement>(null);
   const hideTimer = useRef<ReturnType<typeof setTimeout> | null>(null), keyboardFocus = useRef(false), pointerInput = useRef(false);
   const [playing, setPlaying] = useState(false), [buffering, setBuffering] = useState(true), [error, setError] = useState('');
@@ -85,7 +85,7 @@ export default function CustomVideoPlayer({ src, poster, title, loop = false }: 
       onPlay={() => { playingRef.current = true; setPlaying(true); announcePlayback(owner); showControls(); }}
       onPlaying={() => { setBuffering(false); setError(''); }}
       onPause={() => { playingRef.current = false; setPlaying(false); clearHide(); setControls(true); }}
-      onEnded={() => { playingRef.current = false; setPlaying(false); setControls(true); }}
+      onEnded={() => { playingRef.current = false; setPlaying(false); setControls(true); onEnded?.(); }}
       onWaiting={() => setBuffering(true)} onCanPlay={() => setBuffering(false)}
       onVolumeChange={event => { setVolume(event.currentTarget.volume); setMuted(event.currentTarget.muted); }}
       onError={() => { setBuffering(false); setError('O trecho não carregou. Tente novamente ou assista ao vídeo original.'); }}/>

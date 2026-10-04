@@ -2,15 +2,23 @@
 import { useEffect } from 'react';
 import Lenis from 'lenis';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 export default function SmoothScroll() {
   useEffect(() => {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    const lenis = new Lenis({ duration: 0.9, smoothWheel: true, anchors: true });
-    const tick = (time: number) => lenis.raf(time * 1000);
-    gsap.ticker.add(tick);
-    const visibility = () => document.hidden ? lenis.stop() : lenis.start();
+    gsap.registerPlugin(ScrollTrigger);
+    const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let lenis: Lenis | null = null, locked = false;
+    const tick = (time: number) => lenis?.raf(time * 1000);
+    const visibility = () => { if (document.hidden || locked) lenis?.stop(); else lenis?.start(); };
+    const change = () => {
+      lenis?.destroy(); lenis = null;
+      if (!preference.matches) { lenis = new Lenis({ duration: .9, smoothWheel: true, anchors: true }); lenis.on('scroll', ScrollTrigger.update); visibility(); }
+    };
+    const lock = (event: Event) => { locked = Boolean((event as CustomEvent<boolean>).detail); visibility(); };
+    change(); gsap.ticker.add(tick);
     document.addEventListener('visibilitychange', visibility);
-    return () => { gsap.ticker.remove(tick); document.removeEventListener('visibilitychange', visibility); lenis.destroy(); };
+    preference.addEventListener('change', change); window.addEventListener('jorak:interaction-lock', lock);
+    return () => { gsap.ticker.remove(tick); document.removeEventListener('visibilitychange', visibility); preference.removeEventListener('change', change); window.removeEventListener('jorak:interaction-lock', lock); lenis?.destroy(); };
   }, []);
   return null;
 }
