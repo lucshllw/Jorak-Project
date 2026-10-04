@@ -4,7 +4,7 @@ Portfólio de Jorak, editor MMV e motion designer da cena geek brasileira. A col
 
 A entrega local possui **22 projetos com vídeo próprio** (21 edições e um trailer), **23 apresentações com áudio**, versões menores para celular e **22 discos com prévias reproduzíveis**. Os 35 projetos restantes têm sua pendência documentada individualmente em [MIDIAS-REAIS.md](docs/MIDIAS-REAIS.md). Os arquivos de mídia são preparados fora do Git; o repositório contém as fontes revisadas, evidências e o processo reproduzível.
 
-A versão atual é exclusivamente pública: não contém login, cadastro, painel, sessão ou APIs administrativas. A conversa com o personagem será adicionada em uma etapa futura.
+A versão atual é exclusivamente pública: não contém login, cadastro, painel, sessão ou APIs administrativas. O personagem com transparência real abre um FAQ somente na home. Respostas cadastradas funcionam sem IA; a integração opcional usa OpenAI no servidor. Veja os ajustes e as limitações em [AJUSTES-EXPERIENCIA.md](docs/AJUSTES-EXPERIENCIA.md).
 
 ## Executar localmente
 
@@ -54,8 +54,10 @@ Nenhum recurso Supabase remoto foi criado ou alterado nesta etapa. O catálogo i
 
 Os discos abrem balões no computador e um painel inferior no celular. A prévia silenciosa usa `segment.previewUrl`, ou `clipUrl` com intervalo confirmado, carregando somente o projeto aberto. Sem arquivo próprio, mostra a capa e informa que o trecho está em preparação. Navegação por teclado, Escape, foco e preferência por movimento reduzido são respeitados.
 
-O player próprio inclui progresso, volume, atalhos, tela cheia e controles que se recolhem durante a reprodução. Os arquivos reais usam um quadro da edição e um único botão de play, sem iframe, título sobreposto ou laterais cinzas. Créditos, links e duração ficam fora da imagem. O celular recebe a versão de até 720p, mantendo áudio, proporção e intervalo; o computador conserva a apresentação de alta qualidade. Vídeos externos continuam disponíveis somente onde falta arquivo próprio.
+Cada projeto tem uma única seção “Minha Edição ao Projeto” e um único player. O player próprio inclui progresso, volume, atalhos, tela cheia e controles que se recolhem durante a reprodução. Os arquivos reais usam um quadro da edição e um único botão de play, sem iframe, título sobreposto ou laterais cinzas. Créditos, links e duração ficam fora da imagem. O celular recebe a versão de até 720p, mantendo áudio, proporção e intervalo; o computador conserva a apresentação de alta qualidade. Onde falta arquivo próprio, o lançamento completo permanece como link externo, sem atribuir o vídeo inteiro ao editor. IMPERADOR prefere seu recorte original confirmado e não repete a comissão como outra parte.
 
 Há um intervalo com início/fim explícitos e 23 intervalos cujo fim foi derivado do capítulo seguinte. Estes últimos continuam pendentes e não habilitam automaticamente um recorte. As fontes e os limites da pesquisa estão em `docs/CATALOGO-AUDIT-A.md` e `docs/CATALOGO-AUDIT-B.md`; uma entrada indisponível oculta na playlist não foi inventada.
+
+A lista para consultar o editor contém música, artista, lançamento, crédito literal e informação faltante em [PENDENCIAS-PARA-JORAK.md](docs/PENDENCIAS-PARA-JORAK.md). Atualize-a com `node scripts/report-portfolio.mjs` após mudar `data/media-audit.json`. As 16 thumbnails do YouTube foram revistas; fontes, dimensões e recortes estão em `data/artwork.json`. As 41 capas do Spotify foram preservadas.
 
 O processo está documentado em [RECORTES-OFFLINE.md](RECORTES-OFFLINE.md). `npm run media:prepare` mostra o plano; `--execute --import-local` obtém as fontes públicas revisadas com yt-dlp, exporta H.264/AAC, gera a prévia, o quadro e a versão para celular, e associa as mídias somente na prévia local. Requer as ferramentas indicadas no documento. Os originais são preservados. Para produção ainda faltam o projeto Supabase existente, envio dos arquivos e associação das referências publicadas. As fixtures sintéticas não entram nas contagens de entrega.

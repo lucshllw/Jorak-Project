@@ -7,7 +7,7 @@ Entrega local de 4 de outubro de 2026. Este relatório substitui as contagens da
 - **22 projetos reproduzíveis no player próprio**: 21 com edição e 1 somente com trailer identificado.
 - **23 apresentações com áudio**, 23 versões menores para celular, 23 prévias silenciosas e 23 quadros reais. Há 22 balões/painéis com prévia; IMPERADOR tem dois arquivos de apresentação, mas um disco.
 - **35 projetos sem arquivo próprio**. O relatório individual abaixo distingue créditos de limites comprovados.
-- 57 capas, 49 artistas, oito destaques, conteúdo, links e demais funcionalidades preservados. Administração continua removida; conversa com personagem continua adiada.
+- 57 capas, 49 artistas, oito destaques, conteúdo, links e demais funcionalidades preservados. Administração continua removida. O FAQ e a atualização visual estão descritos em [AJUSTES-EXPERIENCIA.md](AJUSTES-EXPERIENCIA.md).
 - Arquivos de entrega somam 1.44 GB. Ainda não foram enviados para armazenamento de produção.
 
 ## Pesquisa e limites
@@ -89,6 +89,8 @@ As comissões/trailer usam **0 até a duração medida do arquivo do editor**. E
 
 Herói do Japão possui apenas o trailer próprio; a edição no lançamento completo também aguarda limites confirmados. Nos outros projetos com comissão, trechos adicionais do lançamento original permanecem pendentes quando não há limite explícito. Nove entradas privadas de COMISSÕES e uma entrada oculta da playlist de catálogo não têm identificação pública suficiente para associá-las a esses trabalhos. Duas comissões públicas de Yuta/KMG e Barou/Mathover foram identificadas fora dos 57 projetos e não foram incluídas nas contagens.
 
+A lista pronta para encaminhar ao editor, com os créditos literais e as perguntas sobre cada limite, fica em [PENDENCIAS-PARA-JORAK.md](PENDENCIAS-PARA-JORAK.md). Na revisão adicional, os 34 originais públicos pendentes foram obtidos em versão leve para pesquisa visual de abertura, encerramento e transições; nenhum novo fim individual pôde ser comprovado. Tipo Inosuke 2 continua restrito a membros. Esses originais completos não entram nas contagens de entrega nem são expostos como edição própria.
+
 ## Evidências reproduzíveis
 
 `data/media-sources.json` contém os links aprovados, autores e justificativas; `data/media-assets.json` contém codecs, dimensões, durações, SHA-256 e classificação de cada arquivo, sem caminhos privados ou URLs locais. `data/media-audit.json` cobre os 57 projetos e registra o motivo das pendências. Catálogo TypeScript e SQL foram gerados offline, mantendo todos os itens em rascunho no seed de produção e sem inventar URLs de arquivos.
@@ -100,6 +102,8 @@ Os 22 projetos foram abertos e reproduzidos com arquivos reais no navegador, em 
 Foram conferidos quadro real, botão único antes do play, título e créditos fora da imagem, pausa, busca, som/volume, tela cheia e recolhimento dos controles após 2,6 segundos de inatividade. A logo 3D e a coleção continuam presentes; a página inicial não carrega vídeos antes de abrir uma prévia. A preferência de movimento reduzido foi verificada na implementação; não foi alterada a configuração do sistema para simular essa preferência. A verificação responsiva no navegador não equivale a testes em aparelhos físicos iOS/Android.
 
 Os 23 arquivos principais e as 23 versões móveis passaram por decodificação; os principais incluem áudio não silencioso. As prévias foram verificadas sem faixa de áudio. Passaram 17 testes automatizados locais, 49 verificações HTTP de leitura, referências de mídia e remoção administrativa, validação dos 57 projetos, TypeScript e build. Os testes de arquivos reais acima são independentes das fixtures sintéticas usadas em testes unitários.
+
+Após a unificação do player, os 22 projetos voltaram a reproduzir no navegador com uma seção e um player por página, sem personagem, FAQ ou iframe. IMPERADOR agora mostra 04:01–04:30 como apresentação principal; o segundo arquivo é preservado internamente como evidência. A suíte ampliada contém 22 testes e 55 verificações HTTP, incluindo origem, tamanho de pergunta e respostas aprovadas do FAQ.
 
 ## Produção e publicação de mídias
 
