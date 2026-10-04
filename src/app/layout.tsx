@@ -11,5 +11,5 @@ export const metadata: Metadata = {
   robots: { index: process.env.PORTFOLIO_MODE === 'supabase', follow: process.env.PORTFOLIO_MODE === 'supabase' }
 };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return <html lang="pt-BR" className={archivo.variable}><body><a className="skip-link" href="#conteudo">Pular para o conteúdo</a><VisualMotion/>{children}</body></html>;
+  return <html lang="pt-BR" data-scroll-behavior="smooth" className={archivo.variable}><body><a className="skip-link" href="#conteudo">Pular para o conteúdo</a><VisualMotion/>{children}</body></html>;
 }

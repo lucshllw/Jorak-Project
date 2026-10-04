@@ -5,8 +5,9 @@ import * as THREE from 'three';
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
 import gsap from 'gsap';
 import type { Project } from '@/lib/types';
+import type { PreviewAnchor, PreviewInteraction } from './DiscPreview';
 
-type Props = { projects: Project[]; activeIndex: number; flipped: boolean; onSelect: (index: number) => void; onOpen: () => void };
+type Props = { projects: Project[]; activeIndex: number; flipped: boolean; onSelect: (index: number) => void; onOpen: () => void; onPreview: (index: number, anchor: PreviewAnchor, interaction: PreviewInteraction, trigger?: HTMLElement) => void; onPreviewLeave: () => void; onPreviewCancel: () => void };
 type Disc = { group: THREE.Group; index: number };
 const relativeIndex = (index: number, active: number, count: number) => {
   let delta = index - active;
@@ -25,11 +26,12 @@ function labelTexture(project: Project) {
   const texture = new THREE.CanvasTexture(canvas); texture.colorSpace = THREE.SRGBColorSpace;
   return texture;
 }
-export default function DiscGallery({ projects, activeIndex, flipped, onSelect, onOpen }: Props) {
+export default function DiscGallery({ projects, activeIndex, flipped, onSelect, onOpen, onPreview, onPreviewLeave, onPreviewCancel }: Props) {
   const host = useRef<HTMLDivElement>(null);
-  const runtime = useRef<{ update: () => void } | null>(null);
-  const props = useRef({ activeIndex, flipped, onSelect, onOpen });
-  props.current = { activeIndex, flipped, onSelect, onOpen };
+  const runtime = useRef<{ update: () => void; anchor: (index: number) => PreviewAnchor | null } | null>(null);
+  const keyboardTargets = useRef(new Map<number, HTMLButtonElement>());
+  const props = useRef({ activeIndex, flipped, onSelect, onOpen, onPreview, onPreviewLeave, onPreviewCancel });
+  props.current = { activeIndex, flipped, onSelect, onOpen, onPreview, onPreviewLeave, onPreviewCancel };
   const [fallback, setFallback] = useState(false);
   useEffect(() => {
     const element = host.current;
@@ -71,9 +73,27 @@ export default function DiscGallery({ projects, activeIndex, flipped, onSelect, 
     const materials: THREE.Material[] = [];
     const raycaster = new THREE.Raycaster(), pointer = new THREE.Vector2();
     const textureLoader = new THREE.TextureLoader();
+    const discAnchor = (index: number, bounds?: DOMRect): PreviewAnchor | null => {
+      const disc = discs.find(item => item.index === index); if (!disc) return null;
+      disc.group.updateWorldMatrix(true, false);
+      const center = disc.group.localToWorld(new THREE.Vector3()).project(camera);
+      const rim = disc.group.localToWorld(new THREE.Vector3(1.62, 0, 0)).project(camera);
+      const box = bounds || element.getBoundingClientRect(), radius = Math.abs(rim.x - center.x) * box.width / 2;
+      return { left: box.left + (center.x + 1) * box.width / 2 - radius, top: box.top + (1 - center.y) * box.height / 2 - radius, width: radius * 2, height: radius * 2 };
+    };
     const render = () => {
       if (disposed || !visible || document.hidden || pendingFrame) return;
-      pendingFrame = requestAnimationFrame(() => { pendingFrame = 0; if (!disposed && visible && !document.hidden) renderer.render(scene, camera); });
+      pendingFrame = requestAnimationFrame(() => {
+        pendingFrame = 0;
+        if (disposed || !visible || document.hidden) return;
+        renderer.render(scene, camera);
+        const box = element.getBoundingClientRect(), inset = Math.min(140, box.width / 2);
+        keyboardTargets.current.forEach((target, index) => {
+          const anchor = discAnchor(index, box); if (!anchor) return;
+          target.style.left = `${Math.max(inset, Math.min(box.width - inset, anchor.left + anchor.width / 2 - box.left))}px`;
+          target.style.top = `${Math.max(28, Math.min(box.height - 28, anchor.top + anchor.height / 2 - box.top))}px`;
+        });
+      });
     };
     const destroyDisc = (disc: Disc) => {
       gsap.killTweensOf(disc.group.position); gsap.killTweensOf(disc.group.rotation); gsap.killTweensOf(disc.group.scale);
@@ -115,19 +135,28 @@ export default function DiscGallery({ projects, activeIndex, flipped, onSelect, 
         gsap.to(group.scale, { x: selected ? 1.07 : 0.95, y: selected ? 1.07 : 0.95, z: 1, duration: 0.72, ease: 'power3.out', onUpdate: render });
       }); render();
     };
-    runtime.current = { update };
+    runtime.current = { update, anchor: discAnchor };
     const resize = () => { const { width, height } = element.getBoundingClientRect(); if (!width || !height) return; renderer.setSize(width, height); camera.aspect = width / height; camera.position.z = width < 600 ? 8.5 : 7.8; camera.updateProjectionMatrix(); render(); };
     const resizeObserver = new ResizeObserver(resize); resizeObserver.observe(element);
     const observer = new IntersectionObserver(entries => { visible = entries[0].isIntersecting; if (visible) render(); }, { threshold: 0.01 }); observer.observe(element);
     const visibility = () => render(); document.addEventListener('visibilitychange', visibility);
     let startX = 0, startY = 0, down = false, lastX = 0, velocity = 0, moved = false, pointerId = -1;
-    const downHandler = (event: PointerEvent) => { down = true; moved = false; startX = lastX = event.clientX; startY = event.clientY; velocity = 0; pointerId = event.pointerId; };
+    const hitIndex = (event: PointerEvent) => {
+      const rect = element.getBoundingClientRect(); pointer.set((event.clientX - rect.left) / rect.width * 2 - 1, -(event.clientY - rect.top) / rect.height * 2 + 1);
+      raycaster.setFromCamera(pointer, camera); const hit = raycaster.intersectObjects(collection.children, true)[0];
+      if (!hit) return null;
+      let object = hit.object; while (object.parent && object.parent !== collection) object = object.parent;
+      return object.userData.index as number;
+    };
+    const downHandler = (event: PointerEvent) => { props.current.onPreviewCancel(); down = true; moved = false; startX = lastX = event.clientX; startY = event.clientY; velocity = 0; pointerId = event.pointerId; };
     const moveHandler = (event: PointerEvent) => {
       if (down) { const dx = event.clientX - startX; velocity = event.clientX - lastX; lastX = event.clientX;
         if (Math.abs(dx) > 12 && Math.abs(dx) > Math.abs(event.clientY - startY)) { moved = true; if (!renderer.domElement.hasPointerCapture(pointerId)) renderer.domElement.setPointerCapture(pointerId); gsap.set(collection.position, { x: dx / element.clientWidth * 10 }); render(); }
       } else if (event.pointerType === 'mouse') {
         const box = element.getBoundingClientRect();
         gsap.to(collection.rotation, { x: (event.clientY - box.top - box.height / 2) / box.height * 0.06, y: (event.clientX - box.left - box.width / 2) / box.width * 0.06, duration: 0.4, overwrite: true, onUpdate: render });
+        const index = hitIndex(event), anchor = index == null ? null : discAnchor(index);
+        if (index != null && anchor) props.current.onPreview(index, anchor, 'pointer'); else props.current.onPreviewLeave();
       }
     };
     const upHandler = (event: PointerEvent) => {
@@ -136,13 +165,11 @@ export default function DiscGallery({ projects, activeIndex, flipped, onSelect, 
       gsap.to(collection.position, { x: 0, duration: 0.6, ease: 'power3.out', onUpdate: render });
       if (moved) { const distance = event.clientX - startX; const amount = Math.max(1, Math.min(3, Math.round((Math.abs(distance) + Math.abs(velocity) * 4) / (element.clientWidth * 0.18)))); const next = (props.current.activeIndex + (distance < 0 ? amount : -amount) + projects.length) % projects.length; props.current.onSelect(next); return; }
       if (Math.abs(event.clientY - startY) > 12) return;
-      const rect = element.getBoundingClientRect(); pointer.set((event.clientX - rect.left) / rect.width * 2 - 1, -(event.clientY - rect.top) / rect.height * 2 + 1);
-      raycaster.setFromCamera(pointer, camera);
-      const hit = raycaster.intersectObjects(collection.children, true)[0];
-      if (hit) { let object = hit.object; while (object.parent && object.parent !== collection) object = object.parent; const index = object.userData.index as number; if (index === props.current.activeIndex) props.current.onOpen(); else props.current.onSelect(index); }
+      const index = hitIndex(event);
+      if (index != null) { const anchor = discAnchor(index); if (event.pointerType === 'touch' || window.innerWidth <= 700 || window.matchMedia('(pointer: coarse)').matches) { if (anchor) props.current.onPreview(index, anchor, 'touch', element.closest<HTMLElement>('.gallery-section') || undefined); } else if (index === props.current.activeIndex) props.current.onOpen(); else props.current.onSelect(index); }
     };
-    const cancel = () => { down = false; gsap.to(collection.position, { x: 0, duration: 0.4, onUpdate: render }); };
-    const leave = () => { if (!down) gsap.to(collection.rotation, { x: 0, y: 0, duration: 0.4, onUpdate: render }); };
+    const cancel = () => { down = false; props.current.onPreviewCancel(); gsap.to(collection.position, { x: 0, duration: 0.4, onUpdate: render }); };
+    const leave = () => { props.current.onPreviewLeave(); if (!down) gsap.to(collection.rotation, { x: 0, y: 0, duration: 0.4, onUpdate: render }); };
     const contextLost = (event: Event) => { event.preventDefault(); setFallback(true); };
     renderer.domElement.addEventListener('pointerdown', downHandler); renderer.domElement.addEventListener('pointermove', moveHandler); renderer.domElement.addEventListener('pointerup', upHandler); renderer.domElement.addEventListener('pointercancel', cancel); renderer.domElement.addEventListener('pointerleave', leave); renderer.domElement.addEventListener('webglcontextlost', contextLost);
     resize(); update();
@@ -152,11 +179,12 @@ export default function DiscGallery({ projects, activeIndex, flipped, onSelect, 
       discs.forEach(destroyDisc); resources.forEach(t => t.dispose()); materials.forEach(m => m.dispose());
       bodyGeometry.dispose(); faceGeometry.dispose(); hubGeometry.dispose(); grooveGeometry.dispose(); metal.dispose(); hubMaterial.dispose(); environment.dispose();
       renderer.domElement.removeEventListener('pointerdown', downHandler); renderer.domElement.removeEventListener('pointermove', moveHandler); renderer.domElement.removeEventListener('pointerup', upHandler); renderer.domElement.removeEventListener('pointercancel', cancel); renderer.domElement.removeEventListener('pointerleave', leave); renderer.domElement.removeEventListener('webglcontextlost', contextLost);
-      renderer.dispose(); renderer.domElement.remove();
+      renderer.dispose(); renderer.forceContextLoss(); renderer.domElement.remove();
     };
   }, [projects, fallback]);
   useEffect(() => { runtime.current?.update(); }, [activeIndex, flipped]);
   const current = projects[activeIndex];
-  if (fallback && current) return <div className="disc-static"><button onClick={onOpen} aria-label={`Abrir ${current.title}`} className="static-disc">{current.coverUrl ? <Image src={current.coverUrl} alt={current.coverAlt || current.title} fill sizes="360px" unoptimized/> : <span>{current.title}<small>Capa em preparação</small></span>}<i/></button></div>;
-  return <div ref={host} className="disc-canvas"/>;
+  const fromButton = (index: number, target: HTMLButtonElement, interaction: PreviewInteraction) => { const rect = runtime.current?.anchor(index) || target.getBoundingClientRect(); onPreview(index, { left: rect.left, top: rect.top, width: rect.width, height: rect.height }, interaction, target); };
+  if (fallback && current) return <div className="disc-static"><button onPointerEnter={event => { if (event.pointerType === 'mouse') fromButton(activeIndex, event.currentTarget, 'pointer'); }} onPointerLeave={onPreviewLeave} onFocus={event => fromButton(activeIndex, event.currentTarget, 'focus')} onBlur={onPreviewLeave} onClick={event => { if (event.detail === 0 || window.innerWidth <= 700 || window.matchMedia('(pointer: coarse)').matches) fromButton(activeIndex, event.currentTarget, event.detail === 0 ? 'keyboard' : 'touch'); else onOpen(); }} aria-label={`Ver prévia de ${current.title}`} className="static-disc" aria-haspopup="dialog">{current.coverUrl ? <Image src={current.coverUrl} alt={current.coverAlt || current.title} fill sizes="360px" unoptimized/> : <span>{current.title}<small>Capa em preparação</small></span>}<i/></button></div>;
+  return <><div ref={host} className="disc-canvas"/><div className="disc-keyboard-targets" aria-label="Prévias dos discos">{projects.map((project, index) => Math.abs(relativeIndex(index, activeIndex, projects.length)) <= 3 && <button key={project.id} ref={node => { if (node) keyboardTargets.current.set(index, node); else keyboardTargets.current.delete(index); }} className="disc-keyboard-target" aria-haspopup="dialog" onFocus={event => fromButton(index, event.currentTarget, 'focus')} onBlur={onPreviewLeave} onClick={event => fromButton(index, event.currentTarget, 'keyboard')} aria-label={`Ver prévia de ${project.title}`}>{project.title} · Ver prévia</button>)}</div></>;
 }

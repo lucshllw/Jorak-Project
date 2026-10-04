@@ -10,7 +10,7 @@ import { getPublishedPortfolio } from './repository';
 
 function isReferenced(url: string, data: Awaited<ReturnType<typeof getPublishedPortfolio>>) {
   if (data.settings.avatarUrl === url || data.settings.showreelUrl === url) return true;
-  return data.projects.some(project => project.coverUrl === url || project.processImages.includes(url) || project.segments.some(segment => segment.clipUrl === url));
+  return data.projects.some(project => project.coverUrl === url || project.processImages.includes(url) || project.segments.some(segment => segment.clipUrl === url || segment.previewUrl === url));
 }
 export async function serveMedia(request: Request, id: string): Promise<Response> {
   guardRequest(request);
