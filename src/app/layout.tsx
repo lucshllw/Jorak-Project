@@ -6,6 +6,7 @@ import VisualMotion from '@/components/VisualMotion';
 import SmoothScroll from '@/components/SmoothScroll';
 import { TransitionController } from '@/components/TransitionLink';
 import './experience.css';
+import './finalization.css';
 
 const archivo = localFont({ src: '../../public/fonts/archivo-variable.ttf', variable: '--font-archivo', weight: '100 900', display: 'swap' });
 export const metadata: Metadata = {

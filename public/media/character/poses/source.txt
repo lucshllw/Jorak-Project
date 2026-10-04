@@ -1,0 +1,1 @@
+Transparent cutouts prepared with imagegen from the six user-supplied Jorak references. Packaged by scripts/package-character-sprites.mjs. Canvas 384×512.

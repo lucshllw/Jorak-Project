@@ -20,7 +20,7 @@ export function TransitionController() {
       const url = (event as CustomEvent<string>).detail;
       if (typeof url !== 'string' || !url.startsWith('/') || url.startsWith('//')) return;
       cancel();
-      if (new URL(url, location.origin).pathname === location.pathname) { gsap.set(layer.current, { scaleY: 0 }); router.push(url); return; }
+      if (new URL(url, location.origin).pathname === location.pathname) { window.dispatchEvent(new Event('jorak:transition-cancel')); gsap.set(layer.current, { scaleY: 0 }); router.push(url); return; }
       const candidates = [0, 1, 2].filter(value => value !== previousVariation.current);
       const variation = candidates[Math.floor(Math.random() * candidates.length)]; previousVariation.current = variation;
       window.dispatchEvent(new CustomEvent('jorak:transition', { detail: url }));
@@ -30,7 +30,7 @@ export function TransitionController() {
         timer.current = setTimeout(() => { tween.current = gsap.to(layer.current, { scaleY: 0, duration: .22, transformOrigin: 'top', ease: 'power3.out' }); }, 900);
       } });
     };
-    const back = () => { cancel(); gsap.set(layer.current, { scaleY: 0 }); };
+    const back = () => { cancel(); window.dispatchEvent(new Event('jorak:transition-cancel')); gsap.set(layer.current, { scaleY: 0 }); };
     window.addEventListener('jorak:navigate', navigate); window.addEventListener('popstate', back);
     return () => { cancel(); window.removeEventListener('jorak:navigate', navigate); window.removeEventListener('popstate', back); };
   }, [router]);
