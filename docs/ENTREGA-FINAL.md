@@ -26,10 +26,12 @@ Componentes de FAQ, prévia e projeto carregam sob demanda. Uma prévia por vez;
 
 Build Next.js 16.3.8 aprovado. 31 testes passaram sem skips, incluindo exportação real, áudio e prévias. 74 verificações de contexto, FAQ e solicitações; 55 de APIs públicas. Conferência HTTP de 25 trabalhos, 104 URLs de mídia, 13 solicitações pagas e um download gratuito. Produção local conectada ao JJAURA respondeu às três perguntas da home, com proteção de origem mantida.
 
-Navegador: layouts em 320 × 640, 390 × 844 e 768 × 1024 sem overflow horizontal; FAQ e campos de 16 px conferidos. Emulação de largura não equivale a aparelhos reais nem testa o teclado virtual do sistema. Nenhum aparelho físico foi utilizado.
+Navegador: layouts em 320 × 640, 390 × 844, 768 × 1024 e 844 × 390 sem overflow horizontal; FAQ e campos de 16 px conferidos. Player de SOU DEUS, encerramento celestial, repetição e histórico voltar/avançar conferidos. Emulação de largura não equivale a aparelhos reais nem testa o teclado virtual do sistema. Nenhum aparelho físico foi utilizado. A indisponibilidade de WebGL e a troca da preferência do sistema não foram simuladas no navegador disponível; as alternativas foram revisadas no código. Um erro isolado de MutationObserver apareceu na primeira abertura pública, sem origem indicada pela ferramenta, e não se repetiu ao recarregar; não foi possível atribuí-lo conclusivamente.
 
 JJAURA mantém 25 publicados, 32 arquivados e 104 arquivos privados, totalizando 820.726.609 bytes. Credenciais e arquivos de trabalho permanecem fora do Git. A publicação usa Next.js com servidor e armazenamento persistente; não depende da pasta local ignorada.
 
 ## Publicação
 
-Novo projeto Netlify em configuração. O endereço público e a verificação após a implantação serão registrados antes da entrega. A publicação beta permanece preservada.
+Novo endereço público: https://jorak-portfolio-final.netlify.app/ . Projeto conectado à branch `codex/portfolio-finalizacao`, Next.js Runtime 5.16.1, com função de servidor e variáveis privadas restritas à produção. Usa o modo Supabase padrão de produção; a classificação equivocada da configuração comum como segredo foi removida sem desativar a varredura de credenciais. A publicação beta permanece preservada.
+
+Verificação no endereço público: oito rotas principais e de solicitação responderam 200; os três projetos, clipes, prévias e posters responderam corretamente, incluindo Range 206. Os três trabalhos arquivados responderam 404. As três perguntas da home retornaram respostas, e origem externa foi recusada. Contato geral e interesse no Simo Hayha gravaram dois registros identificados de teste no JJAURA, conferidos no banco e removidos por seus IDs exatos após a validação. O selo opcional do Netlify foi desativado porque cobria o campo do FAQ.
