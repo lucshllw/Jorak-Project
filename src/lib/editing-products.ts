@@ -23,6 +23,10 @@ export function productPrice(product: EditingProduct) { return product.price===0
 export function productHref(product: EditingProduct) { return product.price===0 && product.downloadUrl ? product.downloadUrl : `/projetos-de-edicao/${encodeURIComponent(product.id)}/contato`; }
 export function productDescription(product: EditingProduct) { return `Arquivo de projeto da edição de ${product.name}, de ${product.artist}, para abrir e explorar no Node Video. Compatível somente com versões superiores à 6.70.`; }
 export function productRequest(product: EditingProduct) { return `Tenho interesse no arquivo de projeto ${product.name} — ${product.artist}, anunciado por ${productPrice(product)}. ${NODE_VIDEO_COMPATIBILITY} Gostaria de consultar como adquirir este projeto.`; }
+export function productEmailHref(product: EditingProduct, email: string) {
+  const subject=`Interesse em ${product.name} — ${product.artist} | JORAK`;
+  return `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(productRequest(product))}`;
+}
 export function productInquiry(product: EditingProduct, input: {name:string;email:string;message:string}) {
   if(product.price<=0) throw new Error('O projeto gratuito não recebe solicitações pagas.');
   return {name:input.name,email:input.email,type:'Arquivo de projeto / Node Video',duration:'',deadline:'',references:'',budget:productPrice(product),message:`Projeto: ${product.name} — ${product.artist}\nPreço fixo: ${productPrice(product)}\n${NODE_VIDEO_COMPATIBILITY}\n\n${input.message}`,productId:product.id,productPrice:product.price};

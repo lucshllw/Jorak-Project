@@ -2,6 +2,16 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync } from 'node:fs';
 
+test('email de compra identifica produto, artista, valor e versão sem misturar os dois Kaiser',async()=>{
+  const {editingProducts,productEmailHref}=await import('./editing-products.ts');
+  for(const id of ['kaiser-m4rkim','kaiser-fokes']){
+    const product=editingProducts.find(p=>p.id===id),url=new URL(productEmailHref(product,'jorak@example.com'));
+    assert.equal(url.protocol,'mailto:');assert.equal(url.pathname,'jorak@example.com');
+    assert.match(url.searchParams.get('subject'),new RegExp(product.artist));
+    const body=url.searchParams.get('body');assert.match(body,new RegExp(product.artist));assert.ok(body.includes(String(product.price)));assert.match(body,/superiores à 6.70/);
+  }
+});
+
 test('14 produtos preservam preço, artista e destinos distintos de consulta e download', async () => {
   assert.ok(existsSync(new URL('./editing-products.ts',import.meta.url)), 'Catálogo de produtos ainda não implementado');
   const {editingProducts, productHref, productRequest, NODE_VIDEO_COMPATIBILITY} = await import('./editing-products.ts');

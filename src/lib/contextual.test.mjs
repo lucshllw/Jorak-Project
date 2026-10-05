@@ -45,7 +45,7 @@ test('FAQ answers the specific command instead of repeating its broad topic',()=
   const send=answerFaqQuestion('Como enviar meu interesse?',data,context);
   assert.match(cost.answer,/100/);assert.doesNotMatch(cost.answer,/150/);
   assert.match(compatibility.answer,/superiores à 6.70/);
-  assert.match(send.answer,/nome.*e-mail.*mensagem/);
+  assert.match(send.answer,/aplicativo de e-mail/);assert.match(send.answer,/Enviar/);
   assert.equal(new Set([cost.answer,compatibility.answer,send.answer]).size,3);
   const index={page:'index'};
   assert.notEqual(answerFaqQuestion('Como buscar um trabalho?',data,index).answer,answerFaqQuestion('Como filtrar por artista?',data,index).answer);

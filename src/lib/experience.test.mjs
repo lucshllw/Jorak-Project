@@ -1,12 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { isHomeReload } from './introduction.ts';
+import { isHomeEntry } from './introduction.ts';
 import { editionPlaylist, coverTextureFrame, projectDescription } from './project-presentation.ts';
 import { matchFaq, faqAnswer } from './faq.ts';
 
-test('intro requires a reload of the original home document', () => {
-  assert.equal(isHomeReload({ type:'reload', name:'http://127.0.0.1:3100/?disco=faminto' }), true);
-  for(const entry of [undefined,{type:'navigate',name:'http://localhost/'},{type:'back_forward',name:'http://localhost/'},{type:'reload',name:'http://localhost/sobre'},{type:'reload',name:'invalid'}]) assert.equal(isHomeReload(entry),false);
+test('intro appears on home entry, refresh and return without depending on navigation type', () => {
+  for(const type of ['navigate','reload','back_forward']) assert.equal(isHomeEntry({type,name:'http://localhost/?disco=faminto'}),true);
+  for(const entry of [undefined,{type:'reload',name:'http://localhost/sobre'},{type:'navigate',name:'invalid'}]) assert.equal(isHomeEntry(entry),false);
 });
 test('one edition playlist prefers original cuts without duplicate commissions or inferred media', () => {
   const part=(id,start,end,timeline='original',rangeStatus='explicit')=>({id,start,end,timeline,rangeStatus,clipUrl:'/api/media/'+id,order:0});

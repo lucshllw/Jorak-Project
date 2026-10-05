@@ -11,7 +11,7 @@ import Dialog from './Dialog';
 import Icon from './Icon';
 import BrandArt from './BrandArt';
 import type { PreviewAnchor, PreviewInteraction, PreviewRequest } from './DiscPreview';
-import { claimReloadIntroduction } from '@/lib/introduction';
+import { claimHomeIntroduction } from '@/lib/introduction';
 import { navigateWithTransition } from './TransitionLink';
 import Character from './Character';
 const DiscGallery = dynamic(() => import('./DiscGallery'), { ssr: false, loading: () => <div className="gallery-loading" role="status">Preparando a coleção…</div> });
@@ -27,7 +27,7 @@ export default function Portfolio({ data }: { data: PortfolioData }) {
   const [faqOpen, setFaqOpen] = useState(false);
   const faqActive = useRef(false); faqActive.current = faqOpen;
   const [compact, setCompact] = useState(false);
-  const [intro, setIntro] = useState(false), [introChecking, setIntroChecking] = useState(true);
+  const [intro, setIntro] = useState(true), [introChecking, setIntroChecking] = useState(true);
   const introClaimed = useRef<boolean | null>(null), blocked = useRef(true);
   blocked.current = intro || introChecking;
   const previewRef = useRef<PreviewRequest | null>(null), pendingPreview = useRef<PreviewRequest | null>(null), suppressedFocus = useRef<{ node: HTMLElement | null } | null>(null);
@@ -46,7 +46,7 @@ export default function Portfolio({ data }: { data: PortfolioData }) {
   }, []);
   useEffect(() => { if (faqOpen) closePreview(); }, [faqOpen, closePreview]);
   useEffect(() => {
-    if (introClaimed.current === null) introClaimed.current = claimReloadIntroduction();
+    if (introClaimed.current === null) introClaimed.current = claimHomeIntroduction();
     closePreview(); setIntro(introClaimed.current); setIntroChecking(false);
   }, [closePreview]);
   useEffect(() => {

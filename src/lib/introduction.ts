@@ -1,13 +1,10 @@
-export function isHomeReload(entry?: { type: string; name: string }): boolean {
-  if (entry?.type !== 'reload') return false;
-  try { return new URL(entry.name).pathname === '/'; } catch { return false; }
+export function isHomeEntry(entry?: { type: string; name: string }): boolean {
+  try { return new URL(entry?.name || '').pathname === '/'; } catch { return false; }
 }
 
-// A document reload creates a fresh module. Client navigation and remounts do not.
-let consumed = false;
-export function claimReloadIntroduction(): boolean {
-  if (consumed || typeof window === 'undefined') return false;
-  consumed = true;
-  return isHomeReload(performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming | undefined)
+export function claimHomeIntroduction(): boolean {
+  if (typeof window === 'undefined') return false;
+  // Each home mount starts its own introduction; no document/session latch.
+  return isHomeEntry({type:'navigate',name:window.location.href})
     && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 }

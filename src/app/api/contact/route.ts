@@ -1,5 +1,6 @@
 import { assertSameOrigin, HttpError } from '@/lib/server/config';
 import { saveInquiry } from '@/lib/server/repository';
+import { notifySavedInquiry } from '@/lib/server/inquiry-notification';
 import { json, failure, readJson, rateLimit } from '@/lib/server/http';
 import { inquirySchema, parse } from '@/lib/server/validation';
 export const runtime = 'nodejs';
@@ -9,6 +10,7 @@ export async function POST(request: Request) {
     const { website, ...input } = parse(inquirySchema, await readJson(request, 16 * 1024));
     if (website) throw new HttpError(400, 'Não foi possível validar o formulário. Tente novamente.');
     const saved = await saveInquiry(input);
-    return json({ saved: true, id: saved.id }, 201);
+    const notification = await notifySavedInquiry(saved);
+    return json({ saved: true, id: saved.id, notification }, 201);
   } catch (error) { return failure(error); }
 }
