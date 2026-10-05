@@ -9,10 +9,11 @@ import './experience.css';
 import './finalization.css';
 
 const archivo = localFont({ src: '../../public/fonts/archivo-variable.ttf', variable: '--font-archivo', weight: '100 900', display: 'swap' });
+const storageMode = process.env.PORTFOLIO_MODE || (process.env.NODE_ENV === 'production' ? 'supabase' : 'local');
 export const metadata: Metadata = {
   title: { default: 'Jorak — Edição em movimento', template: '%s — Jorak' },
   description: 'Edição MMV e motion design para a cena geek brasileira. Explore os trabalhos de Jorak e conte a sua próxima história.',
-  robots: { index: process.env.PORTFOLIO_MODE === 'supabase', follow: process.env.PORTFOLIO_MODE === 'supabase' }
+  robots: { index: storageMode === 'supabase', follow: storageMode === 'supabase' }
 };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return <html lang="pt-BR" data-scroll-behavior="smooth" className={archivo.variable}><body><a className="skip-link" href="#conteudo">Pular para o conteúdo</a><SmoothScroll/><TransitionController/><VisualMotion/>{children}</body></html>;

@@ -38,7 +38,9 @@ export async function guardServerRequest() {
 export function assertSameOrigin(request: Request): void {
   guardRequest(request);
   const origin = request.headers.get('origin');
-  const configured = process.env.PORTFOLIO_SITE_ORIGIN;
+  // Public configuration stays separate from credentials. Keep the old name
+  // compatible with existing local/deployment environments.
+  const configured = process.env.PORTFOLIO_PUBLIC_ORIGIN || process.env.PORTFOLIO_SITE_ORIGIN;
   // A preview can move to another local port when the preferred port is occupied.
   // guardRequest already restricts local mode to loopback; production stays pinned.
   const expected = getMode() === 'local' ? `${new URL(request.url).protocol}//${request.headers.get('host')}` : configured ? new URL(configured).origin : new URL(request.url).origin;
