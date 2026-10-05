@@ -44,3 +44,16 @@ test('diagnóstico informa a categoria de falha sem conteúdo do cliente',async(
   await sendInquiryNotification(inquiry,{...config,onFailure:value=>{reason=value;}},async()=>new Response('Denied',{status:403}));
   assert.equal(reason,'http-403');
 });
+
+test('encaminhamento pelo navegador usa dados salvos e não define headers reservados',async()=>{
+  const {prepareInquiryNotification,sendPreparedNotification}=await module();
+  const request=prepareInquiryNotification(inquiry,config);
+  assert.equal(request.body['Código do pedido'],inquiry.id);
+  assert.equal(request.body._replyto,inquiry.email);
+  let sent;
+  assert.equal(await sendPreparedNotification(request,async(url,options)=>{sent={url,options};return Response.json({success:true});}),'submitted');
+  assert.equal(sent.url,'https://formsubmit.co/ajax/jorak%40example.com');
+  assert.equal('Referer' in sent.options.headers,false);
+  assert.equal('Origin' in sent.options.headers,false);
+  assert.equal(await sendPreparedNotification({...request,url:'https://evil.example.com'},async()=>assert.fail('Destino inválido')),'unavailable');
+});
