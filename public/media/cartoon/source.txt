@@ -1,0 +1,5 @@
+Original decorative artwork generated with the native image generation tool on 2026-10-04.
+Reference: user-approved JORAK cartoon visual proposal, supplied by the user.
+Prompt: original transparent cartoon comic border ornament, forest-green hand-inked cutouts, lime accents, warm off-white outlines, cel-shaded shadows, localized halftone, sparse brush marks, empty center; no text, logo, UI, CDs, characters or photographs.
+ink-frame.png is the original alpha PNG. ink-frame.webp is the optimized web asset (quality 88, approximately 180 KB).
+The website interface remains semantic HTML and existing Three.js scenes. This artwork contains decoration only.

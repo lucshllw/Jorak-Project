@@ -15,7 +15,7 @@ export default function Header({ settings, onIndex, mode }: { settings: SiteSett
       <Link href="/" onClick={() => setMenu(false)}>Trabalhos</Link>
       {onIndex ? <button onClick={() => { onIndex(); setMenu(false); }}>Índice <span className="nav-plus">+</span></button> : <Link href="/?indice=1" onClick={() => setMenu(false)}>Índice <span className="nav-plus">+</span></Link>}
       <Link href="/projetos-de-edicao" aria-current={pathname==='/projetos-de-edicao'?'page':undefined} onClick={()=>setMenu(false)}>Projetos de edição</Link>
-      <Link href="/surface-academy" className="nav-academy" aria-current={pathname==='/surface-academy'?'page':undefined} onClick={()=>setMenu(false)}>Surface Academy <span aria-hidden="true">↗</span></Link>
+      <Link href="/surface-academy" className="nav-academy" aria-current={pathname==='/surface-academy'?'page':undefined} onClick={()=>setMenu(false)}>Surfate Academy <span aria-hidden="true">↗</span></Link>
       <Link href="/sobre" onClick={() => setMenu(false)}>Sobre mim</Link>
       <Link href="/contato" className="nav-contact" onClick={() => setMenu(false)}>Vamos criar <Icon name="arrow-right-up-linear" size={16}/></Link>
     </nav>

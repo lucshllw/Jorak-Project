@@ -2,15 +2,14 @@ import 'server-only';
 import { randomUUID } from 'node:crypto';
 import type { Project, PortfolioData, Inquiry } from '@/lib/types';
 import { seedPortfolio } from '@/lib/seed';
+import { selectPublicProjects } from '@/lib/public-selection';
 import { getMode, guardServerRequest, isLocalPreview } from './config';
 import { localTransaction, readLocalData } from './local-store';
 import { publicSupabase, serviceSupabase, databaseError } from './supabase';
 import type { InquiryInput } from './validation';
 
 function publicSelection(data: PortfolioData, includeLocalDrafts = false): PortfolioData {
-  const projects = data.projects
-    .filter(project => project.status === 'published' || (includeLocalDrafts && project.status === 'draft'))
-    .sort((a, b) => a.order - b.order);
+  const projects = selectPublicProjects(data.projects, includeLocalDrafts);
   const usedArtists = new Set(projects.flatMap(project => project.artistIds));
   return {
     projects,

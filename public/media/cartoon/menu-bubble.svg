@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 64" preserveAspectRatio="none">
+  <defs>
+    <pattern id="dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#07100d" opacity=".5"/></pattern>
+    <clipPath id="shape"><path d="M10 7 Q48 3 92 6 Q149 2 187 8 L194 22 L190 46 Q151 51 66 48 L45 59 L49 48 Q22 51 8 44 L5 24 Z"/></clipPath>
+  </defs>
+  <path d="M10 7 Q48 3 92 6 Q149 2 187 8 L194 22 L190 46 Q151 51 66 48 L45 59 L49 48 Q22 51 8 44 L5 24 Z" fill="#123c27" stroke="#07100d" stroke-width="6" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+  <g clip-path="url(#shape)">
+    <path d="M138 1 L201 1 L201 64 L170 64 Z" fill="url(#dots)"/>
+    <path d="M9 43 L33 43 L28 49 L8 47 Z" fill="#7fac29" opacity=".7"/>
+  </g>
+  <path d="M10 7 Q48 3 92 6 Q149 2 187 8 L194 22 L190 46 Q151 51 66 48 L45 59 L49 48 Q22 51 8 44 L5 24 Z" fill="none" stroke="#e8e9d2" stroke-width="2" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+</svg>

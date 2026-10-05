@@ -2,7 +2,7 @@ import type { PortfolioData } from './types';
 import { editingProducts, NODE_VIDEO_COMPATIBILITY, productPrice } from './editing-products.ts';
 export const faqTopics = ['identity', 'services', 'artists', 'portfolio', 'contact', 'budget', 'deadline', 'tools', 'products', 'academy', 'unknown'] as const;
 export type FaqTopic = typeof faqTopics[number];
-export const faqSuggestions = ['Quais projetos para Node Video estão disponíveis?', 'Conhecer a Surface Academy', 'Como pedir um orçamento?'];
+export const faqSuggestions = ['Quais projetos para Node Video estão disponíveis?', 'Conhecer a Surfate Academy', 'Como pedir um orçamento?'];
 export function matchFaq(question: string): FaqTopic {
   const text = question.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   if (/academ|surfate|surface|professor|ensino/.test(text)) return 'academy';
@@ -26,7 +26,7 @@ export function faqAnswer(topic: FaqTopic, data: PortfolioData) {
     contact: { answer: 'Para falar comigo, use o formulário Vamos criar. Conte a ideia e informe um e-mail de contato. Os links públicos também estão nessa página.', href: '/contato', label: 'Vamos criar' },
     budget: { answer: 'Não há uma tabela de preços para edições personalizadas. O orçamento depende dos detalhes da sua ideia. Os arquivos de projeto para Node Video têm valores próprios no catálogo Projetos de edição. Para contratar uma edição, envie duração, referências e prazo desejado.', href: '/contato', label: 'Solicitar orçamento' },
     products: { answer: `${NODE_VIDEO_COMPATIBILITY} Os arquivos disponíveis são: ${editingProducts.map(product=>`${product.name} (${product.artist}): ${productPrice(product)}`).join('; ')}. Os pagos levam à consulta pelo contato; Cristino tem um link de download gratuito no catálogo.`, href:'/projetos-de-edicao',label:'Consultar os 14 projetos' },
-    academy: { answer:'A academia apresentada como Surface Academy neste site usa o nome oficial Surfate Academy. Jorak integra a equipe como professor de animação 2D no celular. Consulte a página da academia e o site oficial para conhecer a formação.',href:'/surface-academy',label:'Conhecer a academia' },
+    academy: { answer:'A Surfate Academy é a academia de animação digital em que Jorak atua como professor. Jorak integra a equipe como professor de animação 2D no celular. Consulte a página da academia e o site oficial para conhecer a formação.',href:'/surface-academy',label:'Conhecer a academia' },
     deadline: { answer: 'Prazos e disponibilidade precisam ser combinados diretamente comigo. Informe sua data desejada no formulário; a conversa permite avaliar o projeto antes de confirmar a entrega.', href: '/contato', label: 'Conversar sobre o projeto' },
     tools: { answer: 'As ferramentas verificadas estão indicadas nas páginas dos projetos correspondentes. A escolha pode variar de um trabalho para outro; consulte a edição e os créditos de cada lançamento.', href: '/?visao=todos', label: 'Consultar projetos' },
     unknown: { answer: 'Posso ajudar com informações sobre meus trabalhos, serviços e contato. Essa informação específica ainda não está cadastrada; envie sua dúvida pelo formulário para conversar comigo.', href: '/contato', label: 'Falar com Jorak' },

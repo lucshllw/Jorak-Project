@@ -55,11 +55,11 @@ try {
   await check('FAQ cross-site recusado', await call('/api/faq', { method: 'POST', body: { question: 'Quanto custa?' }, headers: { Origin: 'https://externo.example' } }), 403);
   await check('FAQ não aceita campos extras', await call('/api/faq', { method: 'POST', body: { question: 'Quanto custa?', model: 'outro' } }), 400);
   await check('FAQ limita a pergunta', await call('/api/faq', { method: 'POST', body: { question: 'x'.repeat(801) } }), 400);
-  await check('FAQ limita o tamanho da requisição', await call('/api/faq', { method: 'POST', body: { question: 'x'.repeat(5000) } }), 413);
+  await check('FAQ limita o tamanho da requisição', await call('/api/faq', { method: 'POST', body: { question: 'x'.repeat(9000) } }), 413);
   const faq = await check('FAQ responde com dados aprovados', await call('/api/faq', { method: 'POST', body: { question: 'Quanto custa uma edição?' } }), 200);
   const faqResult = await faq.json();
   assert.ok(['registered', 'ai'].includes(faqResult.mode));
-  assert.match(faqResult.answer, /Não há uma tabela/);
+  assert.match(faqResult.answer, /não têm preço fixo/i);
   assert.equal(faqResult.href, '/contato');
   const response = await check('catálogo público funciona', await call('/api/portfolio'), 200);
   const portfolio = await response.json();
@@ -89,7 +89,7 @@ try {
   await mkdir(path.join(directory, 'uploads'), { recursive: true });
   await writeFile(path.join(directory, 'uploads', mediaFile), bytes, { flag: 'wx', mode: 0o600 });
   await transaction(data => {
-    const project = { ...structuredClone(data.projects[0]), id: fixtureId, slug: fixtureSlug, title: 'Verificação temporária de mídia', status: 'draft', featured: false, featuredOrder: null, order: 999999, segments: [{ id: fixtureId, name: 'Fixture', kind: 'edit', clipUrl: `/api/media/${mediaId}`, start: null, end: null, order: 0 }] };
+    const project = { ...structuredClone(data.projects[0]), id: fixtureId, slug: fixtureSlug, title: 'Verificação temporária de mídia', status: 'draft', featured: false, featuredOrder: null, order: 999999, segments: [{ id: fixtureId, name: 'Fixture', kind: 'edit', clipUrl: `/api/media/${mediaId}`, start: 0, end: 1, rangeStatus:'explicit', order: 0 }] };
     data.projects.push(project);
     data.media.push({ id: mediaId, filename: mediaFile, mime: 'video/mp4', size: bytes.length, createdAt: new Date().toISOString() });
   });
@@ -105,7 +105,7 @@ try {
   await check('mídia arquivada volta a ser privada', await call(`/api/media/${mediaId}`), 404);
   await transaction(data => {
     const project = data.projects.find(project => project.id === fixtureId);
-    project.status = 'draft'; project.segments[0].clipUrl = null; project.segments[0].previewUrl = `/api/media/${mediaId}`;
+    project.status = 'draft'; project.segments[0].clipUrl = publicProject.segments.find(s=>s.clipUrl&&s.rangeStatus==='explicit').clipUrl; project.segments[0].previewUrl = `/api/media/${mediaId}`;
   });
   await check('prévia de rascunho permanece privada', await call(`/api/media/${mediaId}`), 404);
   await transaction(data => { data.projects.find(project => project.id === fixtureId).status = 'published'; });

@@ -7,20 +7,21 @@ import './media-player.css';
 
 type SafariVideo = HTMLVideoElement & { webkitEnterFullscreen?: () => void };
 
-export default function CustomVideoPlayer({ src, poster, title, loop = false, onEnded }: { src: string; poster?: string; title: string; loop?: boolean; onEnded?: () => void }) {
+export default function CustomVideoPlayer({ src, poster, title, loop = false, onEnded, replayToken=0, onStarted, active=true }: { src: string; poster?: string; title: string; loop?: boolean; onEnded?: () => void; replayToken?: number; onStarted?:()=>void;active?:boolean }) {
   const owner = useId(), root = useRef<HTMLDivElement>(null), video = useRef<HTMLVideoElement>(null);
   const hideTimer = useRef<ReturnType<typeof setTimeout> | null>(null), keyboardFocus = useRef(false), pointerInput = useRef(false);
   const [playing, setPlaying] = useState(false), [buffering, setBuffering] = useState(true), [error, setError] = useState('');
   const [current, setCurrent] = useState(0), [duration, setDuration] = useState(0), [volume, setVolume] = useState(.8), [muted, setMuted] = useState(false);
   const [controls, setControls] = useState(true), [fullscreen, setFullscreen] = useState(false), [announcement, setAnnouncement] = useState('');
-  const playingRef = useRef(false);
+  const playingRef = useRef(false),activeRef=useRef(active);activeRef.current=active;
+  useEffect(()=>{if(!active)video.current?.pause();},[active]);
   const clearHide = useCallback(() => { if (hideTimer.current) clearTimeout(hideTimer.current); hideTimer.current = null; }, []);
   const showControls = useCallback(() => {
     clearHide(); setControls(true);
     if (playingRef.current && !keyboardFocus.current) hideTimer.current = setTimeout(() => setControls(false), 2600);
   }, [clearHide]);
   const start = useCallback(async () => {
-    const node = video.current; if (!node) return;
+    const node = video.current; if (!node||!activeRef.current) return;
     setError(''); setAnnouncement('');
     try { await node.play(); }
     catch (failure) {
@@ -72,6 +73,7 @@ export default function CustomVideoPlayer({ src, poster, title, loop = false, on
     void start();
     return () => { clearHide(); observer.disconnect(); node.pause(); node.removeAttribute('src'); node.load(); window.removeEventListener('jorak:media-play', another); document.removeEventListener('visibilitychange', visibility); document.removeEventListener('fullscreenchange', screen); };
   }, [src, owner, start, showControls, clearHide]);
+  useEffect(()=>{if(replayToken>0&&video.current){video.current.currentTime=0;void start();root.current?.focus({preventScroll:true});}},[replayToken,start]);
   const progress = duration > 0 ? Math.min(current / duration * 100, 100) : 0;
   return <div ref={root} className="custom-video-player" role="region" aria-label={`Player de ${title}`} tabIndex={0} data-controls-visible={controls || !playing || !!error} onKeyDown={keyboard}
     onPointerMove={showControls} onPointerDown={() => { pointerInput.current = true; keyboardFocus.current = false; showControls(); }}
@@ -82,7 +84,7 @@ export default function CustomVideoPlayer({ src, poster, title, loop = false, on
       onLoadedMetadata={event => { const node = event.currentTarget; setDuration(Number.isFinite(node.duration) ? node.duration : 0); }}
       onDurationChange={event => setDuration(Number.isFinite(event.currentTarget.duration) ? event.currentTarget.duration : 0)}
       onTimeUpdate={event => setCurrent(event.currentTarget.currentTime)}
-      onPlay={() => { playingRef.current = true; setPlaying(true); announcePlayback(owner); showControls(); }}
+      onPlay={event => { if(!activeRef.current){event.currentTarget.pause();return;}playingRef.current = true; setPlaying(true); onStarted?.(); announcePlayback(owner); showControls(); }}
       onPlaying={() => { setBuffering(false); setError(''); }}
       onPause={() => { playingRef.current = false; setPlaying(false); clearHide(); setControls(true); }}
       onEnded={() => { playingRef.current = false; setPlaying(false); setControls(true); onEnded?.(); }}

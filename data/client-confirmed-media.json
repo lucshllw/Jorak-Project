@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "authorization": "Recortes e obtenção autorizados pelo cliente no pedido de finalização.",
+  "sources": [
+    {"projectSlug":"traicao-de-sangue-igris","segmentId":"client-range-178-206","sourceUrl":"https://www.youtube.com/watch?v=ynECM2La-dI","originalUrl":"https://www.youtube.com/watch?v=ynECM2La-dI","expectedAuthor":"UCxte4E4U5ywpfDp08oEld4A","proofKind":"explicit-range","timeline":"original","kind":"edit","start":178,"end":206,"authorized":true,"evidence":"Intervalo informado pelo cliente: 2:58–3:26 (178–206 segundos). Título e artista conferidos nos metadados oficiais; confirmação dos limites fornecida pelo cliente, não atribuída à descrição do YouTube."},
+    {"projectSlug":"gols-e-travessuras-neko","segmentId":"client-range-44-72","sourceUrl":"https://www.youtube.com/watch?v=qFGJYdGufbE","originalUrl":"https://www.youtube.com/watch?v=qFGJYdGufbE","expectedAuthor":"UCiqceYOrM7tM5RYsFCqffUQ","proofKind":"explicit-range","timeline":"original","kind":"edit","start":44,"end":72,"authorized":true,"evidence":"Intervalo informado pelo cliente: 0:44–1:12 (44–72 segundos). Título e artista conferidos nos metadados oficiais; confirmação dos limites fornecida pelo cliente, não atribuída à descrição do YouTube."},
+    {"projectSlug":"sou-deus-7-minutoz","segmentId":"client-range-148-158","sourceUrl":"https://www.youtube.com/watch?v=5Kvnfecwb60","originalUrl":"https://www.youtube.com/watch?v=5Kvnfecwb60","expectedAuthor":"UCe6pKugTDyOPT1Md2DTybbQ","proofKind":"explicit-range","timeline":"original","kind":"edit","start":148,"end":158,"authorized":true,"evidence":"Intervalo informado pelo cliente: 2:28–2:38 (148–158 segundos). Título e artista conferidos nos metadados oficiais; substitui o fim anteriormente inferido em 156 segundos."}
+  ]
+}

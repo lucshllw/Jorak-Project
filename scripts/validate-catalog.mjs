@@ -23,7 +23,8 @@ export async function validateCatalog(catalog) {
     }
     assert.match(p.coverUrl, /^\/media\/covers\/[a-z0-9-]+\.jpg$/, `Capa local inválida: ${p.slug}`);
     assert.ok(['spotify','youtube','official','uploaded'].includes(p.coverSource));
-    assert.ok(new URL(p.coverSourceUrl).protocol === 'https:', 'Fonte de capa HTTPS');
+    if(p.coverSource==='uploaded')assert.ok(evidence.coverUpload?.sha256 && /cliente/i.test(p.coverCredit), 'Capa fornecida precisa de procedência própria, sem fonte de download inventada');
+    else assert.ok(new URL(p.coverSourceUrl).protocol === 'https:', 'Fonte de capa HTTPS');
     const cover = path.join(root, 'public', p.coverUrl);
     assert.ok((await stat(cover)).size > 1000, `Capa vazia: ${p.slug}`);
     const decoded = await sharp(await readFile(cover)).metadata();

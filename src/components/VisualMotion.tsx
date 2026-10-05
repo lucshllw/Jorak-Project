@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import gsap from 'gsap';
+import ComicBackdrop from './ComicBackdrop';
 export default function VisualMotion() {
   const pathname = usePathname();
   useEffect(() => {
@@ -18,5 +19,5 @@ export default function VisualMotion() {
     preference.addEventListener('change', stop);
     return () => { observer.disconnect(); mutations.disconnect(); preference.removeEventListener('change', stop); tweens.forEach(tween => { const targets = tween.targets() as HTMLElement[]; tween.kill(); gsap.set(targets, {clearProps:'transform,opacity'}); }); };
   }, [pathname]);
-  return <div className="brand-atmosphere" aria-hidden="true"><span/><span/><span/><span/><span/></div>;
+  return <ComicBackdrop/>;
 }

@@ -3015,14 +3015,29 @@ export const seedPortfolio: PortfolioData = {
       "youtubeUrl": "https://www.youtube.com/watch?v=ynECM2La-dI",
       "spotifyUrl": "https://open.spotify.com/album/4dj8LjSkXDCiE89t9uyE4R",
       "xUrl": null,
-      "segments": [],
+      "segments": [
+        {
+          "id": "client-range-178-206",
+          "name": "Trecho no lançamento original",
+          "start": 178,
+          "end": 206,
+          "kind": "edit",
+          "order": 0,
+          "clipUrl": null,
+          "previewUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "original",
+          "sourceUrl": "https://www.youtube.com/watch?v=ynECM2La-dI",
+          "evidence": "Intervalo informado pelo cliente"
+        }
+      ],
       "processImages": [],
       "featured": false,
       "featuredOrder": null,
       "order": 50,
       "status": "draft",
       "accent": "#b7bdad",
-      "verification": "Descrição oficial completa confirma participação nominal; não publica marcação de tempo individual.",
+      "verification": "Intervalo informado pelo cliente. Identidade do vídeo, título e artista conferidos no lançamento original.",
       "coverSourceUrl": "https://open.spotify.com/album/4dj8LjSkXDCiE89t9uyE4R",
       "checkedAt": "2026-10-04",
       "videoAvailability": "available"
@@ -3115,14 +3130,29 @@ export const seedPortfolio: PortfolioData = {
       "youtubeUrl": "https://www.youtube.com/watch?v=qFGJYdGufbE",
       "spotifyUrl": "https://open.spotify.com/album/6ItvEy5v6Abn22N8yZuTEa",
       "xUrl": null,
-      "segments": [],
+      "segments": [
+        {
+          "id": "client-range-44-72",
+          "name": "Trecho no lançamento original",
+          "start": 44,
+          "end": 72,
+          "kind": "edit",
+          "order": 0,
+          "clipUrl": null,
+          "previewUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "original",
+          "sourceUrl": "https://www.youtube.com/watch?v=qFGJYdGufbE",
+          "evidence": "Intervalo informado pelo cliente"
+        }
+      ],
       "processImages": [],
       "featured": true,
       "featuredOrder": 5,
       "order": 52,
       "status": "draft",
       "accent": "#deb4a1",
-      "verification": "Descrição oficial completa confirma participação nominal; não publica marcação de tempo individual.",
+      "verification": "Intervalo informado pelo cliente. Identidade do vídeo, título e artista conferidos no lançamento original.",
       "coverSourceUrl": "https://open.spotify.com/album/6ItvEy5v6Abn22N8yZuTEa",
       "checkedAt": "2026-10-04",
       "videoAvailability": "available"
@@ -3327,13 +3357,13 @@ export const seedPortfolio: PortfolioData = {
       "credits": "EDIÇÃO DE VÍDEO: MB, Malaksans (@malaksans), Zalen (@Zalen_Editor), Misty (@MistycSz), Nickel (@nickel_editor), Manhoso (@manhosoeditor), TGZE (@tgeditor85), 3DMIG (@MigJKJ), Sunny (@eosunnyy), Kizuna (@kizunakkkk), Znow (@znowaex_ofc), Naron (@l_naronn), Hasty (@hastyaex), LightSL (@LLightSL), oAmorim (@oamorimeditor), Coalinha (@c0alinhaEditor), Jorak (@Jorakeditor), LYZ (@lyz_editsx), Luck (@Luck_aex), All (@AlleditorGK), oLeozin (@oleozineditor), Theuo (@srtheuoeditor), Ayato (@ayatoaex), Gowww (@gowwwedits), Redzzz (@R3dzzz_), MaTTe (@eusoumatte), Smoker (@smoker_editss), Zada (@zada_comissions) e Only (@OnLyEditorr)",
       "creditSource": "https://www.youtube.com/watch?v=5Kvnfecwb60",
       "coverUrl": "/media/covers/sou-deus-7-minutoz.jpg",
-      "coverSource": "youtube",
-      "coverAlt": "Thumbnail original de SOU DEUS",
+      "coverSource": "uploaded",
+      "coverAlt": "Capa de SOU DEUS fornecida pelo cliente",
       "coverPosition": {
         "x": 50,
         "y": 50
       },
-      "coverCredit": "Thumbnail do vídeo original no YouTube.",
+      "coverCredit": "Imagem fornecida pelo cliente como referência da capa no Spotify. Arquivo de 300 × 300 pixels, sem ampliação.",
       "youtubeUrl": "https://www.youtube.com/watch?v=5Kvnfecwb60",
       "spotifyUrl": null,
       "xUrl": null,
@@ -3350,6 +3380,20 @@ export const seedPortfolio: PortfolioData = {
           "rangeStatus": "inferred",
           "sourceUrl": "https://www.youtube.com/watch?v=5Kvnfecwb60",
           "evidence": "Início creditado na descrição oficial. Fim estimado pelo capítulo seguinte; confirmação do limite pendente."
+        },
+        {
+          "id": "client-range-148-158",
+          "name": "Trecho no lançamento original",
+          "start": 148,
+          "end": 158,
+          "kind": "edit",
+          "order": 1,
+          "clipUrl": null,
+          "previewUrl": null,
+          "rangeStatus": "explicit",
+          "timeline": "original",
+          "sourceUrl": "https://www.youtube.com/watch?v=5Kvnfecwb60",
+          "evidence": "Intervalo informado pelo cliente"
         }
       ],
       "processImages": [],
@@ -3358,8 +3402,7 @@ export const seedPortfolio: PortfolioData = {
       "order": 56,
       "status": "draft",
       "accent": "#b7bdad",
-      "verification": "Descrição oficial declara início; término calculado pelo próximo crédito e ainda precisa de confirmação.",
-      "coverSourceUrl": "https://www.youtube.com/watch?v=5Kvnfecwb60",
+      "verification": "Intervalo informado pelo cliente. Identidade do vídeo, título e artista conferidos no lançamento original.",
       "checkedAt": "2026-10-04",
       "videoAvailability": "available"
     },

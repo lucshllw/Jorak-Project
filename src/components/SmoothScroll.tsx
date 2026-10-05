@@ -9,13 +9,18 @@ export default function SmoothScroll() {
     const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
     let lenis: Lenis | null = null, locked = false;
     const tick = (time: number) => lenis?.raf(time * 1000);
-    const visibility = () => { if (document.hidden || locked) lenis?.stop(); else lenis?.start(); };
+    const visibility = () => {
+      gsap.ticker.remove(tick);
+      if (document.hidden || locked || !lenis) lenis?.stop();
+      else { lenis.start(); gsap.ticker.add(tick); }
+    };
     const change = () => {
       lenis?.destroy(); lenis = null;
-      if (!preference.matches) { lenis = new Lenis({ duration: .9, smoothWheel: true, anchors: true }); lenis.on('scroll', ScrollTrigger.update); visibility(); }
+      if (!preference.matches) { lenis = new Lenis({ duration: .9, smoothWheel: true, anchors: true }); lenis.on('scroll', ScrollTrigger.update); }
+      visibility();
     };
     const lock = (event: Event) => { locked = Boolean((event as CustomEvent<boolean>).detail); visibility(); };
-    change(); gsap.ticker.add(tick);
+    change();
     document.addEventListener('visibilitychange', visibility);
     preference.addEventListener('change', change); window.addEventListener('jorak:interaction-lock', lock);
     return () => { gsap.ticker.remove(tick); document.removeEventListener('visibilitychange', visibility); preference.removeEventListener('change', change); window.removeEventListener('jorak:interaction-lock', lock); lenis?.destroy(); };

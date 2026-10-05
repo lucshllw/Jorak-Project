@@ -13,7 +13,7 @@ test('14 produtos preservam preço, artista e destinos distintos de consulta e d
     if(product.price===0) assert.equal(productHref(product),'https://drive.google.com/drive/folders/11BnE7c30TY2W_xLrhDDRtdmkME31lZMA');
     else {
       const url=new URL(productHref(product),'http://localhost');
-      assert.equal(url.pathname,'/contato'); assert.equal(url.searchParams.get('produto'),product.id);
+      assert.equal(url.pathname,`/projetos-de-edicao/${product.id}/contato`); assert.equal(url.searchParams.has('produto'),false);
       assert.ok(productRequest(product).includes(`${product.name} — ${product.artist}`));
       assert.ok(productRequest(product).includes('superiores à 6.70'));
     }

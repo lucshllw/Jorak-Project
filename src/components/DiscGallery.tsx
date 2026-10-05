@@ -8,6 +8,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { coverTextureFrame } from '@/lib/project-presentation';
 import type { Project } from '@/lib/types';
 import type { PreviewAnchor, PreviewInteraction } from './DiscPreview';
+import './disc-gallery.css';
 
 type Props = { projects: Project[]; activeIndex: number; flipped: boolean; disabled?: boolean; onSelect: (index: number) => void; onOpen: () => void; onPreview: (index: number, anchor: PreviewAnchor, interaction: PreviewInteraction, trigger?: HTMLElement) => void; onPreviewLeave: () => void; onPreviewCancel: () => void };
 type Disc = { group: THREE.Group; index: number };
@@ -48,7 +49,8 @@ export default function DiscGallery({ projects, activeIndex, flipped, disabled =
     let renderer: THREE.WebGLRenderer;
     try { renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'low-power' }); }
     catch { setFallback(true); return; }
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.6));
+    const lowPower = window.innerWidth <= 700 || window.matchMedia('(pointer: coarse)').matches || navigator.hardwareConcurrency < 6;
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, lowPower ? 1.25 : 1.6));
     renderer.setClearColor(0x000000, 0);
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -77,7 +79,7 @@ export default function DiscGallery({ projects, activeIndex, flipped, disabled =
     const hubMaterial = new THREE.MeshPhysicalMaterial({ color: '#e3e4e0', metalness: 0.75, roughness: 0.22, transmission: 0.12, thickness: 0.03, side: THREE.DoubleSide });
     const resources = new Set<THREE.Texture>();
     const discs: Disc[] = [];
-    const materials: THREE.Material[] = [];
+    const materials = new Set<THREE.Material>();
     const raycaster = new THREE.Raycaster(), pointer = new THREE.Vector2();
     const textureLoader = new THREE.TextureLoader();
     const discAnchor = (index: number, bounds?: DOMRect): PreviewAnchor | null => {
@@ -107,14 +109,14 @@ export default function DiscGallery({ projects, activeIndex, flipped, disabled =
       collection.remove(disc.group);
       disc.group.traverse(object => { if (object instanceof THREE.Mesh && object.material !== metal && object.material !== hubMaterial) {
         const material = object.material as THREE.MeshBasicMaterial;
-        material.map?.dispose(); if (material.map) resources.delete(material.map); material.dispose();
+        material.map?.dispose(); if (material.map) resources.delete(material.map); material.dispose(); materials.delete(material);
       } });
     };
     const createDisc = (index: number) => {
       const project = projects[index], group = new THREE.Group(); group.userData.index = index;
       const body = new THREE.Mesh(bodyGeometry, metal); body.position.z = -0.027; group.add(body);
       const placeholder = labelTexture(project); resources.add(placeholder);
-      const faceMaterial = new THREE.MeshBasicMaterial({ map: placeholder, side: THREE.FrontSide, toneMapped: false }); materials.push(faceMaterial);
+      const faceMaterial = new THREE.MeshBasicMaterial({ map: placeholder, side: THREE.FrontSide, toneMapped: false }); materials.add(faceMaterial);
       const face = new THREE.Mesh(faceGeometry, faceMaterial); face.position.z = 0.046; group.add(face);
       const hub = new THREE.Mesh(hubGeometry, hubMaterial); hub.position.z = 0.048; group.add(hub);
       const reverseHub = new THREE.Mesh(hubGeometry, hubMaterial); reverseHub.position.z = -0.044; group.add(reverseHub);

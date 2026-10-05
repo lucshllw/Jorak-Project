@@ -39,7 +39,9 @@ export function assertSameOrigin(request: Request): void {
   guardRequest(request);
   const origin = request.headers.get('origin');
   const configured = process.env.PORTFOLIO_SITE_ORIGIN;
-  const expected = configured ? new URL(configured).origin : new URL(request.url).origin;
+  // A preview can move to another local port when the preferred port is occupied.
+  // guardRequest already restricts local mode to loopback; production stays pinned.
+  const expected = getMode() === 'local' ? `${new URL(request.url).protocol}//${request.headers.get('host')}` : configured ? new URL(configured).origin : new URL(request.url).origin;
   if (process.env.NODE_ENV === 'production' && !configured) throw new HttpError(503, 'Configure a origem pública do portfólio.');
   // Escritas públicas exigem a origem do próprio site, inclusive sem cookies.
   if (!origin || origin !== expected || request.headers.get('sec-fetch-site') === 'cross-site') throw new HttpError(403, 'Esta solicitação precisa ser feita pelo próprio portfólio.');

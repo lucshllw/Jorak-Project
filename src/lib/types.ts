@@ -29,4 +29,4 @@ export type SiteSettings = {
   whatsapp: string; showreelUrl: string;
 };
 export type PortfolioData = { projects: Project[]; artists: Artist[]; settings: SiteSettings; mode: 'local' | 'supabase' };
-export type Inquiry = { id: string; name: string; email: string; type: string; duration: string; deadline: string; references: string; budget: string; message: string; status: 'new' | 'read' | 'replied'; createdAt: string };
+export type Inquiry = { id: string; name: string; email: string; type: string; duration: string; deadline: string; references: string; budget: string; message: string; productId?: string; productPrice?: number; status: 'new' | 'read' | 'replied'; createdAt: string };
