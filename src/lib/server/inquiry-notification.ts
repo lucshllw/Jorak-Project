@@ -13,6 +13,7 @@ export async function notifySavedInquiry(inquiry: Inquiry): Promise<Notification
     const result = await sendInquiryNotification(inquiry, {
       recipient: settings.email,
       origin: process.env.PORTFOLIO_PUBLIC_ORIGIN || process.env.PORTFOLIO_SITE_ORIGIN || '',
+      onFailure: reason => console.warn('[portfólio] Diagnóstico do aviso:', inquiry.id, reason),
     });
     if (result !== 'submitted') console.warn('[portfólio] Aviso de pedido:', inquiry.id, result);
     return result;

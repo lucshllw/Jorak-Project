@@ -12,6 +12,12 @@ test('email de compra identifica produto, artista, valor e versão sem misturar 
   }
 });
 
+test('rascunho inclui contato e mensagem editada mantendo os dados canônicos do produto',async()=>{
+  const {findProduct,productEmailHref}=await import('./editing-products.ts');
+  const url=new URL(productEmailHref(findProduct('kaiser-m4rkim'),'jorak@example.com',{name:'Cliente',email:'cliente@example.com',message:'Como posso pagar?'}));
+  const body=url.searchParams.get('body');assert.match(body,/Kaiser — M4rkim/);assert.match(body,/150/);assert.match(body,/Cliente/);assert.match(body,/cliente@example.com/);assert.match(body,/Como posso pagar/);
+});
+
 test('14 produtos preservam preço, artista e destinos distintos de consulta e download', async () => {
   assert.ok(existsSync(new URL('./editing-products.ts',import.meta.url)), 'Catálogo de produtos ainda não implementado');
   const {editingProducts, productHref, productRequest, NODE_VIDEO_COMPATIBILITY} = await import('./editing-products.ts');

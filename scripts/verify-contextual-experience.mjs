@@ -21,7 +21,7 @@ try{
  for(const p of editingProducts.filter(p=>p.price>0)){
   const page=await fetch(base+productHref(p));check('Rota dedicada '+p.id,page.status===200);
   const html=await page.text();check('Preço fixo e campos essenciais '+p.id,html.includes(productPrice(p).replace(/\u00a0/g,'&nbsp;'))||html.includes(productPrice(p)));
-  check('E-mail de compra pronto '+p.id,!/name="budget"/.test(html)&&!html.includes('<form')&&html.includes('Enviar e-mail sobre este projeto')&&html.includes('mailto:'));
+  check('Página de compra prepara e-mail '+p.id,!/name="budget"/.test(html)&&html.includes('name="name"')&&html.includes('name="email"')&&html.includes('Enviar e-mail sobre este projeto')&&html.includes('mailto:'));
  }
  check('Cristino grátis preservado',productHref(editingProducts.at(-1)).startsWith('https://drive.google.com/'));
  for(const id of ['nao-existe','cristino-shiny'])check('404 solicitação '+id,(await fetch(base+'/projetos-de-edicao/'+id+'/contato')).status===404);

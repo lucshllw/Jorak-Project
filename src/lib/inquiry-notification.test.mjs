@@ -38,3 +38,9 @@ test('ativação pendente é distinguida de entrega e configuração inválida n
     assert.equal(await sendInquiryNotification(inquiry,invalid,async()=>{assert.fail('Não enviar com configuração inválida');}),'unavailable');
   }
 });
+
+test('diagnóstico informa a categoria de falha sem conteúdo do cliente',async()=>{
+  const {sendInquiryNotification}=await module();let reason;
+  await sendInquiryNotification(inquiry,{...config,onFailure:value=>{reason=value;}},async()=>new Response('Denied',{status:403}));
+  assert.equal(reason,'http-403');
+});
