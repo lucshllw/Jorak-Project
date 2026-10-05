@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {writeFile,mkdir} from 'node:fs/promises';
-const base=process.argv[2];assert.equal(new URL(base).hostname,'jorak-portfolio-final.netlify.app');
+const base=process.argv[2];assert.equal(new URL(base).hostname,'jorakeditor.netlify.app');
 const request=await fetch(base+'/api/portfolio');assert.equal(request.status,200);const catalog=await request.json();assert.equal(catalog.projects.length,25);
 const checks=[];
 for(const route of ['/','/?indice=1','/?visao=todos','/sobre','/contato','/surface-academy','/projetos-de-edicao','/projetos-de-edicao/simo-hayha-pejota/contato']){const response=await fetch(base+route);assert.equal(response.status,200,route);checks.push(route);}
